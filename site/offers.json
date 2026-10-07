@@ -1,0 +1,7002 @@
+[
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/boise-id/painters/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/boise-id/plumbers/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/boise-id/hvac/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/boise-id/roofers/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/boise-id/electricians/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/boise-id/garage-doors/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/boise-id/landscapers/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/boise-id/cleaners/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/boise-id/detailers/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/boise-id/junk-removal/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/boise-id/pest-control/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/boise-id/movers/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/boise-id/groomers/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/boise-id/dentists/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/boise-id/med-spas/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/boise-id/gyms/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/boise-id/restaurants/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/boise-id/food-trucks/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/boise-id/auto-repair/"
+  },
+  {
+    "city": "Boise",
+    "state": "ID",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/boise-id/property-managers/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/spokane-wa/painters/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/spokane-wa/plumbers/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/spokane-wa/hvac/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/spokane-wa/roofers/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/spokane-wa/electricians/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/spokane-wa/garage-doors/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/spokane-wa/landscapers/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/spokane-wa/cleaners/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/spokane-wa/detailers/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/spokane-wa/junk-removal/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/spokane-wa/pest-control/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/spokane-wa/movers/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/spokane-wa/groomers/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/spokane-wa/dentists/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/spokane-wa/med-spas/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/spokane-wa/gyms/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/spokane-wa/restaurants/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/spokane-wa/food-trucks/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/spokane-wa/auto-repair/"
+  },
+  {
+    "city": "Spokane",
+    "state": "WA",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/spokane-wa/property-managers/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/tacoma-wa/painters/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/tacoma-wa/plumbers/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/tacoma-wa/hvac/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/tacoma-wa/roofers/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/tacoma-wa/electricians/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/tacoma-wa/garage-doors/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/tacoma-wa/landscapers/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/tacoma-wa/cleaners/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/tacoma-wa/detailers/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/tacoma-wa/junk-removal/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/tacoma-wa/pest-control/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/tacoma-wa/movers/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/tacoma-wa/groomers/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/tacoma-wa/dentists/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/tacoma-wa/med-spas/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/tacoma-wa/gyms/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/tacoma-wa/restaurants/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/tacoma-wa/food-trucks/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/tacoma-wa/auto-repair/"
+  },
+  {
+    "city": "Tacoma",
+    "state": "WA",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/tacoma-wa/property-managers/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/eugene-or/painters/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/eugene-or/plumbers/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/eugene-or/hvac/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/eugene-or/roofers/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/eugene-or/electricians/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/eugene-or/garage-doors/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/eugene-or/landscapers/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/eugene-or/cleaners/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/eugene-or/detailers/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/eugene-or/junk-removal/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/eugene-or/pest-control/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/eugene-or/movers/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/eugene-or/groomers/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/eugene-or/dentists/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/eugene-or/med-spas/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/eugene-or/gyms/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/eugene-or/restaurants/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/eugene-or/food-trucks/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/eugene-or/auto-repair/"
+  },
+  {
+    "city": "Eugene",
+    "state": "OR",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/eugene-or/property-managers/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/salem-or/painters/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/salem-or/plumbers/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/salem-or/hvac/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/salem-or/roofers/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/salem-or/electricians/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/salem-or/garage-doors/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/salem-or/landscapers/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/salem-or/cleaners/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/salem-or/detailers/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/salem-or/junk-removal/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/salem-or/pest-control/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/salem-or/movers/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/salem-or/groomers/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/salem-or/dentists/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/salem-or/med-spas/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/salem-or/gyms/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/salem-or/restaurants/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/salem-or/food-trucks/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/salem-or/auto-repair/"
+  },
+  {
+    "city": "Salem",
+    "state": "OR",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/salem-or/property-managers/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/bend-or/painters/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/bend-or/plumbers/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/bend-or/hvac/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/bend-or/roofers/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/bend-or/electricians/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/bend-or/garage-doors/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/bend-or/landscapers/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/bend-or/cleaners/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/bend-or/detailers/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/bend-or/junk-removal/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/bend-or/pest-control/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/bend-or/movers/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/bend-or/groomers/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/bend-or/dentists/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/bend-or/med-spas/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/bend-or/gyms/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/bend-or/restaurants/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/bend-or/food-trucks/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/bend-or/auto-repair/"
+  },
+  {
+    "city": "Bend",
+    "state": "OR",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/bend-or/property-managers/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/reno-nv/painters/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/reno-nv/plumbers/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/reno-nv/hvac/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/reno-nv/roofers/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/reno-nv/electricians/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/reno-nv/garage-doors/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/reno-nv/landscapers/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/reno-nv/cleaners/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/reno-nv/detailers/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/reno-nv/junk-removal/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/reno-nv/pest-control/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/reno-nv/movers/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/reno-nv/groomers/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/reno-nv/dentists/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/reno-nv/med-spas/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/reno-nv/gyms/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/reno-nv/restaurants/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/reno-nv/food-trucks/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/reno-nv/auto-repair/"
+  },
+  {
+    "city": "Reno",
+    "state": "NV",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/reno-nv/property-managers/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/tucson-az/painters/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/tucson-az/plumbers/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/tucson-az/hvac/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/tucson-az/roofers/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/tucson-az/electricians/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/tucson-az/garage-doors/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/tucson-az/landscapers/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/tucson-az/cleaners/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/tucson-az/detailers/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/tucson-az/junk-removal/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/tucson-az/pest-control/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/tucson-az/movers/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/tucson-az/groomers/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/tucson-az/dentists/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/tucson-az/med-spas/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/tucson-az/gyms/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/tucson-az/restaurants/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/tucson-az/food-trucks/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/tucson-az/auto-repair/"
+  },
+  {
+    "city": "Tucson",
+    "state": "AZ",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/tucson-az/property-managers/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/albuquerque-nm/painters/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/albuquerque-nm/plumbers/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/albuquerque-nm/hvac/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/albuquerque-nm/roofers/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/albuquerque-nm/electricians/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/albuquerque-nm/garage-doors/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/albuquerque-nm/landscapers/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/albuquerque-nm/cleaners/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/albuquerque-nm/detailers/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/albuquerque-nm/junk-removal/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/albuquerque-nm/pest-control/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/albuquerque-nm/movers/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/albuquerque-nm/groomers/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/albuquerque-nm/dentists/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/albuquerque-nm/med-spas/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/albuquerque-nm/gyms/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/albuquerque-nm/restaurants/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/albuquerque-nm/food-trucks/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/albuquerque-nm/auto-repair/"
+  },
+  {
+    "city": "Albuquerque",
+    "state": "NM",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/albuquerque-nm/property-managers/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/el-paso-tx/painters/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/el-paso-tx/plumbers/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/el-paso-tx/hvac/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/el-paso-tx/roofers/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/el-paso-tx/electricians/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/el-paso-tx/garage-doors/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/el-paso-tx/landscapers/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/el-paso-tx/cleaners/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/el-paso-tx/detailers/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/el-paso-tx/junk-removal/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/el-paso-tx/pest-control/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/el-paso-tx/movers/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/el-paso-tx/groomers/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/el-paso-tx/dentists/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/el-paso-tx/med-spas/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/el-paso-tx/gyms/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/el-paso-tx/restaurants/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/el-paso-tx/food-trucks/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/el-paso-tx/auto-repair/"
+  },
+  {
+    "city": "El Paso",
+    "state": "TX",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/el-paso-tx/property-managers/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/lubbock-tx/painters/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/lubbock-tx/plumbers/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/lubbock-tx/hvac/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/lubbock-tx/roofers/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/lubbock-tx/electricians/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/lubbock-tx/garage-doors/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/lubbock-tx/landscapers/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/lubbock-tx/cleaners/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/lubbock-tx/detailers/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/lubbock-tx/junk-removal/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/lubbock-tx/pest-control/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/lubbock-tx/movers/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/lubbock-tx/groomers/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/lubbock-tx/dentists/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/lubbock-tx/med-spas/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/lubbock-tx/gyms/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/lubbock-tx/restaurants/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/lubbock-tx/food-trucks/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/lubbock-tx/auto-repair/"
+  },
+  {
+    "city": "Lubbock",
+    "state": "TX",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/lubbock-tx/property-managers/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/amarillo-tx/painters/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/amarillo-tx/plumbers/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/amarillo-tx/hvac/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/amarillo-tx/roofers/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/amarillo-tx/electricians/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/amarillo-tx/garage-doors/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/amarillo-tx/landscapers/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/amarillo-tx/cleaners/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/amarillo-tx/detailers/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/amarillo-tx/junk-removal/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/amarillo-tx/pest-control/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/amarillo-tx/movers/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/amarillo-tx/groomers/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/amarillo-tx/dentists/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/amarillo-tx/med-spas/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/amarillo-tx/gyms/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/amarillo-tx/restaurants/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/amarillo-tx/food-trucks/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/amarillo-tx/auto-repair/"
+  },
+  {
+    "city": "Amarillo",
+    "state": "TX",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/amarillo-tx/property-managers/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/corpus-christi-tx/painters/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/corpus-christi-tx/plumbers/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/corpus-christi-tx/hvac/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/corpus-christi-tx/roofers/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/corpus-christi-tx/electricians/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/corpus-christi-tx/garage-doors/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/corpus-christi-tx/landscapers/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/corpus-christi-tx/cleaners/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/corpus-christi-tx/detailers/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/corpus-christi-tx/junk-removal/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/corpus-christi-tx/pest-control/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/corpus-christi-tx/movers/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/corpus-christi-tx/groomers/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/corpus-christi-tx/dentists/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/corpus-christi-tx/med-spas/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/corpus-christi-tx/gyms/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/corpus-christi-tx/restaurants/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/corpus-christi-tx/food-trucks/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/corpus-christi-tx/auto-repair/"
+  },
+  {
+    "city": "Corpus Christi",
+    "state": "TX",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/corpus-christi-tx/property-managers/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/shreveport-la/painters/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/shreveport-la/plumbers/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/shreveport-la/hvac/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/shreveport-la/roofers/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/shreveport-la/electricians/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/shreveport-la/garage-doors/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/shreveport-la/landscapers/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/shreveport-la/cleaners/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/shreveport-la/detailers/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/shreveport-la/junk-removal/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/shreveport-la/pest-control/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/shreveport-la/movers/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/shreveport-la/groomers/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/shreveport-la/dentists/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/shreveport-la/med-spas/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/shreveport-la/gyms/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/shreveport-la/restaurants/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/shreveport-la/food-trucks/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/shreveport-la/auto-repair/"
+  },
+  {
+    "city": "Shreveport",
+    "state": "LA",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/shreveport-la/property-managers/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/lafayette-la/painters/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/lafayette-la/plumbers/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/lafayette-la/hvac/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/lafayette-la/roofers/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/lafayette-la/electricians/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/lafayette-la/garage-doors/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/lafayette-la/landscapers/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/lafayette-la/cleaners/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/lafayette-la/detailers/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/lafayette-la/junk-removal/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/lafayette-la/pest-control/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/lafayette-la/movers/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/lafayette-la/groomers/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/lafayette-la/dentists/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/lafayette-la/med-spas/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/lafayette-la/gyms/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/lafayette-la/restaurants/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/lafayette-la/food-trucks/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/lafayette-la/auto-repair/"
+  },
+  {
+    "city": "Lafayette",
+    "state": "LA",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/lafayette-la/property-managers/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/mobile-al/painters/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/mobile-al/plumbers/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/mobile-al/hvac/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/mobile-al/roofers/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/mobile-al/electricians/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/mobile-al/garage-doors/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/mobile-al/landscapers/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/mobile-al/cleaners/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/mobile-al/detailers/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/mobile-al/junk-removal/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/mobile-al/pest-control/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/mobile-al/movers/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/mobile-al/groomers/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/mobile-al/dentists/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/mobile-al/med-spas/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/mobile-al/gyms/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/mobile-al/restaurants/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/mobile-al/food-trucks/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/mobile-al/auto-repair/"
+  },
+  {
+    "city": "Mobile",
+    "state": "AL",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/mobile-al/property-managers/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/huntsville-al/painters/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/huntsville-al/plumbers/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/huntsville-al/hvac/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/huntsville-al/roofers/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/huntsville-al/electricians/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/huntsville-al/garage-doors/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/huntsville-al/landscapers/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/huntsville-al/cleaners/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/huntsville-al/detailers/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/huntsville-al/junk-removal/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/huntsville-al/pest-control/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/huntsville-al/movers/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/huntsville-al/groomers/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/huntsville-al/dentists/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/huntsville-al/med-spas/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/huntsville-al/gyms/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/huntsville-al/restaurants/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/huntsville-al/food-trucks/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/huntsville-al/auto-repair/"
+  },
+  {
+    "city": "Huntsville",
+    "state": "AL",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/huntsville-al/property-managers/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/montgomery-al/painters/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/montgomery-al/plumbers/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/montgomery-al/hvac/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/montgomery-al/roofers/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/montgomery-al/electricians/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/montgomery-al/garage-doors/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/montgomery-al/landscapers/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/montgomery-al/cleaners/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/montgomery-al/detailers/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/montgomery-al/junk-removal/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/montgomery-al/pest-control/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/montgomery-al/movers/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/montgomery-al/groomers/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/montgomery-al/dentists/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/montgomery-al/med-spas/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/montgomery-al/gyms/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/montgomery-al/restaurants/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/montgomery-al/food-trucks/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/montgomery-al/auto-repair/"
+  },
+  {
+    "city": "Montgomery",
+    "state": "AL",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/montgomery-al/property-managers/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/jackson-ms/painters/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/jackson-ms/plumbers/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/jackson-ms/hvac/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/jackson-ms/roofers/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/jackson-ms/electricians/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/jackson-ms/garage-doors/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/jackson-ms/landscapers/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/jackson-ms/cleaners/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/jackson-ms/detailers/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/jackson-ms/junk-removal/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/jackson-ms/pest-control/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/jackson-ms/movers/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/jackson-ms/groomers/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/jackson-ms/dentists/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/jackson-ms/med-spas/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/jackson-ms/gyms/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/jackson-ms/restaurants/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/jackson-ms/food-trucks/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/jackson-ms/auto-repair/"
+  },
+  {
+    "city": "Jackson",
+    "state": "MS",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/jackson-ms/property-managers/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/little-rock-ar/painters/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/little-rock-ar/plumbers/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/little-rock-ar/hvac/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/little-rock-ar/roofers/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/little-rock-ar/electricians/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/little-rock-ar/garage-doors/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/little-rock-ar/landscapers/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/little-rock-ar/cleaners/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/little-rock-ar/detailers/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/little-rock-ar/junk-removal/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/little-rock-ar/pest-control/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/little-rock-ar/movers/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/little-rock-ar/groomers/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/little-rock-ar/dentists/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/little-rock-ar/med-spas/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/little-rock-ar/gyms/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/little-rock-ar/restaurants/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/little-rock-ar/food-trucks/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/little-rock-ar/auto-repair/"
+  },
+  {
+    "city": "Little Rock",
+    "state": "AR",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/little-rock-ar/property-managers/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/fayetteville-ar/painters/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/fayetteville-ar/plumbers/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/fayetteville-ar/hvac/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/fayetteville-ar/roofers/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/fayetteville-ar/electricians/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/fayetteville-ar/garage-doors/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/fayetteville-ar/landscapers/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/fayetteville-ar/cleaners/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/fayetteville-ar/detailers/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/fayetteville-ar/junk-removal/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/fayetteville-ar/pest-control/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/fayetteville-ar/movers/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/fayetteville-ar/groomers/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/fayetteville-ar/dentists/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/fayetteville-ar/med-spas/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/fayetteville-ar/gyms/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/fayetteville-ar/restaurants/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/fayetteville-ar/food-trucks/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/fayetteville-ar/auto-repair/"
+  },
+  {
+    "city": "Fayetteville",
+    "state": "AR",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/fayetteville-ar/property-managers/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/tulsa-ok/painters/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/tulsa-ok/plumbers/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/tulsa-ok/hvac/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/tulsa-ok/roofers/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/tulsa-ok/electricians/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/tulsa-ok/garage-doors/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/tulsa-ok/landscapers/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/tulsa-ok/cleaners/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/tulsa-ok/detailers/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/tulsa-ok/junk-removal/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/tulsa-ok/pest-control/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/tulsa-ok/movers/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/tulsa-ok/groomers/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/tulsa-ok/dentists/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/tulsa-ok/med-spas/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/tulsa-ok/gyms/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/tulsa-ok/restaurants/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/tulsa-ok/food-trucks/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/tulsa-ok/auto-repair/"
+  },
+  {
+    "city": "Tulsa",
+    "state": "OK",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/tulsa-ok/property-managers/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/wichita-ks/painters/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/wichita-ks/plumbers/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/wichita-ks/hvac/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/wichita-ks/roofers/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/wichita-ks/electricians/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/wichita-ks/garage-doors/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/wichita-ks/landscapers/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/wichita-ks/cleaners/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/wichita-ks/detailers/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/wichita-ks/junk-removal/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/wichita-ks/pest-control/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/wichita-ks/movers/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/wichita-ks/groomers/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/wichita-ks/dentists/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/wichita-ks/med-spas/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/wichita-ks/gyms/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/wichita-ks/restaurants/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/wichita-ks/food-trucks/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/wichita-ks/auto-repair/"
+  },
+  {
+    "city": "Wichita",
+    "state": "KS",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/wichita-ks/property-managers/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/des-moines-ia/painters/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/des-moines-ia/plumbers/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/des-moines-ia/hvac/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/des-moines-ia/roofers/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/des-moines-ia/electricians/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/des-moines-ia/garage-doors/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/des-moines-ia/landscapers/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/des-moines-ia/cleaners/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/des-moines-ia/detailers/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/des-moines-ia/junk-removal/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/des-moines-ia/pest-control/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/des-moines-ia/movers/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/des-moines-ia/groomers/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/des-moines-ia/dentists/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/des-moines-ia/med-spas/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/des-moines-ia/gyms/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/des-moines-ia/restaurants/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/des-moines-ia/food-trucks/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/des-moines-ia/auto-repair/"
+  },
+  {
+    "city": "Des Moines",
+    "state": "IA",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/des-moines-ia/property-managers/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/cedar-rapids-ia/painters/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/cedar-rapids-ia/plumbers/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/cedar-rapids-ia/hvac/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/cedar-rapids-ia/roofers/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/cedar-rapids-ia/electricians/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/cedar-rapids-ia/garage-doors/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/cedar-rapids-ia/landscapers/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/cedar-rapids-ia/cleaners/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/cedar-rapids-ia/detailers/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/cedar-rapids-ia/junk-removal/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/cedar-rapids-ia/pest-control/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/cedar-rapids-ia/movers/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/cedar-rapids-ia/groomers/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/cedar-rapids-ia/dentists/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/cedar-rapids-ia/med-spas/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/cedar-rapids-ia/gyms/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/cedar-rapids-ia/restaurants/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/cedar-rapids-ia/food-trucks/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/cedar-rapids-ia/auto-repair/"
+  },
+  {
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/cedar-rapids-ia/property-managers/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/omaha-ne/painters/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/omaha-ne/plumbers/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/omaha-ne/hvac/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/omaha-ne/roofers/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/omaha-ne/electricians/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/omaha-ne/garage-doors/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/omaha-ne/landscapers/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/omaha-ne/cleaners/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/omaha-ne/detailers/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/omaha-ne/junk-removal/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/omaha-ne/pest-control/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/omaha-ne/movers/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/omaha-ne/groomers/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/omaha-ne/dentists/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/omaha-ne/med-spas/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/omaha-ne/gyms/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/omaha-ne/restaurants/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/omaha-ne/food-trucks/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/omaha-ne/auto-repair/"
+  },
+  {
+    "city": "Omaha",
+    "state": "NE",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/omaha-ne/property-managers/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/sioux-falls-sd/painters/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/sioux-falls-sd/plumbers/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/sioux-falls-sd/hvac/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/sioux-falls-sd/roofers/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/sioux-falls-sd/electricians/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/sioux-falls-sd/garage-doors/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/sioux-falls-sd/landscapers/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/sioux-falls-sd/cleaners/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/sioux-falls-sd/detailers/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/sioux-falls-sd/junk-removal/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/sioux-falls-sd/pest-control/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/sioux-falls-sd/movers/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/sioux-falls-sd/groomers/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/sioux-falls-sd/dentists/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/sioux-falls-sd/med-spas/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/sioux-falls-sd/gyms/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/sioux-falls-sd/restaurants/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/sioux-falls-sd/food-trucks/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/sioux-falls-sd/auto-repair/"
+  },
+  {
+    "city": "Sioux Falls",
+    "state": "SD",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/sioux-falls-sd/property-managers/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/fargo-nd/painters/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/fargo-nd/plumbers/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/fargo-nd/hvac/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/fargo-nd/roofers/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/fargo-nd/electricians/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/fargo-nd/garage-doors/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/fargo-nd/landscapers/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/fargo-nd/cleaners/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/fargo-nd/detailers/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/fargo-nd/junk-removal/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/fargo-nd/pest-control/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/fargo-nd/movers/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/fargo-nd/groomers/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/fargo-nd/dentists/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/fargo-nd/med-spas/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/fargo-nd/gyms/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/fargo-nd/restaurants/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/fargo-nd/food-trucks/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/fargo-nd/auto-repair/"
+  },
+  {
+    "city": "Fargo",
+    "state": "ND",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/fargo-nd/property-managers/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/billings-mt/painters/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/billings-mt/plumbers/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/billings-mt/hvac/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/billings-mt/roofers/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/billings-mt/electricians/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/billings-mt/garage-doors/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/billings-mt/landscapers/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/billings-mt/cleaners/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/billings-mt/detailers/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/billings-mt/junk-removal/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/billings-mt/pest-control/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/billings-mt/movers/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/billings-mt/groomers/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/billings-mt/dentists/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/billings-mt/med-spas/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/billings-mt/gyms/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/billings-mt/restaurants/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/billings-mt/food-trucks/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/billings-mt/auto-repair/"
+  },
+  {
+    "city": "Billings",
+    "state": "MT",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/billings-mt/property-managers/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/madison-wi/painters/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/madison-wi/plumbers/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/madison-wi/hvac/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/madison-wi/roofers/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/madison-wi/electricians/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/madison-wi/garage-doors/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/madison-wi/landscapers/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/madison-wi/cleaners/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/madison-wi/detailers/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/madison-wi/junk-removal/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/madison-wi/pest-control/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/madison-wi/movers/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/madison-wi/groomers/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/madison-wi/dentists/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/madison-wi/med-spas/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/madison-wi/gyms/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/madison-wi/restaurants/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/madison-wi/food-trucks/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/madison-wi/auto-repair/"
+  },
+  {
+    "city": "Madison",
+    "state": "WI",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/madison-wi/property-managers/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/green-bay-wi/painters/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/green-bay-wi/plumbers/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/green-bay-wi/hvac/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/green-bay-wi/roofers/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/green-bay-wi/electricians/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/green-bay-wi/garage-doors/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/green-bay-wi/landscapers/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/green-bay-wi/cleaners/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/green-bay-wi/detailers/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/green-bay-wi/junk-removal/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/green-bay-wi/pest-control/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/green-bay-wi/movers/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/green-bay-wi/groomers/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/green-bay-wi/dentists/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/green-bay-wi/med-spas/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/green-bay-wi/gyms/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/green-bay-wi/restaurants/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/green-bay-wi/food-trucks/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/green-bay-wi/auto-repair/"
+  },
+  {
+    "city": "Green Bay",
+    "state": "WI",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/green-bay-wi/property-managers/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/grand-rapids-mi/painters/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/grand-rapids-mi/plumbers/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/grand-rapids-mi/hvac/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/grand-rapids-mi/roofers/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/grand-rapids-mi/electricians/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/grand-rapids-mi/garage-doors/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/grand-rapids-mi/landscapers/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/grand-rapids-mi/cleaners/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/grand-rapids-mi/detailers/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/grand-rapids-mi/junk-removal/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/grand-rapids-mi/pest-control/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/grand-rapids-mi/movers/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/grand-rapids-mi/groomers/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/grand-rapids-mi/dentists/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/grand-rapids-mi/med-spas/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/grand-rapids-mi/gyms/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/grand-rapids-mi/restaurants/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/grand-rapids-mi/food-trucks/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/grand-rapids-mi/auto-repair/"
+  },
+  {
+    "city": "Grand Rapids",
+    "state": "MI",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/grand-rapids-mi/property-managers/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/ann-arbor-mi/painters/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/ann-arbor-mi/plumbers/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/ann-arbor-mi/hvac/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/ann-arbor-mi/roofers/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/ann-arbor-mi/electricians/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/ann-arbor-mi/garage-doors/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/ann-arbor-mi/landscapers/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/ann-arbor-mi/cleaners/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/ann-arbor-mi/detailers/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/ann-arbor-mi/junk-removal/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/ann-arbor-mi/pest-control/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/ann-arbor-mi/movers/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/ann-arbor-mi/groomers/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/ann-arbor-mi/dentists/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/ann-arbor-mi/med-spas/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/ann-arbor-mi/gyms/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/ann-arbor-mi/restaurants/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/ann-arbor-mi/food-trucks/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/ann-arbor-mi/auto-repair/"
+  },
+  {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/ann-arbor-mi/property-managers/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/fort-wayne-in/painters/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/fort-wayne-in/plumbers/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/fort-wayne-in/hvac/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/fort-wayne-in/roofers/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/fort-wayne-in/electricians/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/fort-wayne-in/garage-doors/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/fort-wayne-in/landscapers/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/fort-wayne-in/cleaners/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/fort-wayne-in/detailers/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/fort-wayne-in/junk-removal/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/fort-wayne-in/pest-control/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/fort-wayne-in/movers/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/fort-wayne-in/groomers/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/fort-wayne-in/dentists/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/fort-wayne-in/med-spas/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/fort-wayne-in/gyms/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/fort-wayne-in/restaurants/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/fort-wayne-in/food-trucks/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/fort-wayne-in/auto-repair/"
+  },
+  {
+    "city": "Fort Wayne",
+    "state": "IN",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/fort-wayne-in/property-managers/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/peoria-il/painters/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/peoria-il/plumbers/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/peoria-il/hvac/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/peoria-il/roofers/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/peoria-il/electricians/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/peoria-il/garage-doors/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/peoria-il/landscapers/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/peoria-il/cleaners/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/peoria-il/detailers/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/peoria-il/junk-removal/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/peoria-il/pest-control/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/peoria-il/movers/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/peoria-il/groomers/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/peoria-il/dentists/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/peoria-il/med-spas/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/peoria-il/gyms/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/peoria-il/restaurants/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/peoria-il/food-trucks/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/peoria-il/auto-repair/"
+  },
+  {
+    "city": "Peoria",
+    "state": "IL",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/peoria-il/property-managers/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/rockford-il/painters/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/rockford-il/plumbers/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/rockford-il/hvac/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/rockford-il/roofers/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/rockford-il/electricians/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/rockford-il/garage-doors/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/rockford-il/landscapers/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/rockford-il/cleaners/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/rockford-il/detailers/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/rockford-il/junk-removal/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/rockford-il/pest-control/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/rockford-il/movers/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/rockford-il/groomers/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/rockford-il/dentists/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/rockford-il/med-spas/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/rockford-il/gyms/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/rockford-il/restaurants/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/rockford-il/food-trucks/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/rockford-il/auto-repair/"
+  },
+  {
+    "city": "Rockford",
+    "state": "IL",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/rockford-il/property-managers/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/toledo-oh/painters/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/toledo-oh/plumbers/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/toledo-oh/hvac/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/toledo-oh/roofers/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/toledo-oh/electricians/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/toledo-oh/garage-doors/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/toledo-oh/landscapers/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/toledo-oh/cleaners/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/toledo-oh/detailers/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/toledo-oh/junk-removal/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/toledo-oh/pest-control/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/toledo-oh/movers/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/toledo-oh/groomers/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/toledo-oh/dentists/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/toledo-oh/med-spas/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/toledo-oh/gyms/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/toledo-oh/restaurants/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/toledo-oh/food-trucks/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/toledo-oh/auto-repair/"
+  },
+  {
+    "city": "Toledo",
+    "state": "OH",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/toledo-oh/property-managers/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/dayton-oh/painters/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/dayton-oh/plumbers/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/dayton-oh/hvac/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/dayton-oh/roofers/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/dayton-oh/electricians/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/dayton-oh/garage-doors/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/dayton-oh/landscapers/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/dayton-oh/cleaners/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/dayton-oh/detailers/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/dayton-oh/junk-removal/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/dayton-oh/pest-control/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/dayton-oh/movers/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/dayton-oh/groomers/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/dayton-oh/dentists/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/dayton-oh/med-spas/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/dayton-oh/gyms/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/dayton-oh/restaurants/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/dayton-oh/food-trucks/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/dayton-oh/auto-repair/"
+  },
+  {
+    "city": "Dayton",
+    "state": "OH",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/dayton-oh/property-managers/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/akron-oh/painters/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/akron-oh/plumbers/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/akron-oh/hvac/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/akron-oh/roofers/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/akron-oh/electricians/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/akron-oh/garage-doors/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/akron-oh/landscapers/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/akron-oh/cleaners/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/akron-oh/detailers/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/akron-oh/junk-removal/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/akron-oh/pest-control/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/akron-oh/movers/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/akron-oh/groomers/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/akron-oh/dentists/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/akron-oh/med-spas/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/akron-oh/gyms/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/akron-oh/restaurants/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/akron-oh/food-trucks/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/akron-oh/auto-repair/"
+  },
+  {
+    "city": "Akron",
+    "state": "OH",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/akron-oh/property-managers/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/lexington-ky/painters/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/lexington-ky/plumbers/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/lexington-ky/hvac/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/lexington-ky/roofers/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/lexington-ky/electricians/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/lexington-ky/garage-doors/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/lexington-ky/landscapers/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/lexington-ky/cleaners/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/lexington-ky/detailers/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/lexington-ky/junk-removal/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/lexington-ky/pest-control/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/lexington-ky/movers/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/lexington-ky/groomers/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/lexington-ky/dentists/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/lexington-ky/med-spas/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/lexington-ky/gyms/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/lexington-ky/restaurants/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/lexington-ky/food-trucks/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/lexington-ky/auto-repair/"
+  },
+  {
+    "city": "Lexington",
+    "state": "KY",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/lexington-ky/property-managers/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/knoxville-tn/painters/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/knoxville-tn/plumbers/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/knoxville-tn/hvac/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/knoxville-tn/roofers/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/knoxville-tn/electricians/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/knoxville-tn/garage-doors/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/knoxville-tn/landscapers/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/knoxville-tn/cleaners/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/knoxville-tn/detailers/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/knoxville-tn/junk-removal/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/knoxville-tn/pest-control/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/knoxville-tn/movers/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/knoxville-tn/groomers/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/knoxville-tn/dentists/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/knoxville-tn/med-spas/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/knoxville-tn/gyms/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/knoxville-tn/restaurants/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/knoxville-tn/food-trucks/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/knoxville-tn/auto-repair/"
+  },
+  {
+    "city": "Knoxville",
+    "state": "TN",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/knoxville-tn/property-managers/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/chattanooga-tn/painters/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/chattanooga-tn/plumbers/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/chattanooga-tn/hvac/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/chattanooga-tn/roofers/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/chattanooga-tn/electricians/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/chattanooga-tn/garage-doors/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/chattanooga-tn/landscapers/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/chattanooga-tn/cleaners/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/chattanooga-tn/detailers/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/chattanooga-tn/junk-removal/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/chattanooga-tn/pest-control/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/chattanooga-tn/movers/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/chattanooga-tn/groomers/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/chattanooga-tn/dentists/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/chattanooga-tn/med-spas/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/chattanooga-tn/gyms/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/chattanooga-tn/restaurants/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/chattanooga-tn/food-trucks/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/chattanooga-tn/auto-repair/"
+  },
+  {
+    "city": "Chattanooga",
+    "state": "TN",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/chattanooga-tn/property-managers/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/greenville-sc/painters/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/greenville-sc/plumbers/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/greenville-sc/hvac/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/greenville-sc/roofers/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/greenville-sc/electricians/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/greenville-sc/garage-doors/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/greenville-sc/landscapers/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/greenville-sc/cleaners/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/greenville-sc/detailers/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/greenville-sc/junk-removal/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/greenville-sc/pest-control/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/greenville-sc/movers/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/greenville-sc/groomers/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/greenville-sc/dentists/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/greenville-sc/med-spas/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/greenville-sc/gyms/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/greenville-sc/restaurants/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/greenville-sc/food-trucks/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/greenville-sc/auto-repair/"
+  },
+  {
+    "city": "Greenville",
+    "state": "SC",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/greenville-sc/property-managers/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/savannah-ga/painters/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/savannah-ga/plumbers/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/savannah-ga/hvac/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/savannah-ga/roofers/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/savannah-ga/electricians/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/savannah-ga/garage-doors/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/savannah-ga/landscapers/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/savannah-ga/cleaners/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/savannah-ga/detailers/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/savannah-ga/junk-removal/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/savannah-ga/pest-control/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/savannah-ga/movers/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/savannah-ga/groomers/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/savannah-ga/dentists/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/savannah-ga/med-spas/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/savannah-ga/gyms/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/savannah-ga/restaurants/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/savannah-ga/food-trucks/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/savannah-ga/auto-repair/"
+  },
+  {
+    "city": "Savannah",
+    "state": "GA",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/savannah-ga/property-managers/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/augusta-ga/painters/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/augusta-ga/plumbers/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/augusta-ga/hvac/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/augusta-ga/roofers/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/augusta-ga/electricians/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/augusta-ga/garage-doors/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/augusta-ga/landscapers/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/augusta-ga/cleaners/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/augusta-ga/detailers/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/augusta-ga/junk-removal/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/augusta-ga/pest-control/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/augusta-ga/movers/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/augusta-ga/groomers/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/augusta-ga/dentists/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/augusta-ga/med-spas/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/augusta-ga/gyms/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/augusta-ga/restaurants/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/augusta-ga/food-trucks/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/augusta-ga/auto-repair/"
+  },
+  {
+    "city": "Augusta",
+    "state": "GA",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/augusta-ga/property-managers/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/charleston-wv/painters/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/charleston-wv/plumbers/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/charleston-wv/hvac/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/charleston-wv/roofers/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/charleston-wv/electricians/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/charleston-wv/garage-doors/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/charleston-wv/landscapers/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/charleston-wv/cleaners/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/charleston-wv/detailers/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/charleston-wv/junk-removal/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/charleston-wv/pest-control/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/charleston-wv/movers/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/charleston-wv/groomers/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/charleston-wv/dentists/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/charleston-wv/med-spas/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/charleston-wv/gyms/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/charleston-wv/restaurants/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/charleston-wv/food-trucks/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/charleston-wv/auto-repair/"
+  },
+  {
+    "city": "Charleston",
+    "state": "WV",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/charleston-wv/property-managers/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/springfield-mo/painters/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/springfield-mo/plumbers/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/springfield-mo/hvac/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/springfield-mo/roofers/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/springfield-mo/electricians/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/springfield-mo/garage-doors/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/springfield-mo/landscapers/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/springfield-mo/cleaners/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/springfield-mo/detailers/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/springfield-mo/junk-removal/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/springfield-mo/pest-control/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/springfield-mo/movers/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/springfield-mo/groomers/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/springfield-mo/dentists/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/springfield-mo/med-spas/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/springfield-mo/gyms/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/springfield-mo/restaurants/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/springfield-mo/food-trucks/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/springfield-mo/auto-repair/"
+  },
+  {
+    "city": "Springfield",
+    "state": "MO",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/springfield-mo/property-managers/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/fort-collins-co/painters/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/fort-collins-co/plumbers/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/fort-collins-co/hvac/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/fort-collins-co/roofers/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/fort-collins-co/electricians/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/fort-collins-co/garage-doors/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/fort-collins-co/landscapers/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/fort-collins-co/cleaners/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/fort-collins-co/detailers/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/fort-collins-co/junk-removal/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/fort-collins-co/pest-control/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/fort-collins-co/movers/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/fort-collins-co/groomers/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/fort-collins-co/dentists/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/fort-collins-co/med-spas/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/fort-collins-co/gyms/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/fort-collins-co/restaurants/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/fort-collins-co/food-trucks/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/fort-collins-co/auto-repair/"
+  },
+  {
+    "city": "Fort Collins",
+    "state": "CO",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/fort-collins-co/property-managers/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/provo-ut/painters/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/provo-ut/plumbers/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/provo-ut/hvac/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/provo-ut/roofers/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/provo-ut/electricians/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/provo-ut/garage-doors/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/provo-ut/landscapers/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/provo-ut/cleaners/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/provo-ut/detailers/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/provo-ut/junk-removal/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/provo-ut/pest-control/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/provo-ut/movers/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/provo-ut/groomers/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/provo-ut/dentists/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/provo-ut/med-spas/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/provo-ut/gyms/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/provo-ut/restaurants/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/provo-ut/food-trucks/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/provo-ut/auto-repair/"
+  },
+  {
+    "city": "Provo",
+    "state": "UT",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/provo-ut/property-managers/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "painters",
+    "price": 800,
+    "path": "/cities/gainesville-fl/painters/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "plumbers",
+    "price": 900,
+    "path": "/cities/gainesville-fl/plumbers/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "hvac",
+    "price": 1100,
+    "path": "/cities/gainesville-fl/hvac/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "roofers",
+    "price": 1000,
+    "path": "/cities/gainesville-fl/roofers/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "electricians",
+    "price": 1000,
+    "path": "/cities/gainesville-fl/electricians/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "garage-doors",
+    "price": 700,
+    "path": "/cities/gainesville-fl/garage-doors/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "landscapers",
+    "price": 800,
+    "path": "/cities/gainesville-fl/landscapers/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "cleaners",
+    "price": 700,
+    "path": "/cities/gainesville-fl/cleaners/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "detailers",
+    "price": 700,
+    "path": "/cities/gainesville-fl/detailers/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "junk-removal",
+    "price": 700,
+    "path": "/cities/gainesville-fl/junk-removal/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "pest-control",
+    "price": 800,
+    "path": "/cities/gainesville-fl/pest-control/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "movers",
+    "price": 900,
+    "path": "/cities/gainesville-fl/movers/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "groomers",
+    "price": 700,
+    "path": "/cities/gainesville-fl/groomers/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "dentists",
+    "price": 1500,
+    "path": "/cities/gainesville-fl/dentists/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "med-spas",
+    "price": 1400,
+    "path": "/cities/gainesville-fl/med-spas/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "gyms",
+    "price": 900,
+    "path": "/cities/gainesville-fl/gyms/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "restaurants",
+    "price": 1200,
+    "path": "/cities/gainesville-fl/restaurants/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "food-trucks",
+    "price": 800,
+    "path": "/cities/gainesville-fl/food-trucks/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "auto-repair",
+    "price": 1000,
+    "path": "/cities/gainesville-fl/auto-repair/"
+  },
+  {
+    "city": "Gainesville",
+    "state": "FL",
+    "service": "property-managers",
+    "price": 1300,
+    "path": "/cities/gainesville-fl/property-managers/"
+  }
+]
