@@ -187,6 +187,7 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
   const canonical = origin
     ? `\n<link rel="canonical" href="${esc(origin.replace(/\/$/, '') + (from ? '/' + from + '/' : '/'))}">`
     : '';
+  const ogUrl = origin ? esc(origin.replace(/\/$/, '') + (from ? '/' + from + '/' : '/')) : 'https://city-desk.netlify.app/';
   const header = shop
     ? `<header class="bar">
   <div class="wrap bar-row">
@@ -217,6 +218,17 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
 <meta name="theme-color" content="${theme || '#f3efe6'}">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">${canonical}
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(description)}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="${ogUrl}">
+<meta property="og:image" content="https://city-desk.netlify.app/media/painters/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@1nc0gn30">
+<meta name="twitter:creator" content="@1nc0gn30">
+<meta name="twitter:title" content="${esc(title)}">
+<meta name="twitter:description" content="${esc(description)}">
+<meta name="twitter:image" content="https://city-desk.netlify.app/media/painters/hero.jpg">
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">${jsonLd(json)}</script>
 </head>
@@ -229,6 +241,7 @@ ${body}
 <footer>
   <div class="wrap">
   ${footer}
+  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform</p>
   </div>
 </footer>
 </body>
@@ -250,10 +263,19 @@ function sendNote(service, city) {
 }
 
 function cta(text) {
+  const stripeUrl = 'https://buy.stripe.com/7sI7sA8hM2X8eFG8ww';
+  const depayUrl = 'https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
   if (replyTo) {
     const subject = text.split('\n')[0];
     const mail = `mailto:${encodeURIComponent(replyTo)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
-    return { action: `<a class="btn" href="${esc(mail)}">Send this page</a>`, rest: '' };
+    return {
+      action: `<div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+  <a class="btn" href="${esc(mail)}">Send this page</a>
+  <a class="btn" style="background:#635bff;color:#ffffff;" href="${stripeUrl}" target="_blank" rel="noopener">Claim via Stripe</a>
+  <a class="btn" style="background:#9945ff;color:#ffffff;" href="${depayUrl}" target="_blank" rel="noopener">Pay Solana</a>
+</div>`,
+      rest: ''
+    };
   }
   return {
     action: '<button type="button" id="copyOffer">Copy send note</button>',
@@ -607,7 +629,27 @@ function build() {
   const base = (origin || '').replace(/\/$/, '');
   const locs = paths.map((p) => `  <url><loc>${esc(base + p)}</loc></url>`).join('\n');
   write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${locs}\n</urlset>\n`);
-  const robots = ['User-agent: *', 'Allow: /', base ? `Sitemap: ${base}/sitemap.xml` : '# Set config.origin before submitting this sitemap.'];
+  const robots = [
+    'User-agent: *',
+    'Allow: /',
+    '',
+    'User-agent: Googlebot',
+    'Allow: /',
+    '',
+    'User-agent: GPTBot',
+    'Allow: /',
+    '',
+    'User-agent: ClaudeBot',
+    'Allow: /',
+    '',
+    'User-agent: PerplexityBot',
+    'Allow: /',
+    '',
+    'User-agent: Applebot',
+    'Allow: /',
+    '',
+    base ? `Sitemap: ${base}/sitemap.xml` : 'Sitemap: https://city-desk.netlify.app/sitemap.xml'
+  ];
   write('robots.txt', robots.join('\n') + '\n');
   write('_headers', [
     '/*',

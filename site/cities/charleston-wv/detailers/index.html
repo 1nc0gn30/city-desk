@@ -6,6 +6,18 @@
 <meta name="theme-color" content="#f4f0ea">
 <title>Mobile detailers in Charleston, WV | City Desk</title>
 <meta name="description" content="Mobile detailers in Charleston, WV. A finished page. The owner adds a name and a phone.">
+<link rel="canonical" href="https://city-desk.netlify.app/cities/charleston-wv/detailers/">
+<meta property="og:title" content="Mobile detailers in Charleston, WV | City Desk">
+<meta property="og:description" content="Mobile detailers in Charleston, WV. A finished page. The owner adds a name and a phone.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://city-desk.netlify.app/cities/charleston-wv/detailers/">
+<meta property="og:image" content="https://city-desk.netlify.app/media/painters/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@1nc0gn30">
+<meta name="twitter:creator" content="@1nc0gn30">
+<meta name="twitter:title" content="Mobile detailers in Charleston, WV | City Desk">
+<meta name="twitter:description" content="Mobile detailers in Charleston, WV. A finished page. The owner adds a name and a phone.">
+<meta name="twitter:image" content="https://city-desk.netlify.app/media/painters/hero.jpg">
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Mobile detailers in Charleston, WV","serviceType":"Finished one-page site for a detailing owner","description":"A mobile visit at the driveway, with packages named in words and prices said before the day.","areaServed":{"@type":"City","name":"Charleston","address":{"@type":"PostalAddress","addressRegion":"WV","addressCountry":"US"}},"provider":{"@type":"Organization","name":"City Desk"},"offers":{"@type":"Offer","price":"700","priceCurrency":"USD"}}</script>
 </head>
@@ -97,45 +109,14 @@
     <div class="trade-price">
       <strong>$700</strong>
       <span>One finished page · Charleston, WV</span>
-      <button type="button" id="copyOffer">Copy send note</button>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+  <a class="btn" href="mailto:contact%40nealfrazier.tech?subject=City%20Desk%20%E2%80%94%20finished%20page&amp;body=City%20Desk%20%E2%80%94%20finished%20page%0AMobile%20detailers%20in%20Charleston%2C%20WV%0A%24700%0A%0AThe%20page%20is%20finished.%20Put%20the%20business%20name%2C%20phone%2C%20and%20email%20on%20the%20contact%20lines%20and%20publish%20it.%0ACity%20Desk%20is%20one%20studio.%20This%20is%20not%20a%20local%20office%20in%20Charleston.%0ANo%20reviews%20were%20written%20for%20this%20page.%20There%20is%20no%20promise%20of%20a%20ranking.">Send this page</a>
+  <a class="btn" style="background:#635bff;color:#ffffff;" href="https://buy.stripe.com/7sI7sA8hM2X8eFG8ww" target="_blank" rel="noopener">Claim via Stripe</a>
+  <a class="btn" style="background:#9945ff;color:#ffffff;" href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK" target="_blank" rel="noopener">Pay Solana</a>
+</div>
     </div>
   </div>
-  <pre class="copy" id="offerText">City Desk — finished page
-Mobile detailers in Charleston, WV
-$700
-
-The page is finished. Put the business name, phone, and email on the contact lines and publish it.
-City Desk is one studio. This is not a local office in Charleston.
-No reviews were written for this page. There is no promise of a ranking.</pre>
-<script>
-document.getElementById('copyOffer').addEventListener('click', function () {
-  var btn = this;
-  var value = document.getElementById('offerText').textContent;
-  function done(label) { btn.textContent = label; }
-  function legacy() {
-    var area = document.createElement('textarea');
-    area.value = value;
-    area.setAttribute('readonly', '');
-    area.style.position = 'fixed';
-    area.style.top = '0';
-    area.style.left = '0';
-    area.style.width = '1px';
-    area.style.height = '1px';
-    area.style.opacity = '0';
-    document.body.appendChild(area);
-    area.select();
-    var ok = false;
-    try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
-    area.remove();
-    done(ok ? 'Copied' : 'Select the note below');
-  }
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(value).then(function () { done('Copied'); }, legacy);
-  } else {
-    legacy();
-  }
-});
-</script>
+  
 </section>
 <section class="trade-sect trade-more">
   <h2>Other finished pages in Charleston</h2>
@@ -166,6 +147,7 @@ document.getElementById('copyOffer').addEventListener('click', function () {
 <footer>
   <div class="wrap">
   <p>This is not a local office in Charleston. City Desk finished the page. The owner who publishes it puts their own name, phone, and email on the contact lines. No reviews were written here.</p>
+  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform</p>
   </div>
 </footer>
 </body>
