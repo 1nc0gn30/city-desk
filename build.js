@@ -256,7 +256,7 @@ ${body}
 </footer>
 
 <!-- Pro Paywall Modal -->
-<div id="proModal" data-alias="licenseModal" class="modal-overlay hidden">
+<div id="licenseModal" data-alias="proModal" class="modal-overlay hidden">
   <div class="modal-content">
     <button id="closeProModal" onclick="window.closeProModal()" class="modal-close" aria-label="Close modal">✕</button>
 
@@ -296,15 +296,20 @@ ${body}
 
     <!-- Instant Key Activation -->
     <div style="margin-top:14px;padding-top:12px;border-top:1px solid #e7e5e4;">
-      <label for="licenseKeyInput" style="display:block;font-size:0.75rem;color:#78716c;margin-bottom:4px;">Already purchased? Enter License Key or Receipt Email:</label>
+      <label for="license-input" style="display:block;font-size:0.75rem;color:#78716c;margin-bottom:4px;">Already purchased? Enter License Key or Receipt Email:</label>
       <div style="display:flex;gap:6px;">
-        <input type="text" id="licenseKeyInput" placeholder="e.g. CITY-PRO-2026 or email" style="flex:1;padding:6px 10px;font-size:0.8rem;border:1px solid #d6d3d1;border-radius:6px;">
+        <input type="text" id="license-input" name="licenseKeyInput" placeholder="e.g. CITY-PRO-2026 or email" style="flex:1;padding:6px 10px;font-size:0.8rem;border:1px solid #d6d3d1;border-radius:6px;">
         <button id="btnActivateKey" data-alias="btnActivateKey" onclick="window.activateWithKey()" class="btn-gold" style="white-space:nowrap;padding:6px 12px;font-size:0.8rem;">
           Activate Key
         </button>
       </div>
     </div>
   </div>
+</div>
+
+<!-- Toast Notification Container -->
+<div id="toast" class="toast">
+  <span id="toast-message"></span>
 </div>
 
 <script src="/city_engine.js"></script>
@@ -668,7 +673,7 @@ function homePage() {
 
   <!-- Pro Output Paywall Section -->
   <div id="proPaywallSection" style="position:relative;margin-top:20px;border-radius:8px;overflow:hidden;border:1px solid #e7e5e4;">
-    <div id="proPaywallContent" class="pro-paywall-blur" style="filter:blur(6px);pointer-events:none;user-select:none;padding:16px;background:#ffffff;">
+    <div id="proPaywallContent" class="pro-paywall-blur" style="filter:blur(6px);user-select:none;padding:16px;background:#ffffff;">
       <div style="font-family:monospace;font-size:11px;color:#78716c;line-height:1.6;">
         <div>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;</div>
         <div>&lt;title&gt;Apex Craftsman — House Painting in Boise, ID&lt;/title&gt;</div>
@@ -698,7 +703,7 @@ function homePage() {
           <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="justify-content:center;padding:8px;text-decoration:none;display:flex;align-items:center;font-size:12px;" onclick="window.payWithSolana(event)">
             🟣 Pay with Solana (DePay)
           </a>
-          <button id="btnKeyOverlay" onclick="window.openProModal()" style="background:none;border:none;color:#78716c;font-size:11px;text-decoration:underline;cursor:pointer;margin-top:4px;">
+          <button id="btn-paywall-key" data-alias="btnKeyOverlay" onclick="window.openProModal()" style="background:none;border:none;color:#78716c;font-size:11px;text-decoration:underline;cursor:pointer;margin-top:4px;">
             Already purchased? Enter License Key or Receipt Email
           </button>
         </div>

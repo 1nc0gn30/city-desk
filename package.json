@@ -3,12 +3,26 @@
   "version": "2.5.0",
   "description": "Local Service Landing Page Generator & Standalone Multi-City Publisher",
   "main": "city_engine.js",
+  "homepage": "https://city-desk.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1nc0gn30/city-desk.git"
+  },
   "scripts": {
     "build": "node build.js",
-    "serve": "npx serve site -l 8846",
-    "start": "python3 -m http.server 8080 --directory site",
-    "test": "node test/verify_links.js"
+    "serve": "npx serve site -l 8087",
+    "start": "python3 -m http.server 8087 --directory site",
+    "test": "node test/build.test.js",
+    "test:ui": "python3 scripts/verify_ui.py"
   },
+  "keywords": [
+    "city-desk",
+    "local-seo",
+    "landing-page-generator",
+    "trade-services",
+    "sovereign",
+    "nullai"
+  ],
   "author": "Neal Frazier Tech (@1nc0gn30) • NullAI Platform",
   "license": "MIT"
 }

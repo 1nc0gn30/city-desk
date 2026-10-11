@@ -20,13 +20,15 @@
 
   function checkLicense() {
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('licensed') === 'true' || urlParams.get('pro') === 'true' || urlParams.get('key') === 'CITY-PRO-2026') {
+    const isParam = (urlParams.get('licensed') === 'true' || urlParams.get('pro') === 'true' || urlParams.get('key') === 'CITY-PRO-2026');
+    if (isParam) {
       localStorage.setItem(STORAGE_KEY, 'true');
       localStorage.setItem(STORAGE_KEY_ALT, 'true');
       localStorage.setItem(STORAGE_KEY_PRO, 'true');
       try {
-        const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-        window.history.replaceState({ path: cleanUrl }, '', cleanUrl);
+        const cleanUrl = window.location.pathname;
+        window.history.replaceState({}, document.title, cleanUrl);
+        showToast('🎉 City Desk Pro Activated via Checkout!');
       } catch (e) {}
     }
 
@@ -56,12 +58,10 @@
       }
       paywallBlur.forEach(el => {
         el.style.filter = 'none';
-        el.style.pointerEvents = 'auto';
         el.style.userSelect = 'auto';
       });
       if (proPaywallContent) {
         proPaywallContent.style.filter = 'none';
-        proPaywallContent.style.pointerEvents = 'auto';
         proPaywallContent.style.userSelect = 'auto';
       }
       paywallOverlay.forEach(el => el.classList.add('hidden'));
@@ -80,12 +80,10 @@
       }
       paywallBlur.forEach(el => {
         el.style.filter = 'blur(6px)';
-        el.style.pointerEvents = 'none';
         el.style.userSelect = 'none';
       });
       if (proPaywallContent) {
         proPaywallContent.style.filter = 'blur(6px)';
-        proPaywallContent.style.pointerEvents = 'none';
         proPaywallContent.style.userSelect = 'none';
       }
       paywallOverlay.forEach(el => el.classList.remove('hidden'));
@@ -96,12 +94,12 @@
   }
 
   window.openProModal = function () {
-    const modal = document.getElementById('proModal') || document.querySelector('[data-alias="licenseModal"]');
+    const modal = document.getElementById('licenseModal') || document.getElementById('proModal') || document.querySelector('[data-alias="licenseModal"]');
     if (modal) modal.classList.remove('hidden');
   };
 
   window.closeProModal = function () {
-    const modal = document.getElementById('proModal') || document.querySelector('[data-alias="licenseModal"]');
+    const modal = document.getElementById('licenseModal') || document.getElementById('proModal') || document.querySelector('[data-alias="licenseModal"]');
     if (modal) modal.classList.add('hidden');
   };
 
@@ -110,7 +108,7 @@
 
   window.activateWithKey = function (key) {
     if (!key) {
-      const input = document.getElementById('licenseKeyInput');
+      const input = document.getElementById('license-input') || document.getElementById('licenseKeyInput');
       if (input && input.value.trim()) {
         key = input.value.trim();
       }
@@ -254,15 +252,23 @@
   }
 
   function showToast(msg) {
-    const t = document.createElement('div');
-    t.style.cssText = 'position:fixed;bottom:24px;right:24px;z-index:99999;background:#1c1917;color:#fff;padding:12px 20px;border-radius:8px;font-size:13px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,0.3);border:1px solid #44403c;transition:opacity 0.3s ease;';
-    t.textContent = msg;
-    document.body.appendChild(t);
+    let t = document.getElementById('toast');
+    if (!t) {
+      t = document.createElement('div');
+      t.id = 'toast';
+      t.className = 'toast';
+      document.body.appendChild(t);
+    }
+    const msgEl = document.getElementById('toast-message') || t;
+    msgEl.textContent = msg;
+    t.classList.add('show');
+    t.style.display = 'block';
     setTimeout(() => {
-      t.style.opacity = '0';
-      setTimeout(() => t.remove(), 300);
-    }, 3000);
+      t.classList.remove('show');
+      t.style.display = 'none';
+    }, 3200);
   }
+  window.showToast = showToast;
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
