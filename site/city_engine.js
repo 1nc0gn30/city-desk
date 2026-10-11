@@ -13,13 +13,26 @@
     setupEventListeners();
   }
 
+  // Pro License Storage Keys
+  const STORAGE_KEY = 'city_desk_pro_licensed';
+  const STORAGE_KEY_ALT = 'zoth_city_desk_licensed';
+  const STORAGE_KEY_PRO = 'pro_licensed';
+
   function checkLicense() {
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('licensed') === 'true' || urlParams.get('pro') === 'true') {
-      localStorage.setItem('city_desk_pro_licensed', 'true');
+    if (urlParams.get('licensed') === 'true' || urlParams.get('pro') === 'true' || urlParams.get('key') === 'CITY-PRO-2026') {
+      localStorage.setItem(STORAGE_KEY, 'true');
+      localStorage.setItem(STORAGE_KEY_ALT, 'true');
+      localStorage.setItem(STORAGE_KEY_PRO, 'true');
+      try {
+        const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+        window.history.replaceState({ path: cleanUrl }, '', cleanUrl);
+      } catch (e) {}
     }
 
-    isPro = localStorage.getItem('city_desk_pro_licensed') === 'true';
+    isPro = localStorage.getItem(STORAGE_KEY) === 'true' ||
+            localStorage.getItem(STORAGE_KEY_ALT) === 'true' ||
+            localStorage.getItem(STORAGE_KEY_PRO) === 'true';
     updateProUI();
   }
 
@@ -29,6 +42,7 @@
     const paywallOverlay = document.querySelectorAll('.pro-paywall-overlay');
     const paywallOverlaySingle = document.getElementById('paywallOverlay');
     const proPaywallContent = document.getElementById('proPaywallContent');
+    const salesBanner = document.getElementById('salesBanner') || document.querySelector('.sales-banner');
 
     if (isPro) {
       if (licenseBadge) {
@@ -36,6 +50,9 @@
         licenseBadge.style.background = '#dcfce7';
         licenseBadge.style.color = '#15803d';
         licenseBadge.style.borderColor = '#86efac';
+      }
+      if (salesBanner) {
+        salesBanner.style.display = 'none';
       }
       paywallBlur.forEach(el => {
         el.style.filter = 'none';
@@ -58,6 +75,9 @@
         licenseBadge.style.color = '#9a3412';
         licenseBadge.style.borderColor = 'rgba(0,0,0,0.12)';
       }
+      if (salesBanner) {
+        salesBanner.style.display = 'block';
+      }
       paywallBlur.forEach(el => {
         el.style.filter = 'blur(6px)';
         el.style.pointerEvents = 'none';
@@ -76,14 +96,17 @@
   }
 
   window.openProModal = function () {
-    const modal = document.getElementById('proModal');
+    const modal = document.getElementById('proModal') || document.querySelector('[data-alias="licenseModal"]');
     if (modal) modal.classList.remove('hidden');
   };
 
   window.closeProModal = function () {
-    const modal = document.getElementById('proModal');
+    const modal = document.getElementById('proModal') || document.querySelector('[data-alias="licenseModal"]');
     if (modal) modal.classList.add('hidden');
   };
+
+  window.openLicenseModal = window.openProModal;
+  window.closeLicenseModal = window.closeProModal;
 
   window.activateWithKey = function (key) {
     if (!key) {
@@ -92,17 +115,26 @@
         key = input.value.trim();
       }
     }
-    if (!key) {
-      key = prompt('Enter your City Desk Pro License Key or Stripe Receipt Email:');
+    const val = (key || '').trim();
+    const upper = val.toUpperCase();
+    if (upper === 'CITY-PRO-2026' || val.includes('@') || val.length >= 8 || upper === 'SOVEREIGN-PRO-2026' || upper.startsWith('CITY-')) {
+      localStorage.setItem(STORAGE_KEY, 'true');
+      localStorage.setItem(STORAGE_KEY_ALT, 'true');
+      localStorage.setItem(STORAGE_KEY_PRO, 'true');
+      isPro = true;
+      updateProUI();
+      window.closeProModal();
+      showToast('⭐ City Desk Pro successfully unlocked! Full standalone production exports active.');
+      return true;
+    } else {
+      showToast('Invalid key. Enter your receipt email or order license key.');
+      console.warn('Invalid license key');
+      return false;
     }
-    if (!key || !key.trim()) return;
-
-    localStorage.setItem('city_desk_pro_licensed', 'true');
-    isPro = true;
-    updateProUI();
-    window.closeProModal();
-    showToast('⭐ City Desk Pro successfully unlocked! Full standalone production exports active.');
   };
+
+  window.activateLicenseKey = window.activateWithKey;
+  window.activateLicense = window.activateWithKey;
 
   window.handleExportBundle = function () {
     if (!isPro) {

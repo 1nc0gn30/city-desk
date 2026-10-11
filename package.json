@@ -1,0 +1,14 @@
+{
+  "name": "city-desk",
+  "version": "2.5.0",
+  "description": "Local Service Landing Page Generator & Standalone Multi-City Publisher",
+  "main": "city_engine.js",
+  "scripts": {
+    "build": "node build.js",
+    "serve": "npx serve site -l 8846",
+    "start": "python3 -m http.server 8080 --directory site",
+    "test": "node test/verify_links.js"
+  },
+  "author": "Neal Frazier Tech (@1nc0gn30) • NullAI Platform",
+  "license": "MIT"
+}

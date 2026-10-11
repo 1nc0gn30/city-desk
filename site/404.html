@@ -29,7 +29,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar">
   <div class="wrap bar-row">
-  <a class="mark" href="/"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">City <span>Desk</span></a>
+  <a class="mark" href="/"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">City <span>Desk</span><span class="tag-badge" style="font-size:10px;font-weight:700;padding:2px 6px;border-radius:9999px;background:rgba(234,88,12,0.15);color:#ea580c;border:1px solid rgba(234,88,12,0.3);margin-left:6px;">v2.5 SOVEREIGN</span></a>
   <div style="display:flex;align-items:center;gap:12px;">
     <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">⚡ FREE TIER</span>
     <nav>
@@ -50,7 +50,7 @@
 </footer>
 
 <!-- Pro Paywall Modal -->
-<div id="proModal" class="modal-overlay hidden">
+<div id="proModal" data-alias="licenseModal" class="modal-overlay hidden">
   <div class="modal-content">
     <button id="closeProModal" onclick="window.closeProModal()" class="modal-close" aria-label="Close modal">✕</button>
 
@@ -93,7 +93,7 @@
       <label for="licenseKeyInput" style="display:block;font-size:0.75rem;color:#78716c;margin-bottom:4px;">Already purchased? Enter License Key or Receipt Email:</label>
       <div style="display:flex;gap:6px;">
         <input type="text" id="licenseKeyInput" placeholder="e.g. CITY-PRO-2026 or email" style="flex:1;padding:6px 10px;font-size:0.8rem;border:1px solid #d6d3d1;border-radius:6px;">
-        <button id="btnActivateKey" onclick="window.activateWithKey()" class="btn-gold" style="white-space:nowrap;padding:6px 12px;font-size:0.8rem;">
+        <button id="btnActivateKey" data-alias="btnActivateKey" onclick="window.activateWithKey()" class="btn-gold" style="white-space:nowrap;padding:6px 12px;font-size:0.8rem;">
           Activate Key
         </button>
       </div>
