@@ -17,7 +17,5 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# No catch-all rewrite: this is a static multi-page site, so unknown URLs
+# should get site/404.html with a real 404 status (better for SEO and users).
