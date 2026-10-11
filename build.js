@@ -191,22 +191,28 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
   const header = shop
     ? `<header class="bar">
   <div class="wrap bar-row">
-  <a class="mark" href="#top">${esc(shop.name)} <span>${esc(shop.city)}</span></a>
-  <nav>
-    <a href="#work">Work</a>
-    <a href="#job">A job</a>
-    <a href="#ask">Questions</a>
-    <a class="nav-cta" href="#contact">Get a price</a>
-  </nav>
+  <a class="mark" href="#top"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">${esc(shop.name)} <span>${esc(shop.city)}</span></a>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">⚡ FREE TIER</span>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#job">A job</a>
+      <a href="#ask">Questions</a>
+      <a class="nav-cta" href="#contact">Get a price</a>
+    </nav>
+  </div>
   </div>
 </header>`
     : `<header class="bar">
   <div class="wrap bar-row">
-  <a class="mark" href="/">${esc(studio.split(' ')[0])} <span>${esc(studio.split(' ').slice(1).join(' ') || 'Desk')}</span></a>
-  <nav>
-    <a href="/">Cities</a>
-    <a href="/services/">Trades</a>
-  </nav>
+  <a class="mark" href="/"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">${esc(studio.split(' ')[0])} <span>${esc(studio.split(' ').slice(1).join(' ') || 'Desk')}</span></a>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">⚡ FREE TIER</span>
+    <nav>
+      <a href="/">Cities</a>
+      <a href="/services/">Trades</a>
+    </nav>
+  </div>
   </div>
 </header>`;
   const footer = foot || `<p>${esc(studio)} is one studio. These pages are finished sites for owners. They are not local offices, and they are not a count of who else is selling in town.</p>`;
@@ -229,6 +235,10 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="https://city-desk.netlify.app/media/painters/hero.jpg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/media/icon.png">
+<link rel="apple-touch-icon" href="/media/icon.png">
+<script src="https://integrate.depay.com/widgets/v13.js" defer></script>
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">${jsonLd(json)}</script>
 </head>
@@ -244,6 +254,60 @@ ${body}
   <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform</p>
   </div>
 </footer>
+
+<!-- Pro Paywall Modal -->
+<div id="proModal" class="modal-overlay hidden">
+  <div class="modal-content">
+    <button id="closeProModal" onclick="window.closeProModal()" class="modal-close" aria-label="Close modal">✕</button>
+
+    <div style="text-align:center;margin-bottom:16px;">
+      <img src="/media/icon.png" alt="City Desk Icon" style="width:36px;height:36px;border-radius:6px;margin:0 auto 8px auto;display:block;">
+      <h3 style="font-size:1.15rem;font-weight:800;color:#292524;margin-bottom:4px;">UNLOCK CITY DESK PRO</h3>
+      <p style="font-size:0.8rem;color:#78716c;margin:0;">
+        Deploy 1,000 localized service pages with instant HTML exports and $0 platform fees.
+      </p>
+    </div>
+
+    <div style="font-size:0.8rem;color:#44403c;display:flex;flex-direction:column;gap:6px;margin-bottom:16px;">
+      <div><strong style="color:#9a3412;">✓</strong> <strong>1,000 Multi-City Pages:</strong> 20 trades across 50 mid-size cities</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Standalone HTML Export:</strong> Deploy anywhere (Netlify, Vercel, S3)</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Zero Ads &amp; Zero Platform Taxes:</strong> Keep 100% of client revenue</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Schema.org LocalBusiness Graph:</strong> Automated Google &amp; Perplexity SEO</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Deterministic Rebuild Engine:</strong> Rebuilds anytime with 0 diffs</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Lifetime License &amp; Updates:</strong> One-time fee, no recurring charges</div>
+    </div>
+
+    <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:8px;padding:10px;text-align:center;margin-bottom:14px;">
+      <span style="font-size:0.75rem;color:#78716c;">Founding Lifetime Access:</span>
+      <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:2px;">
+        <span style="text-decoration:line-through;color:#a8a29e;font-size:0.9rem;">$79</span>
+        <strong style="font-size:1.25rem;font-weight:800;color:#9a3412;">$19 USD</strong>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <a href="https://buy.stripe.com/7sI7sA8hM2X8eFG8ww" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:10px;font-size:0.85rem;">
+        💳 Instant Checkout via Stripe ($19)
+      </a>
+      <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="padding:10px;text-decoration:none;text-align:center;display:block;font-size:0.85rem;" onclick="window.payWithSolana(event)">
+        🟣 Pay with Solana (DePay Widget)
+      </a>
+    </div>
+
+    <!-- Instant Key Activation -->
+    <div style="margin-top:14px;padding-top:12px;border-top:1px solid #e7e5e4;">
+      <label for="licenseKeyInput" style="display:block;font-size:0.75rem;color:#78716c;margin-bottom:4px;">Already purchased? Enter License Key or Receipt Email:</label>
+      <div style="display:flex;gap:6px;">
+        <input type="text" id="licenseKeyInput" placeholder="e.g. CITY-PRO-2026 or email" style="flex:1;padding:6px 10px;font-size:0.8rem;border:1px solid #d6d3d1;border-radius:6px;">
+        <button id="btnActivateKey" onclick="window.activateWithKey()" class="btn-gold" style="white-space:nowrap;padding:6px 12px;font-size:0.8rem;">
+          Activate Key
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/city_engine.js"></script>
 </body>
 </html>
 `;
@@ -514,6 +578,24 @@ function homePage() {
   const low = Math.min(...SERVICES.map((s) => s.price));
   const high = Math.max(...SERVICES.map((s) => s.price));
   const body = `
+<aside aria-label="Founding Studio Promotion" class="sales-banner">
+  <div class="sales-content">
+    <div class="sales-left">
+      <span class="pulse-dot"></span>
+      <strong>⚡ FOUNDING LEAD STUDIO ACCESS:</strong>
+      <span>Lifetime Local Trade Page Synthesizer —</span>
+      <span style="text-decoration: line-through; opacity: 0.6;">$79</span>
+      <strong style="color: #ea580c; font-size: 14px;">$19</strong>
+      <span class="banner-sub">• Instant 1,000-city generation &amp; HTML bundle exports.</span>
+    </div>
+    <div class="sales-actions">
+      <a href="https://buy.stripe.com/7sI7sA8hM2X8eFG8ww" target="_blank" rel="noopener noreferrer" class="btn-gold">💳 Unlock via Stripe ($19)</a>
+      <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" onclick="window.payWithSolana(event)">🟣 Solana Pay</a>
+      <button id="btnActivateBanner" onclick="window.openProModal()" class="btn-text">Activate Key</button>
+    </div>
+  </div>
+</aside>
+
 <p class="eyebrow">One studio · ${SERVICES.length} trades · ${CITIES.length} cities</p>
 <h1>Finished pages for one trade in one city</h1>
 <hr class="rule">
@@ -524,6 +606,107 @@ function homePage() {
     <p>A finished page. No ads. No rank promise. No reviews written by us.</p>
   </div>
 </div>
+
+<!-- Interactive Studio Workspace -->
+<section class="sect studio-workspace" style="margin-top:28px;margin-bottom:32px;padding:24px;background:#ffffff;border:1px solid #e7e5e4;border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,0.04);">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px;border-bottom:1px solid #f5f5f4;padding-bottom:12px;">
+    <div>
+      <h2 style="font-size:22px;font-weight:700;color:#1c1917;margin:0;">⚡ Live Lead Page Synthesizer</h2>
+      <p style="font-size:14px;color:#78716c;margin:4px 0 0 0;">Select trade and city, inject owner contact lines, and live assemble a ready-to-pitch page.</p>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center;">
+      <button id="btnExportBundleLive" onclick="window.handleExportBundle()" class="btn-gold" style="font-size:13px;padding:8px 16px;">
+        💾 Export Standalone HTML Bundle
+      </button>
+    </div>
+  </div>
+
+  <div class="synthesizer-controls" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:12px;margin-bottom:18px;">
+    <div>
+      <label style="display:block;font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;margin-bottom:4px;">Trade Service</label>
+      <select id="synthTradeSelect" style="width:100%;padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;background:#fafaf9;">
+        ${SERVICES.map(s => `<option value="${s.slug}">${s.name} (${money(s.price)})</option>`).join('\n')}
+      </select>
+    </div>
+    <div>
+      <label style="display:block;font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;margin-bottom:4px;">Target City</label>
+      <select id="synthCitySelect" style="width:100%;padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;background:#fafaf9;">
+        ${CITIES.map(c => `<option value="${c.slug}">${c.name}, ${c.state}</option>`).join('\n')}
+      </select>
+    </div>
+    <div>
+      <label style="display:block;font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;margin-bottom:4px;">Owner Company Name</label>
+      <input type="text" id="synthBizInput" value="Apex Craftsman" style="width:100%;padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;background:#fafaf9;">
+    </div>
+    <div>
+      <label style="display:block;font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;margin-bottom:4px;">Phone Number</label>
+      <input type="text" id="synthPhoneInput" value="(208) 555-0199" style="width:100%;padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;background:#fafaf9;">
+    </div>
+  </div>
+
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+    <button id="btnGeneratePreview" onclick="window.generateLivePreview()" class="btn" style="background:#1c1917;color:#ffffff;font-size:13px;padding:8px 18px;border:none;border-radius:6px;cursor:pointer;font-weight:700;">
+      ⚡ Live Assemble Page Preview
+    </button>
+    <span id="previewStatus" style="font-size:12px;color:#78716c;font-family:monospace;">Ready to assemble</span>
+  </div>
+
+  <!-- Live Assembled Preview Box -->
+  <div id="synthPreviewCard" style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:8px;padding:18px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e7e5e4;padding-bottom:8px;margin-bottom:12px;">
+      <span style="font-size:11px;font-weight:700;color:#9a3412;text-transform:uppercase;" id="previewBadge">ASSEMBLED LEAD PAGE SPEC</span>
+      <span style="font-size:13px;font-weight:700;color:#1c1917;" id="previewPrice">$800 · Written Price</span>
+    </div>
+    <h3 style="font-size:18px;font-weight:700;color:#1c1917;margin:0 0 8px 0;" id="previewHeadline">Boise House Painting — Written price before the first can opens</h3>
+    <p style="font-size:14px;color:#57534e;line-height:1.5;margin:0 0 12px 0;" id="previewLede">Three rooms or the whole house, inside or out. You see the price in writing with prep, coats, and paint all listed before work begins.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:10px;font-size:13px;background:#ffffff;padding:12px;border-radius:6px;border:1px solid #e7e5e4;">
+      <div><strong>Company:</strong> <span id="previewBiz">Apex Craftsman</span></div>
+      <div><strong>Phone:</strong> <span id="previewPhone">(208) 555-0199</span></div>
+      <div><strong>Target Market:</strong> <span id="previewCity">Boise, ID</span></div>
+    </div>
+  </div>
+
+  <!-- Pro Output Paywall Section -->
+  <div id="proPaywallSection" style="position:relative;margin-top:20px;border-radius:8px;overflow:hidden;border:1px solid #e7e5e4;">
+    <div id="proPaywallContent" class="pro-paywall-blur" style="filter:blur(6px);pointer-events:none;user-select:none;padding:16px;background:#ffffff;">
+      <div style="font-family:monospace;font-size:11px;color:#78716c;line-height:1.6;">
+        <div>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;</div>
+        <div>&lt;title&gt;Apex Craftsman — House Painting in Boise, ID&lt;/title&gt;</div>
+        <div>&lt;meta name="description" content="Written price before the first can opens. Call (208) 555-0199."&gt;</div>
+        <div>&lt;link rel="canonical" href="https://apexboise.com/"&gt;</div>
+        <div>&lt;!-- Full 20kb self-contained single-page bundle with responsive CSS, semantic schema.org graph, and client contact handler --&gt;</div>
+        <div>&lt;script type="application/ld+json"&gt;{"@context":"https://schema.org","@type":"LocalBusiness","name":"Apex Craftsman","telephone":"(208) 555-0199"}&lt;/script&gt;</div>
+      </div>
+    </div>
+
+    <!-- Glowing centered lock card -->
+    <div id="paywallOverlay" class="pro-paywall-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:10;background:rgba(243,239,230,0.88);backdrop-filter:blur(2px);">
+      <div style="background:#ffffff;border:1px solid #9a3412;box-shadow:0 8px 30px rgba(154,52,18,0.15);border-radius:12px;max-width:440px;width:90%;padding:20px;text-align:center;">
+        <div style="font-size:24px;margin-bottom:6px;">🔒</div>
+        <h4 style="font-size:15px;font-weight:800;color:#1c1917;margin:0 0 6px 0;">PRO STUDIO: FULL PRODUCTION EXPORT</h4>
+        <p style="font-size:12px;color:#78716c;line-height:1.4;margin:0 0 14px 0;">
+          Export standalone production HTML bundles ready for Netlify, Vercel, or custom domains. Includes 1,000-city sitemaps and unbranded assets.
+        </p>
+        <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:6px;padding:6px;margin-bottom:12px;font-size:12px;">
+          <span style="color:#a8a29e;text-decoration:line-through;">$79 Regular</span>
+          <strong style="color:#9a3412;font-size:14px;margin-left:6px;">$19 Lifetime Founding Access</strong>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <a href="https://buy.stripe.com/7sI7sA8hM2X8eFG8ww" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:8px;font-size:12px;">
+            💳 Instant Unlock via Stripe ($19)
+          </a>
+          <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="justify-content:center;padding:8px;text-decoration:none;display:flex;align-items:center;font-size:12px;" onclick="window.payWithSolana(event)">
+            🟣 Pay with Solana (DePay)
+          </a>
+          <button id="btnKeyOverlay" onclick="window.openProModal()" style="background:none;border:none;color:#78716c;font-size:11px;text-decoration:underline;cursor:pointer;margin-top:4px;">
+            Already purchased? Enter License Key or Receipt Email
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <h2>Trades</h2>
 <div class="grid">
 ${SERVICES.map((s) => `  <a class="card" href="${esc(href('services/' + s.slug + '/'))}"><h2>${esc(s.name)}</h2><p>${esc(money(s.price))} · ${esc(s.line)}</p></a>`).join('\n')}
@@ -579,6 +762,12 @@ function build() {
   fs.mkdirSync(SITE, { recursive: true });
   fs.copyFileSync(path.join(ROOT, 'style.css'), path.join(SITE, 'style.css'));
   copyTree(path.join(ROOT, 'media'), path.join(SITE, 'media'));
+  if (fs.existsSync(path.join(ROOT, 'media', 'favicon.ico'))) {
+    fs.copyFileSync(path.join(ROOT, 'media', 'favicon.ico'), path.join(SITE, 'favicon.ico'));
+  }
+  if (fs.existsSync(path.join(ROOT, 'city_engine.js'))) {
+    fs.copyFileSync(path.join(ROOT, 'city_engine.js'), path.join(SITE, 'city_engine.js'));
+  }
 
   const slugs = new Set();
   for (const city of CITIES) {

@@ -18,6 +18,10 @@
 <meta name="twitter:title" content="HVAC shops in Boise, ID | City Desk">
 <meta name="twitter:description" content="HVAC shops in Boise, ID. A finished page. The owner adds a name and a phone.">
 <meta name="twitter:image" content="https://city-desk.netlify.app/media/painters/hero.jpg">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/media/icon.png">
+<link rel="apple-touch-icon" href="/media/icon.png">
+<script src="https://integrate.depay.com/widgets/v13.js" defer></script>
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"HVAC shops in Boise, ID","serviceType":"Finished one-page site for an HVAC owner","description":"A tune-up path and a no-cool or no-heat path, written as two different visits.","areaServed":{"@type":"City","name":"Boise","address":{"@type":"PostalAddress","addressRegion":"ID","addressCountry":"US"}},"provider":{"@type":"Organization","name":"City Desk"},"offers":{"@type":"Offer","price":"1100","priceCurrency":"USD"}}</script>
 </head>
@@ -26,13 +30,16 @@
 <div class="strip"><div class="strip-row"><p>City Desk · sample page, finished and unclaimed</p><a href="#offer">See the offer</a></div></div>
 <header class="bar">
   <div class="wrap bar-row">
-  <a class="mark" href="#top">HVAC shops <span>Boise</span></a>
-  <nav>
-    <a href="#work">Work</a>
-    <a href="#job">A job</a>
-    <a href="#ask">Questions</a>
-    <a class="nav-cta" href="#contact">Get a price</a>
-  </nav>
+  <a class="mark" href="#top"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">HVAC shops <span>Boise</span></a>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">⚡ FREE TIER</span>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#job">A job</a>
+      <a href="#ask">Questions</a>
+      <a class="nav-cta" href="#contact">Get a price</a>
+    </nav>
+  </div>
   </div>
 </header>
 <main id="main">
@@ -149,5 +156,59 @@
   <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform</p>
   </div>
 </footer>
+
+<!-- Pro Paywall Modal -->
+<div id="proModal" class="modal-overlay hidden">
+  <div class="modal-content">
+    <button id="closeProModal" onclick="window.closeProModal()" class="modal-close" aria-label="Close modal">✕</button>
+
+    <div style="text-align:center;margin-bottom:16px;">
+      <img src="/media/icon.png" alt="City Desk Icon" style="width:36px;height:36px;border-radius:6px;margin:0 auto 8px auto;display:block;">
+      <h3 style="font-size:1.15rem;font-weight:800;color:#292524;margin-bottom:4px;">UNLOCK CITY DESK PRO</h3>
+      <p style="font-size:0.8rem;color:#78716c;margin:0;">
+        Deploy 1,000 localized service pages with instant HTML exports and $0 platform fees.
+      </p>
+    </div>
+
+    <div style="font-size:0.8rem;color:#44403c;display:flex;flex-direction:column;gap:6px;margin-bottom:16px;">
+      <div><strong style="color:#9a3412;">✓</strong> <strong>1,000 Multi-City Pages:</strong> 20 trades across 50 mid-size cities</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Standalone HTML Export:</strong> Deploy anywhere (Netlify, Vercel, S3)</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Zero Ads &amp; Zero Platform Taxes:</strong> Keep 100% of client revenue</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Schema.org LocalBusiness Graph:</strong> Automated Google &amp; Perplexity SEO</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Deterministic Rebuild Engine:</strong> Rebuilds anytime with 0 diffs</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Lifetime License &amp; Updates:</strong> One-time fee, no recurring charges</div>
+    </div>
+
+    <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:8px;padding:10px;text-align:center;margin-bottom:14px;">
+      <span style="font-size:0.75rem;color:#78716c;">Founding Lifetime Access:</span>
+      <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:2px;">
+        <span style="text-decoration:line-through;color:#a8a29e;font-size:0.9rem;">$79</span>
+        <strong style="font-size:1.25rem;font-weight:800;color:#9a3412;">$19 USD</strong>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <a href="https://buy.stripe.com/7sI7sA8hM2X8eFG8ww" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:10px;font-size:0.85rem;">
+        💳 Instant Checkout via Stripe ($19)
+      </a>
+      <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="padding:10px;text-decoration:none;text-align:center;display:block;font-size:0.85rem;" onclick="window.payWithSolana(event)">
+        🟣 Pay with Solana (DePay Widget)
+      </a>
+    </div>
+
+    <!-- Instant Key Activation -->
+    <div style="margin-top:14px;padding-top:12px;border-top:1px solid #e7e5e4;">
+      <label for="licenseKeyInput" style="display:block;font-size:0.75rem;color:#78716c;margin-bottom:4px;">Already purchased? Enter License Key or Receipt Email:</label>
+      <div style="display:flex;gap:6px;">
+        <input type="text" id="licenseKeyInput" placeholder="e.g. CITY-PRO-2026 or email" style="flex:1;padding:6px 10px;font-size:0.8rem;border:1px solid #d6d3d1;border-radius:6px;">
+        <button id="btnActivateKey" onclick="window.activateWithKey()" class="btn-gold" style="white-space:nowrap;padding:6px 12px;font-size:0.8rem;">
+          Activate Key
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/city_engine.js"></script>
 </body>
 </html>
