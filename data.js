@@ -785,10 +785,10 @@ const CITIES = [
   ['Mobile', 'AL'], ['Huntsville', 'AL'], ['Montgomery', 'AL'], ['Jackson', 'MS'], ['Little Rock', 'AR'],
   ['Fayetteville', 'AR'], ['Tulsa', 'OK'], ['Wichita', 'KS'], ['Des Moines', 'IA'], ['Cedar Rapids', 'IA'],
   ['Omaha', 'NE'], ['Sioux Falls', 'SD'], ['Fargo', 'ND'], ['Billings', 'MT'], ['Madison', 'WI'],
-  ['Green Bay', 'WI'], ['Grand Rapids', 'MI'], ['Ann Arbor', 'MI'], ['Fort Wayne', 'IN'], ['Peoria', 'IL'],
-  ['Rockford', 'IL'], ['Toledo', 'OH'], ['Dayton', 'OH'], ['Akron', 'OH'], ['Lexington', 'KY'],
+  ['Green Bay', 'WI'], ['Grand Rapids', 'MI'], ['Ann Arbor', 'MI'], ['Fort Wayne', 'IN'], ['Virginia Beach', 'VA'],
+  ['Norfolk', 'VA'], ['Toledo', 'OH'], ['Dayton', 'OH'], ['Akron', 'OH'], ['Lexington', 'KY'],
   ['Knoxville', 'TN'], ['Chattanooga', 'TN'], ['Greenville', 'SC'], ['Savannah', 'GA'], ['Augusta', 'GA'],
-  ['Charleston', 'WV'], ['Springfield', 'MO'], ['Fort Collins', 'CO'], ['Provo', 'UT'], ['Gainesville', 'FL']
+  ['Chesapeake', 'VA'], ['Springfield', 'MO'], ['Fort Collins', 'CO'], ['Provo', 'UT'], ['Gainesville', 'FL']
 ].map(([name, state]) => ({
   name,
   state,

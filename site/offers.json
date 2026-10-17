@@ -4760,284 +4760,284 @@
     "path": "/cities/fort-wayne-in/property-managers/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "painters",
     "price": 800,
-    "path": "/cities/peoria-il/painters/"
+    "path": "/cities/virginia-beach-va/painters/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "plumbers",
     "price": 900,
-    "path": "/cities/peoria-il/plumbers/"
+    "path": "/cities/virginia-beach-va/plumbers/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "hvac",
     "price": 1100,
-    "path": "/cities/peoria-il/hvac/"
+    "path": "/cities/virginia-beach-va/hvac/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "roofers",
     "price": 1000,
-    "path": "/cities/peoria-il/roofers/"
+    "path": "/cities/virginia-beach-va/roofers/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "electricians",
     "price": 1000,
-    "path": "/cities/peoria-il/electricians/"
+    "path": "/cities/virginia-beach-va/electricians/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "garage-doors",
     "price": 700,
-    "path": "/cities/peoria-il/garage-doors/"
+    "path": "/cities/virginia-beach-va/garage-doors/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "landscapers",
     "price": 800,
-    "path": "/cities/peoria-il/landscapers/"
+    "path": "/cities/virginia-beach-va/landscapers/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "cleaners",
     "price": 700,
-    "path": "/cities/peoria-il/cleaners/"
+    "path": "/cities/virginia-beach-va/cleaners/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "detailers",
     "price": 700,
-    "path": "/cities/peoria-il/detailers/"
+    "path": "/cities/virginia-beach-va/detailers/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "junk-removal",
     "price": 700,
-    "path": "/cities/peoria-il/junk-removal/"
+    "path": "/cities/virginia-beach-va/junk-removal/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "pest-control",
     "price": 800,
-    "path": "/cities/peoria-il/pest-control/"
+    "path": "/cities/virginia-beach-va/pest-control/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "movers",
     "price": 900,
-    "path": "/cities/peoria-il/movers/"
+    "path": "/cities/virginia-beach-va/movers/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "groomers",
     "price": 700,
-    "path": "/cities/peoria-il/groomers/"
+    "path": "/cities/virginia-beach-va/groomers/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "dentists",
     "price": 1500,
-    "path": "/cities/peoria-il/dentists/"
+    "path": "/cities/virginia-beach-va/dentists/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "med-spas",
     "price": 1400,
-    "path": "/cities/peoria-il/med-spas/"
+    "path": "/cities/virginia-beach-va/med-spas/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "gyms",
     "price": 900,
-    "path": "/cities/peoria-il/gyms/"
+    "path": "/cities/virginia-beach-va/gyms/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "restaurants",
     "price": 1200,
-    "path": "/cities/peoria-il/restaurants/"
+    "path": "/cities/virginia-beach-va/restaurants/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "food-trucks",
     "price": 800,
-    "path": "/cities/peoria-il/food-trucks/"
+    "path": "/cities/virginia-beach-va/food-trucks/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "auto-repair",
     "price": 1000,
-    "path": "/cities/peoria-il/auto-repair/"
+    "path": "/cities/virginia-beach-va/auto-repair/"
   },
   {
-    "city": "Peoria",
-    "state": "IL",
+    "city": "Virginia Beach",
+    "state": "VA",
     "service": "property-managers",
     "price": 1300,
-    "path": "/cities/peoria-il/property-managers/"
+    "path": "/cities/virginia-beach-va/property-managers/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "painters",
     "price": 800,
-    "path": "/cities/rockford-il/painters/"
+    "path": "/cities/norfolk-va/painters/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "plumbers",
     "price": 900,
-    "path": "/cities/rockford-il/plumbers/"
+    "path": "/cities/norfolk-va/plumbers/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "hvac",
     "price": 1100,
-    "path": "/cities/rockford-il/hvac/"
+    "path": "/cities/norfolk-va/hvac/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "roofers",
     "price": 1000,
-    "path": "/cities/rockford-il/roofers/"
+    "path": "/cities/norfolk-va/roofers/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "electricians",
     "price": 1000,
-    "path": "/cities/rockford-il/electricians/"
+    "path": "/cities/norfolk-va/electricians/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "garage-doors",
     "price": 700,
-    "path": "/cities/rockford-il/garage-doors/"
+    "path": "/cities/norfolk-va/garage-doors/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "landscapers",
     "price": 800,
-    "path": "/cities/rockford-il/landscapers/"
+    "path": "/cities/norfolk-va/landscapers/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "cleaners",
     "price": 700,
-    "path": "/cities/rockford-il/cleaners/"
+    "path": "/cities/norfolk-va/cleaners/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "detailers",
     "price": 700,
-    "path": "/cities/rockford-il/detailers/"
+    "path": "/cities/norfolk-va/detailers/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "junk-removal",
     "price": 700,
-    "path": "/cities/rockford-il/junk-removal/"
+    "path": "/cities/norfolk-va/junk-removal/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "pest-control",
     "price": 800,
-    "path": "/cities/rockford-il/pest-control/"
+    "path": "/cities/norfolk-va/pest-control/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "movers",
     "price": 900,
-    "path": "/cities/rockford-il/movers/"
+    "path": "/cities/norfolk-va/movers/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "groomers",
     "price": 700,
-    "path": "/cities/rockford-il/groomers/"
+    "path": "/cities/norfolk-va/groomers/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "dentists",
     "price": 1500,
-    "path": "/cities/rockford-il/dentists/"
+    "path": "/cities/norfolk-va/dentists/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "med-spas",
     "price": 1400,
-    "path": "/cities/rockford-il/med-spas/"
+    "path": "/cities/norfolk-va/med-spas/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "gyms",
     "price": 900,
-    "path": "/cities/rockford-il/gyms/"
+    "path": "/cities/norfolk-va/gyms/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "restaurants",
     "price": 1200,
-    "path": "/cities/rockford-il/restaurants/"
+    "path": "/cities/norfolk-va/restaurants/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "food-trucks",
     "price": 800,
-    "path": "/cities/rockford-il/food-trucks/"
+    "path": "/cities/norfolk-va/food-trucks/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "auto-repair",
     "price": 1000,
-    "path": "/cities/rockford-il/auto-repair/"
+    "path": "/cities/norfolk-va/auto-repair/"
   },
   {
-    "city": "Rockford",
-    "state": "IL",
+    "city": "Norfolk",
+    "state": "VA",
     "service": "property-managers",
     "price": 1300,
-    "path": "/cities/rockford-il/property-managers/"
+    "path": "/cities/norfolk-va/property-managers/"
   },
   {
     "city": "Toledo",
@@ -6300,144 +6300,144 @@
     "path": "/cities/augusta-ga/property-managers/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "painters",
     "price": 800,
-    "path": "/cities/charleston-wv/painters/"
+    "path": "/cities/chesapeake-va/painters/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "plumbers",
     "price": 900,
-    "path": "/cities/charleston-wv/plumbers/"
+    "path": "/cities/chesapeake-va/plumbers/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "hvac",
     "price": 1100,
-    "path": "/cities/charleston-wv/hvac/"
+    "path": "/cities/chesapeake-va/hvac/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "roofers",
     "price": 1000,
-    "path": "/cities/charleston-wv/roofers/"
+    "path": "/cities/chesapeake-va/roofers/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "electricians",
     "price": 1000,
-    "path": "/cities/charleston-wv/electricians/"
+    "path": "/cities/chesapeake-va/electricians/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "garage-doors",
     "price": 700,
-    "path": "/cities/charleston-wv/garage-doors/"
+    "path": "/cities/chesapeake-va/garage-doors/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "landscapers",
     "price": 800,
-    "path": "/cities/charleston-wv/landscapers/"
+    "path": "/cities/chesapeake-va/landscapers/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "cleaners",
     "price": 700,
-    "path": "/cities/charleston-wv/cleaners/"
+    "path": "/cities/chesapeake-va/cleaners/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "detailers",
     "price": 700,
-    "path": "/cities/charleston-wv/detailers/"
+    "path": "/cities/chesapeake-va/detailers/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "junk-removal",
     "price": 700,
-    "path": "/cities/charleston-wv/junk-removal/"
+    "path": "/cities/chesapeake-va/junk-removal/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "pest-control",
     "price": 800,
-    "path": "/cities/charleston-wv/pest-control/"
+    "path": "/cities/chesapeake-va/pest-control/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "movers",
     "price": 900,
-    "path": "/cities/charleston-wv/movers/"
+    "path": "/cities/chesapeake-va/movers/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "groomers",
     "price": 700,
-    "path": "/cities/charleston-wv/groomers/"
+    "path": "/cities/chesapeake-va/groomers/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "dentists",
     "price": 1500,
-    "path": "/cities/charleston-wv/dentists/"
+    "path": "/cities/chesapeake-va/dentists/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "med-spas",
     "price": 1400,
-    "path": "/cities/charleston-wv/med-spas/"
+    "path": "/cities/chesapeake-va/med-spas/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "gyms",
     "price": 900,
-    "path": "/cities/charleston-wv/gyms/"
+    "path": "/cities/chesapeake-va/gyms/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "restaurants",
     "price": 1200,
-    "path": "/cities/charleston-wv/restaurants/"
+    "path": "/cities/chesapeake-va/restaurants/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "food-trucks",
     "price": 800,
-    "path": "/cities/charleston-wv/food-trucks/"
+    "path": "/cities/chesapeake-va/food-trucks/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "auto-repair",
     "price": 1000,
-    "path": "/cities/charleston-wv/auto-repair/"
+    "path": "/cities/chesapeake-va/auto-repair/"
   },
   {
-    "city": "Charleston",
-    "state": "WV",
+    "city": "Chesapeake",
+    "state": "VA",
     "service": "property-managers",
     "price": 1300,
-    "path": "/cities/charleston-wv/property-managers/"
+    "path": "/cities/chesapeake-va/property-managers/"
   },
   {
     "city": "Springfield",

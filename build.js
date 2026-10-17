@@ -286,8 +286,11 @@ ${body}
     </div>
 
     <div style="display:flex;flex-direction:column;gap:8px;">
-      <a href="https://buy.stripe.com/7sI7sA8hM2X8eFG8ww" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:10px;font-size:0.85rem;">
+      <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:10px;font-size:0.85rem;">
         💳 Instant Checkout via Stripe ($19)
+      </a>
+      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.82rem;background:#292524;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
+        🛠️ Done-For-You Custom Launch + Domain ($149)
       </a>
       <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="padding:10px;text-decoration:none;text-align:center;display:block;font-size:0.85rem;" onclick="window.payWithSolana(event)">
         🟣 Pay with Solana (DePay Widget)
@@ -332,15 +335,17 @@ function sendNote(service, city) {
 }
 
 function cta(text) {
-  const stripeUrl = 'https://buy.stripe.com/7sI7sA8hM2X8eFG8ww';
+  const stripeDfyUrl = 'https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O';
+  const stripeProUrl = 'https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N';
   const depayUrl = 'https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
   if (replyTo) {
     const subject = text.split('\n')[0];
     const mail = `mailto:${encodeURIComponent(replyTo)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
     return {
       action: `<div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
-  <a class="btn" href="${esc(mail)}">Send this page</a>
-  <a class="btn" style="background:#635bff;color:#ffffff;" href="${stripeUrl}" target="_blank" rel="noopener">Claim via Stripe</a>
+  <a class="btn" style="background:#635bff;color:#ffffff;font-weight:700;" href="${stripeDfyUrl}" target="_blank" rel="noopener">⚡ Done-For-You Launch ($149)</a>
+  <a class="btn" style="background:#9a3412;color:#ffffff;font-weight:700;" href="${stripeProUrl}" target="_blank" rel="noopener">💳 Self-Serve HTML ($19)</a>
+  <a class="btn" href="${esc(mail)}">Request Custom Quote</a>
   <a class="btn" style="background:#9945ff;color:#ffffff;" href="${depayUrl}" target="_blank" rel="noopener">Pay Solana</a>
 </div>`,
       rest: ''
@@ -594,7 +599,7 @@ function homePage() {
       <span class="banner-sub">• Instant 1,000-city generation &amp; HTML bundle exports.</span>
     </div>
     <div class="sales-actions">
-      <a href="https://buy.stripe.com/7sI7sA8hM2X8eFG8ww" target="_blank" rel="noopener noreferrer" class="btn-gold">💳 Unlock via Stripe ($19)</a>
+      <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold">💳 Unlock via Stripe ($19)</a>
       <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" onclick="window.payWithSolana(event)">🟣 Solana Pay</a>
       <button id="btnActivateBanner" onclick="window.openProModal()" class="btn-text">Activate Key</button>
     </div>
@@ -697,7 +702,7 @@ function homePage() {
           <strong style="color:#9a3412;font-size:14px;margin-left:6px;">$19 Lifetime Founding Access</strong>
         </div>
         <div style="display:flex;flex-direction:column;gap:6px;">
-          <a href="https://buy.stripe.com/7sI7sA8hM2X8eFG8ww" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:8px;font-size:12px;">
+          <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:8px;font-size:12px;">
             💳 Instant Unlock via Stripe ($19)
           </a>
           <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="justify-content:center;padding:8px;text-decoration:none;display:flex;align-items:center;font-size:12px;" onclick="window.payWithSolana(event)">

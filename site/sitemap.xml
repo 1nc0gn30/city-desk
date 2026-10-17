@@ -56,8 +56,8 @@
   <url><loc>https://city-desk.netlify.app/cities/grand-rapids-mi/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/ann-arbor-mi/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/fort-wayne-in/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/toledo-oh/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/dayton-oh/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/akron-oh/</loc></url>
@@ -67,7 +67,7 @@
   <url><loc>https://city-desk.netlify.app/cities/greenville-sc/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/savannah-ga/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/augusta-ga/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/springfield-mo/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/fort-collins-co/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/provo-ut/</loc></url>
@@ -752,46 +752,46 @@
   <url><loc>https://city-desk.netlify.app/cities/fort-wayne-in/food-trucks/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/fort-wayne-in/auto-repair/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/fort-wayne-in/property-managers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/painters/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/plumbers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/hvac/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/roofers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/electricians/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/garage-doors/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/landscapers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/cleaners/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/detailers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/junk-removal/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/pest-control/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/movers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/groomers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/dentists/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/med-spas/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/gyms/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/restaurants/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/food-trucks/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/auto-repair/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/peoria-il/property-managers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/painters/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/plumbers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/hvac/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/roofers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/electricians/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/garage-doors/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/landscapers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/cleaners/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/detailers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/junk-removal/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/pest-control/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/movers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/groomers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/dentists/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/med-spas/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/gyms/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/restaurants/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/food-trucks/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/auto-repair/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/rockford-il/property-managers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/painters/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/plumbers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/hvac/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/roofers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/electricians/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/garage-doors/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/landscapers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/cleaners/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/detailers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/junk-removal/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/pest-control/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/movers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/groomers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/dentists/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/med-spas/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/gyms/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/restaurants/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/food-trucks/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/auto-repair/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/virginia-beach-va/property-managers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/painters/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/plumbers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/hvac/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/roofers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/electricians/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/garage-doors/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/landscapers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/cleaners/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/detailers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/junk-removal/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/pest-control/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/movers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/groomers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/dentists/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/med-spas/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/gyms/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/restaurants/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/food-trucks/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/auto-repair/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/norfolk-va/property-managers/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/toledo-oh/painters/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/toledo-oh/plumbers/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/toledo-oh/hvac/</loc></url>
@@ -972,26 +972,26 @@
   <url><loc>https://city-desk.netlify.app/cities/augusta-ga/food-trucks/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/augusta-ga/auto-repair/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/augusta-ga/property-managers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/painters/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/plumbers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/hvac/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/roofers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/electricians/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/garage-doors/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/landscapers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/cleaners/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/detailers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/junk-removal/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/pest-control/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/movers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/groomers/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/dentists/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/med-spas/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/gyms/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/restaurants/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/food-trucks/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/auto-repair/</loc></url>
-  <url><loc>https://city-desk.netlify.app/cities/charleston-wv/property-managers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/painters/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/plumbers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/hvac/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/roofers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/electricians/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/garage-doors/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/landscapers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/cleaners/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/detailers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/junk-removal/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/pest-control/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/movers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/groomers/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/dentists/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/med-spas/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/gyms/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/restaurants/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/food-trucks/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/auto-repair/</loc></url>
+  <url><loc>https://city-desk.netlify.app/cities/chesapeake-va/property-managers/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/springfield-mo/painters/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/springfield-mo/plumbers/</loc></url>
   <url><loc>https://city-desk.netlify.app/cities/springfield-mo/hvac/</loc></url>
