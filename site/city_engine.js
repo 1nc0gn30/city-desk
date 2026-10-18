@@ -134,17 +134,17 @@
         if (topSect && !document.getElementById('personalizedOwnerBanner')) {
           const banner = document.createElement('div');
           banner.id = 'personalizedOwnerBanner';
-          banner.style.cssText = 'max-width:1440px;margin:14px auto 0;padding:0 clamp(16px,4vw,48px);';
-          const siteLabel = siteUrl ? ` (${siteUrl.replace(/^https?:\/\//, '')})` : '';
-          banner.innerHTML = `<div style="background:linear-gradient(135deg,#1c1917 0%,#292524 100%);color:#fafaf9;border:2px solid #16a34a;border-radius:12px;padding:14px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,0.12);">
-            <div style="flex:1 1 320px;">
-              <div style="font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#4ade80;margin-bottom:3px;">★ LIVE CUSTOM PREVIEW &amp; AI SEARCH PACK FOR ${biz.replace(/[&<>"']/g, '')}${siteLabel.replace(/[&<>"']/g, '')}</div>
-              <div style="font-size:13.5px;color:#e7e5e4;line-height:1.45;">Your name, phone <strong>${(phone || 'line').replace(/[&<>"']/g, '')}</strong>, and <strong>${(customCity || 'local market').replace(/[&<>"']/g, '')}</strong> Schema.org JSON-LD are pre-loaded below. Grab the complete standalone HTML + AI Search Booster Pack for <strong>$7</strong> or have us launch it on your domain in 24h.</div>
+          banner.className = 'owner-preview-wrap';
+          const siteLabel = siteUrl ? ` · ${siteUrl.replace(/^https?:\/\//, '')}` : '';
+          banner.innerHTML = `<div class="owner-preview-bar">
+            <div class="owner-preview-copy">
+              <div class="owner-preview-kicker"><span class="dot"></span>LIVE CUSTOM SPEC &amp; AI SEARCH GRAPH PREPARED FOR ${biz.replace(/[&<>"']/g, '')}${siteLabel.replace(/[&<>"']/g, '')}</div>
+              <p class="owner-preview-desc">Your business name, direct line <strong>${(phone || 'on file').replace(/[&<>"']/g, '')}</strong>, and <strong>${(customCity || 'local market').replace(/[&<>"']/g, '')}</strong> Schema.org JSON-LD are pre-wired below. Export the complete standalone HTML + AI Search Booster Pack for <strong>$7</strong> or have our engineering desk deploy it on your domain in 48 hours.</p>
             </div>
-            <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-              <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener" style="background:#16a34a;color:#ffffff;font-weight:800;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;white-space:nowrap;">⚡ Unlock $7 AI + HTML Pack</a>
-              <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener" style="background:#ea580c;color:#ffffff;font-weight:700;font-size:13px;padding:10px 14px;border-radius:8px;text-decoration:none;white-space:nowrap;">🚀 $149 Done-For-You Launch</a>
-              <button type="button" onclick="window.openVipModal()" style="background:rgba(255,255,255,0.12);color:#ffffff;border:1px solid rgba(255,255,255,0.25);font-weight:700;font-size:12px;padding:9px 12px;border-radius:8px;cursor:pointer;white-space:nowrap;">🎁 Already Paid?</button>
+            <div class="owner-preview-actions">
+              <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener" class="btn-arch-primary">★ Unlock $7 AI + HTML Pack</a>
+              <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener" class="btn-arch-copper">$149 Done-For-You Launch &rarr;</a>
+              <button type="button" onclick="window.openVipModal()" class="btn-arch-ghost">Already Paid? Onboarding</button>
             </div>
           </div>`;
           topSect.parentNode.insertBefore(banner, topSect);

@@ -31,13 +31,13 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="strip"><div class="strip-row"><p>City Desk · Live sample page ready for your domain</p><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;"><a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" style="color:#86efac;font-weight:800;">★ $7 Instant AI + HTML Pack</a><a href="#offer">Claim ($149 DFY / $19 HTML)</a><a href="javascript:void(0)" onclick="window.openVipModal()">Already Paid? Onboarding</a></div></div></div>
+<div class="strip"><div class="strip-row"><p>City Desk · Live sample page ready for your domain</p><div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;"><a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" style="color:#4ade80;font-weight:700;">★ $7 Instant AI + HTML Pack</a><a href="#offer">Claim ($149 DFY / $19 HTML)</a><a href="javascript:void(0)" onclick="window.openVipModal()">Already Paid? Onboarding</a></div></div></div>
 <header class="bar">
   <div class="wrap bar-row">
   <a class="mark" href="#top"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">Plumbers <span>Fayetteville</span></a>
   <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-    <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">⚡ FREE TIER</span>
-    <button type="button" onclick="window.openVipModal()" style="font-size:11px;font-weight:700;padding:4px 10px;border-radius:9999px;background:#1c1917;color:#ffffff;border:none;cursor:pointer;min-height:28px;">🎁 Paid / Onboarding</button>
+    <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">FREE TIER</span>
+    <button type="button" onclick="window.openVipModal()" style="font-size:11px;font-weight:700;padding:4px 10px;border-radius:9999px;background:#1c1917;color:#ffffff;border:none;cursor:pointer;min-height:28px;">Paid / Onboarding</button>
     <nav>
       <a href="#work">Work</a>
       <a href="#estimator">Estimator</a>
@@ -56,14 +56,40 @@
     <p class="trade-lede">A running leak and a planned water-heater swap are different jobs. This page keeps them apart.</p>
     <div class="trade-actions">
       <a class="t-btn" href="#estimator">60-Second Price Estimator</a>
-      <a class="t-line" href="#offer">Claim This Site ($149 DFY / $19 HTML)</a>
+      <a class="t-line" href="#offer">Claim This Site ($149 DFY / $7 Pack)</a>
     </div>
   </div>
-  <dl class="trade-facts">
-    <div><dt>01</dt><dd>Describe what failed</dd></div>
-    <div><dt>02</dt><dd>Take a visit window</dd></div>
-    <div><dt>03</dt><dd>Approve the repair</dd></div>
-  </dl>
+  <div class="trade-right-col">
+    <div class="trade-spec-card">
+      <div class="spec-head">
+        <span>LOCAL DISPATCH SPECIFICATION · Fayetteville, AR</span>
+        <span class="spec-status">READY FOR DOMAIN</span>
+      </div>
+      <div class="spec-grid">
+        <div>
+          <span class="spec-label">Core Web Vitals</span>
+          <span class="spec-val">100 / 100 Mobile</span>
+        </div>
+        <div>
+          <span class="spec-label">Structured Graph</span>
+          <span class="spec-val">Schema.org JSON-LD</span>
+        </div>
+        <div>
+          <span class="spec-label">Quote Intake</span>
+          <span class="spec-val">60s Written Ledger</span>
+        </div>
+        <div>
+          <span class="spec-label">Platform Retainer</span>
+          <span class="spec-val">$0 / Month Forever</span>
+        </div>
+      </div>
+    </div>
+    <dl class="trade-facts">
+      <div><dt>01</dt><dd>Describe what failed</dd></div>
+      <div><dt>02</dt><dd>Take a visit window</dd></div>
+      <div><dt>03</dt><dd>Approve the repair</dd></div>
+    </dl>
+  </div>
 </section>
 <section class="trade-sect" id="work">
   <h2>The work</h2>
@@ -101,36 +127,39 @@
 </section>
 <section class="trade-sect" id="estimator" aria-label="Interactive Written Price Estimator">
   <h2>Interactive 60-Second Written Estimate &amp; Callback Request</h2>
-  <div style="background:#ffffff;border:1px solid #ddd4c7;border-radius:16px;padding:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:center;">
+  <div class="estimator-ledger">
     <div style="display:flex;flex-direction:column;gap:14px;">
       <div>
-        <label style="display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5c564c;margin-bottom:6px;">1. Select Service Needed</label>
-        <select id="estScopeSelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px;border:1px solid #d6d3d1;border-radius:8px;font-size:15px;background:#fafaf9;color:#1c1917;">
+        <label for="estScopeSelect" style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#5c564c;margin-bottom:6px;">01 · Select Service Needed</label>
+        <select id="estScopeSelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px 14px;border:1px solid #d6d3d1;border-radius:6px;font-size:15px;font-family:inherit;background:#ffffff;color:#1c1917;">
           <option value="0">Drains and fixtures (Fayetteville)</option>
           <option value="1">Emergency (Fayetteville)</option>
           <option value="2">Water heaters (Fayetteville)</option>
         </select>
       </div>
       <div>
-        <label style="display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5c564c;margin-bottom:6px;">2. Visit Type &amp; Urgency</label>
-        <select id="estUrgencySelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px;border:1px solid #d6d3d1;border-radius:8px;font-size:15px;background:#fafaf9;color:#1c1917;">
+        <label for="estUrgencySelect" style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#5c564c;margin-bottom:6px;">02 · Visit Type &amp; Dispatch Window</label>
+        <select id="estUrgencySelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px 14px;border:1px solid #d6d3d1;border-radius:6px;font-size:15px;font-family:inherit;background:#ffffff;color:#1c1917;">
           <option value="1">Standard Scheduled Visit</option>
           <option value="1.75">Full System / Multi-Area Scope</option>
           <option value="1.35">Same-Day / Priority Dispatch</option>
         </select>
       </div>
     </div>
-    <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:12px;padding:20px;">
-      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#9a3412;">ESTIMATED BALLPARK RANGE (Fayetteville, AR)</div>
-      <div id="estRangeOutput" style="font-size:32px;font-weight:800;color:#1c1917;margin:6px 0;">$165 – $380</div>
+    <div class="estimator-ticket">
+      <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px dashed #d6d3d1;padding-bottom:10px;margin-bottom:12px;">
+        <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;color:#8f3217;">WRITTEN BALLPARK LEDGER · Fayetteville, AR</span>
+        <span style="font-size:11px;font-weight:700;color:#5c564c;letter-spacing:0.06em;">ZERO OBLIGATION</span>
+      </div>
+      <div id="estRangeOutput" style="font-family:'Newsreader',Georgia,serif;font-size:clamp(28px,3.5vw,38px);font-weight:500;color:#171614;letter-spacing:-0.02em;margin:4px 0 8px;">$165 – $380</div>
       <p style="font-size:13px;color:#57534e;margin:0 0 14px 0;">Exact written price is provided before work begins. Test the instant lead capture form below:</p>
       <form name="trade-lead-capture" method="POST" data-netlify="true" onsubmit="return window.submitNetlifyForm ? window.submitNetlifyForm(event, 'tradeEstStatus') : true" style="display:flex;gap:8px;flex-wrap:wrap;">
         <input type="hidden" name="form-name" value="trade-lead-capture">
         <input type="hidden" name="city" value="Fayetteville, AR">
         <input type="hidden" name="trade" value="Plumbers">
-        <input type="text" name="customer_name" placeholder="Your Name" required style="flex:1 1 120px;padding:10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;">
-        <input type="tel" name="customer_phone" placeholder="Your Phone #" required style="flex:1 1 130px;padding:10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;">
-        <button type="submit" class="btn-gold" style="padding:10px 16px;font-size:13px;border-radius:6px;">Request Written Quote</button>
+        <input type="text" name="customer_name" placeholder="Your Name" required style="flex:1 1 130px;padding:10px 12px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;font-family:inherit;">
+        <input type="tel" name="customer_phone" placeholder="Your Phone #" required style="flex:1 1 140px;padding:10px 12px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;font-family:inherit;">
+        <button type="submit" class="btn-arch-copper" style="padding:10px 16px;font-size:13px;">Request Written Quote</button>
       </form>
       <div id="tradeEstStatus" style="font-size:12px;color:#15803d;font-weight:700;margin-top:8px;display:none;">✓ Request logged! The owner will text/call you with a visit window.</div>
     </div>
@@ -152,34 +181,66 @@
     <div>
       <p class="trade-kicker trade-kicker-light">For the owner in Fayetteville</p>
       <h2>This page is finished. Put your name on it.</h2>
-      <p>Add the business name, phone, and email to the contact lines and publish. Choose Done-For-You 48-Hour Launch ($149), Self-Serve HTML ($19), 24/7 AI Receptionist ($299), or 5-Page Custom Website ($499).</p>
+      <p>Add the business name, phone, and email to the contact lines and publish. Zero monthly agency retainer — choose instant code export or 48-hour turnkey deployment below.</p>
     </div>
     <div class="trade-price">
       <strong><s style="opacity:0.45;font-size:0.45em;margin-right:8px;">$900</s>$149</strong>
-      <span>Done-For-You 48h Launch · Fayetteville, AR (or $19 Self-Serve HTML)</span>
-      <div style="display:flex;gap:0.55rem;flex-wrap:wrap;align-items:center;">
-  <a class="btn" style="background:#16a34a;color:#ffffff;font-weight:800;" href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener">★ $7 Instant AI + HTML Pack</a>
-  <a class="btn" style="background:#ea580c;color:#ffffff;font-weight:700;" href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener">⚡ $149 Done-For-You 1-Page Launch</a>
-  <a class="btn" style="background:#635bff;color:#ffffff;font-weight:700;" href="https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S" target="_blank" rel="noopener">🤖 $299 Add 24/7 AI Receptionist</a>
-  <a class="btn" style="background:#0f766e;color:#ffffff;font-weight:700;" href="https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T" target="_blank" rel="noopener">🚀 $499 Turnkey 5-Page Website</a>
-  <a class="btn" style="background:#44403c;color:#ffffff;font-weight:700;" href="https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V" target="_blank" rel="noopener">🤝 $99 Kickoff Deposit</a>
-  <a class="btn" style="background:#9945ff;color:#ffffff;" href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK" target="_blank" rel="noopener">🟣 Solana Pay</a>
-  <button type="button" class="btn" style="background:#ffffff;color:#1c1917;font-weight:700;" onclick="window.openVipModal()">🎁 Already Paid? Download / Onboarding</button>
-</div>
+      <span>Done-For-You 48h Launch · Fayetteville, AR (or $7 AI + HTML Starter)</span>
     </div>
   </div>
+  <div class="offer-tiers-wrap">
+  <div class="offer-tiers-grid">
+    <article class="offer-tier-card featured-green">
+      <span class="tier-badge">★ FLASH STARTER · INSTANT EXPORT</span>
+      <h3>AI Search + HTML Pack</h3>
+      <div class="tier-price">$7 <small>one-time · $0/mo</small></div>
+      <p>Instant 1-click download of your customized LocalBusiness Schema.org JSON-LD graph, llms.txt AI index, 60s estimator snippet, and standalone HTML page.</p>
+      <a class="btn-arch-primary" href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener">Unlock $7 AI + HTML Pack</a>
+    </article>
+    <article class="offer-tier-card featured-copper">
+      <span class="tier-badge">★ TURNKEY 48H DEPLOYMENT</span>
+      <h3>Done-For-You 1-Page Launch</h3>
+      <div class="tier-price">$149 <small>one-time · $0/mo</small></div>
+      <p>We wire your business name, phone line, logo, photos, and connect your custom domain within 48 hours with zero monthly hosting fees.</p>
+      <a class="btn-arch-copper" href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener">Order $149 DFY Launch</a>
+    </article>
+    <article class="offer-tier-card">
+      <span class="tier-badge">24/7 CALL &amp; SMS AUTOMATION</span>
+      <h3>AI Voice &amp; SMS Receptionist</h3>
+      <div class="tier-price">$299 <small>one-time · $0/mo</small></div>
+      <p>Trained on your trade scopes &amp; pricing. Answers customer questions 24/7, calculates quotes, and texts missed-call leads directly to your phone.</p>
+      <a class="btn-arch-ghost" style="border-color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.08);" href="https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S" target="_blank" rel="noopener">Order $299 AI Receptionist</a>
+    </article>
+    <article class="offer-tier-card">
+      <span class="tier-badge">FULL 5-PAGE AUTHORITY BUILD</span>
+      <h3>Turnkey 5-Page Custom Site</h3>
+      <div class="tier-price">$499 <small>one-time · $0/mo</small></div>
+      <p>Complete 5-page custom website (Home, Services, Estimator, Reviews, Contact) + full Schema.org AI Search graph + 24/7 AI Receptionist included.</p>
+      <a class="btn-arch-ghost" style="border-color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.08);" href="https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T" target="_blank" rel="noopener">Order $499 5-Page Build</a>
+    </article>
+  </div>
+  <div class="offer-utility-bar">
+    <span>Prefer a milestone deposit, self-serve code pass, or crypto checkout?</span>
+    <div class="offer-utility-links">
+      <a href="https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V" target="_blank" rel="noopener">$99 Kickoff Deposit &rarr;</a>
+      <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener">$19 Self-Serve HTML &rarr;</a>
+      <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK" target="_blank" rel="noopener" onclick="window.payWithSolana(event)">Solana / USDC Pay &rarr;</a>
+      <button type="button" onclick="window.openVipModal()" style="background:#ffffff;color:#171614;border:none;font-weight:700;">Already Paid? Download &amp; Onboarding</button>
+    </div>
+  </div>
+</div>
   <div style="max-width:1440px;margin:0 auto;padding:12px clamp(16px,4vw,48px) 56px;">
-  <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:14px;padding:20px;">
-    <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#f59e0b;margin-bottom:6px;">HAVE A QUESTION OR WANT US TO CUSTOMIZE THIS FIRST?</div>
-    <p style="font-size:14px;color:#d6d3d1;margin:0 0 12px 0;">Send your business name, phone, and what you want changed — Neal Frazier will reply personally, or click <strong>Paid / Onboarding</strong> if you already checked out:</p>
+  <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:22px;">
+    <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;color:#f59e0b;margin-bottom:6px;">DIRECT ENGINEERING DESK · ASK A QUESTION OR REQUEST CUSTOM SCOPE</div>
+    <p style="font-size:13.5px;color:#d6d3d1;margin:0 0 14px 0;">Send your business name, phone, and what you want customized — Neal Frazier replies directly, or click <strong>Paid / Onboarding</strong> if you already checked out:</p>
     <form name="owner-question" method="POST" data-netlify="true" onsubmit="return window.submitNetlifyForm ? window.submitNetlifyForm(event, 'ownerQuestionStatus') : true" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;">
       <input type="hidden" name="form-name" value="owner-question">
       <input type="hidden" name="page_url" value="">
-      <input type="text" name="business_name" placeholder="Your Business Name *" required style="padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.35);color:#fff;font-size:14px;">
-      <input type="tel" name="owner_phone" placeholder="Your Phone Number *" required style="padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.35);color:#fff;font-size:14px;">
-      <input type="email" name="owner_email" placeholder="Your Email Address *" required style="padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.35);color:#fff;font-size:14px;">
-      <input type="text" name="question" placeholder="Domain name or question..." required style="padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.35);color:#fff;font-size:14px;">
-      <button type="submit" class="btn-gold" style="justify-content:center;padding:10px 18px;font-size:14px;border-radius:8px;">Send Direct Note to Neal</button>
+      <input type="text" name="business_name" placeholder="Your Business Name *" required style="padding:10px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.18);background:rgba(0,0,0,0.4);color:#fff;font-size:14px;font-family:inherit;">
+      <input type="tel" name="owner_phone" placeholder="Your Phone Number *" required style="padding:10px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.18);background:rgba(0,0,0,0.4);color:#fff;font-size:14px;font-family:inherit;">
+      <input type="email" name="owner_email" placeholder="Your Email Address *" required style="padding:10px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.18);background:rgba(0,0,0,0.4);color:#fff;font-size:14px;font-family:inherit;">
+      <input type="text" name="question" placeholder="Domain name or question..." required style="padding:10px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.18);background:rgba(0,0,0,0.4);color:#fff;font-size:14px;font-family:inherit;">
+      <button type="submit" class="btn-arch-copper" style="justify-content:center;">Send Note to Neal</button>
     </form>
     <div id="ownerQuestionStatus" style="display:none;margin-top:10px;color:#86efac;font-size:13px;font-weight:700;">✓ Message sent! Neal Frazier will text/email you back shortly.</div>
   </div>
@@ -269,7 +330,7 @@
         <input type="tel" id="vipQuickPhone" placeholder="Your Phone Number" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;">
       </div>
       <button type="button" onclick="window.downloadCurrentPageBundle()" class="btn-gold" style="width:100%;justify-content:center;padding:10px;font-size:13px;">
-        💾 Download Ready-to-Host Website HTML Bundle (.html)
+        &darr; Download Ready-to-Host Website HTML Bundle (.html)
       </button>
     </div>
 
@@ -290,16 +351,16 @@
         </div>
         <select id="vipPackageSelect" name="package_purchased" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;background:#fafaf9;">
           <option value="$7 Flash Starter AI + HTML Pack ($7)">★ $7 Flash Starter AI + HTML Pack ($7)</option>
-          <option value="Done-For-You 1-Page Launch ($149)">⚡ Done-For-You 1-Page Launch ($149)</option>
-          <option value="24/7 AI Receptionist & Missed-Call Text-Back ($299)">🤖 24/7 AI Receptionist &amp; Missed-Call SMS ($299)</option>
-          <option value="Turnkey 5-Page Custom Website ($499)">🚀 Turnkey 5-Page Custom Website ($499)</option>
-          <option value="Custom Build Kickoff Deposit ($99)">🤝 Custom Build Kickoff Deposit ($99)</option>
-          <option value="Custom AI Swarm / SaaS Sprint ($997)">🔥 Custom AI Swarm / SaaS Sprint ($997)</option>
-          <option value="Self-Serve HTML Pro Pass ($19)">💳 Self-Serve HTML Pro Pass ($19)</option>
+          <option value="Done-For-You 1-Page Launch ($149)">★ Done-For-You 1-Page Launch ($149)</option>
+          <option value="24/7 AI Receptionist & Missed-Call Text-Back ($299)">• 24/7 AI Receptionist &amp; Missed-Call SMS ($299)</option>
+          <option value="Turnkey 5-Page Custom Website ($499)">• Turnkey 5-Page Custom Website ($499)</option>
+          <option value="Custom Build Kickoff Deposit ($99)">• Custom Build Kickoff Deposit ($99)</option>
+          <option value="Custom AI Swarm / SaaS Sprint ($997)">• Custom AI Swarm / SaaS Sprint ($997)</option>
+          <option value="Self-Serve HTML Pro Pass ($19)">• Self-Serve HTML Pro Pass ($19)</option>
         </select>
         <textarea id="vipCustomNotes" name="custom_notes" rows="2" placeholder="Service areas, hours, logo link, or special requests..." style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;"></textarea>
         <button type="submit" class="btn" style="background:#1c1917;color:#ffffff;justify-content:center;padding:10px;font-size:13px;border-radius:6px;font-weight:700;">
-          🚀 Submit VIP Launch Specs (48-Hour SLA)
+          Submit VIP Launch Specs (48-Hour SLA) &rarr;
         </button>
       </form>
       <div id="vipOnboardingConfirm" style="display:none;margin-top:10px;padding:12px;background:#dcfce7;border:1px solid #86efac;border-radius:8px;color:#14532d;font-size:12px;">
@@ -332,28 +393,28 @@
     </div>
 
     <div style="display:flex;flex-direction:column;gap:8px;">
-      <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.85rem;background:#16a34a;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:800;">
+      <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener noreferrer" class="btn-arch-primary" style="width:100%;">
         ★ $7 Flash Starter: Instant AI Search + HTML Pack ($7)
       </a>
-      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:10px;font-size:0.85rem;">
-        ⚡ Done-For-You 1-Page Launch + Domain ($149)
+      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-arch-copper" style="width:100%;">
+        ★ Done-For-You 1-Page Launch + Domain ($149)
       </a>
       <a href="https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.82rem;background:#1c1917;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
-        🤖 24/7 AI Receptionist &amp; Missed-Call SMS ($299)
+        24/7 AI Receptionist &amp; Missed-Call SMS ($299) &rarr;
       </a>
       <a href="https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.82rem;background:#292524;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
-        🚀 Turnkey 5-Page Custom Website ($499)
+        Turnkey 5-Page Custom Website ($499) &rarr;
       </a>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
         <a href="https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:8px;font-size:0.78rem;background:#44403c;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
-          🤝 $99 Kickoff Deposit
+          $99 Kickoff Deposit
         </a>
         <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:8px;font-size:0.78rem;background:#9a3412;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
-          💳 $19 Self-Serve HTML
+          $19 Self-Serve HTML
         </a>
       </div>
       <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="padding:10px;text-decoration:none;text-align:center;display:block;font-size:0.85rem;" onclick="window.payWithSolana(event)">
-        🟣 Pay with Solana (DePay Widget)
+        Pay with Solana / USDC (DePay) &rarr;
       </a>
     </div>
 
