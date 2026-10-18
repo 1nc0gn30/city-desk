@@ -1,0 +1,3 @@
+/cities/:city/:trade/* /cities/virginia-beach-va/:trade/index.html 200
+/cities/:city/:trade /cities/virginia-beach-va/:trade/index.html 200
+/cities/:city/* /cities/virginia-beach-va/index.html 200

@@ -1192,6 +1192,12 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
     '  Content-Type: text/plain; charset=utf-8',
     ''
   ].join('\n'));
+  write('_redirects', [
+    '/cities/:city/:trade/* /cities/virginia-beach-va/:trade/index.html 200',
+    '/cities/:city/:trade /cities/virginia-beach-va/:trade/index.html 200',
+    '/cities/:city/* /cities/virginia-beach-va/index.html 200',
+    ''
+  ].join('\n'));
 
   check(offers);
   console.log(`Built ${offers.length} finished pages in ${SITE}`);

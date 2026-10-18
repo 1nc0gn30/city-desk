@@ -17,5 +17,15 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
-# No catch-all rewrite: this is a static multi-page site, so unknown URLs
-# should get site/404.html with a real 404 status (better for SEO and users).
+# Dynamic city x trade routing: static 50 cities serve directly; any additional US city slug
+# rewrites cleanly with HTTP 200 to the trade template and is personalized by city_engine.js.
+[[redirects]]
+  from = "/cities/:city/:trade/*"
+  to = "/cities/virginia-beach-va/:trade/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/cities/:city/*"
+  to = "/cities/virginia-beach-va/index.html"
+  status = 200
+

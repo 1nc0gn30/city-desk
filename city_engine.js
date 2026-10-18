@@ -20,6 +20,18 @@
       const biz = (params.get('biz') || localStorage.getItem('cd_last_biz') || '').trim();
       const phone = (params.get('phone') || localStorage.getItem('cd_last_phone') || '').trim();
       const email = (params.get('email') || localStorage.getItem('cd_last_email') || '').trim();
+      let customCity = (params.get('city') || '').trim();
+      const siteUrl = (params.get('site') || '').trim();
+      if (!customCity) {
+        const pathMatch = window.location.pathname.match(/\/cities\/([a-z0-9-]+)-([a-z]{2})\//i);
+        if (pathMatch) {
+          const derivedCity = pathMatch[1].split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+          const derivedState = pathMatch[2].toUpperCase();
+          if (derivedCity.toLowerCase() !== 'virginia beach') {
+            customCity = `${derivedCity}, ${derivedState}`;
+          }
+        }
+      }
 
       if (params.get('biz')) localStorage.setItem('cd_last_biz', params.get('biz').trim());
       if (params.get('phone')) localStorage.setItem('cd_last_phone', params.get('phone').trim());
@@ -39,7 +51,7 @@
       if (phone && vipQuickPhone && !vipQuickPhone.value) vipQuickPhone.value = phone;
       if (params.get('session_id') && vipSession) vipSession.value = params.get('session_id');
 
-      if (!params.get('biz') && !params.get('phone') && !params.get('email')) return;
+      if (!params.get('biz') && !params.get('phone') && !params.get('email') && !customCity) return;
 
       // Update homepage synthesizer inputs if present
       const bizIn = document.getElementById('synthBizInput');
@@ -70,13 +82,31 @@
         }
       });
 
+      if (customCity) {
+        const cityOnly = customCity.split(',')[0].trim();
+        const h1Em = document.querySelector('h1 em');
+        if (h1Em && cityOnly) h1Em.textContent = cityOnly;
+        const markSpan = document.querySelector('.bar .mark span');
+        if (markSpan) markSpan.textContent = customCity;
+        // Replace fallback template city references across visible copy
+        document.querySelectorAll('h1, h2, p, span, option, summary, dd').forEach((el) => {
+          if (el.children.length === 0 && el.textContent) {
+            if (el.textContent.includes('Virginia Beach, VA')) {
+              el.textContent = el.textContent.replace(/Virginia Beach,\s*VA/g, customCity);
+            } else if (el.textContent.includes('Virginia Beach')) {
+              el.textContent = el.textContent.replace(/Virginia Beach/g, cityOnly);
+            }
+          }
+        });
+      }
+
       if (biz) {
-        document.title = `${biz} — ${document.title}`;
+        document.title = `${biz}${customCity ? ' (' + customCity + ')' : ''} — ${document.title.replace(/Virginia Beach,\s*VA/g, customCity || 'Local Preview')}`;
         const mark = document.querySelector('.bar .mark');
         if (mark) {
           const citySpan = mark.querySelector('span');
           const img = mark.querySelector('img');
-          const cityText = citySpan ? citySpan.textContent : '';
+          const cityText = customCity || (citySpan ? citySpan.textContent : '');
           mark.innerHTML = '';
           if (img) mark.appendChild(img);
           mark.appendChild(document.createTextNode(biz + ' '));
@@ -88,15 +118,36 @@
         }
         const stripP = document.querySelector('.strip-row p');
         if (stripP) {
-          stripP.textContent = `Prepared for ${biz} · Live sample site ready for your domain`;
+          stripP.textContent = `Prepared for ${biz}${customCity ? ' (' + customCity + ')' : ''} · Live sample site ready for your domain`;
         }
         const kicker = document.querySelector('.trade-kicker, .front-copy .kicker');
         if (kicker && !kicker.textContent.includes(biz)) {
-          kicker.textContent = `${biz} · ${kicker.textContent.trim()}`;
+          kicker.textContent = `${biz} · ${customCity || kicker.textContent.trim()}`;
         }
         const offerH2 = document.querySelector('#offer h2');
         if (offerH2) {
           offerH2.textContent = `Prepared for ${biz}. Put it on your domain today.`;
+        }
+
+        // Inject above-the-fold personalized diagnostic + $7 Instant Unlock banner on trade pages
+        const topSect = document.getElementById('top');
+        if (topSect && !document.getElementById('personalizedOwnerBanner')) {
+          const banner = document.createElement('div');
+          banner.id = 'personalizedOwnerBanner';
+          banner.style.cssText = 'max-width:1440px;margin:14px auto 0;padding:0 clamp(16px,4vw,48px);';
+          const siteLabel = siteUrl ? ` (${siteUrl.replace(/^https?:\/\//, '')})` : '';
+          banner.innerHTML = `<div style="background:linear-gradient(135deg,#1c1917 0%,#292524 100%);color:#fafaf9;border:2px solid #16a34a;border-radius:12px;padding:14px 18px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 8px 24px rgba(0,0,0,0.12);">
+            <div style="flex:1 1 320px;">
+              <div style="font-size:11px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#4ade80;margin-bottom:3px;">★ LIVE CUSTOM PREVIEW &amp; AI SEARCH PACK FOR ${biz.replace(/[&<>"']/g, '')}${siteLabel.replace(/[&<>"']/g, '')}</div>
+              <div style="font-size:13.5px;color:#e7e5e4;line-height:1.45;">Your name, phone <strong>${(phone || 'line').replace(/[&<>"']/g, '')}</strong>, and <strong>${(customCity || 'local market').replace(/[&<>"']/g, '')}</strong> Schema.org JSON-LD are pre-loaded below. Grab the complete standalone HTML + AI Search Booster Pack for <strong>$7</strong> or have us launch it on your domain in 24h.</div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+              <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener" style="background:#16a34a;color:#ffffff;font-weight:800;font-size:13px;padding:10px 16px;border-radius:8px;text-decoration:none;white-space:nowrap;">⚡ Unlock $7 AI + HTML Pack</a>
+              <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener" style="background:#ea580c;color:#ffffff;font-weight:700;font-size:13px;padding:10px 14px;border-radius:8px;text-decoration:none;white-space:nowrap;">🚀 $149 Done-For-You Launch</a>
+              <button type="button" onclick="window.openVipModal()" style="background:rgba(255,255,255,0.12);color:#ffffff;border:1px solid rgba(255,255,255,0.25);font-weight:700;font-size:12px;padding:9px 12px;border-radius:8px;cursor:pointer;white-space:nowrap;">🎁 Already Paid?</button>
+            </div>
+          </div>`;
+          topSect.parentNode.insertBefore(banner, topSect);
         }
       }
     } catch (e) {}
