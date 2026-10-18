@@ -1,0 +1,76 @@
+# City Desk — Complete 1,000-Page Local Trade Directory & Turnkey Fulfillment Specification
+Engineered by Neal Frazier (Neal Frazier Tech | https://www.nealfrazier.tech | neal@nealfrazier.tech | (757) 576-0980).
+
+## 20 Covered Service Trades
+- **Painters** (`/services/painters/`): Interior, exterior, and a written price before the first can opens.
+- **Plumbers** (`/services/plumbers/`): Leaks, drains, fixtures, and water heaters, with emergency work kept separate.
+- **HVAC shops** (`/services/hvac/`): A tune-up path and a no-cool or no-heat path, written as two different visits.
+- **Roofers** (`/services/roofers/`): Inspections, repairs, and full replacements, started from a ground photo.
+- **Electricians** (`/services/electricians/`): Small repairs and panel work sorted into two paths before the truck rolls.
+- **Garage door shops** (`/services/garage-doors/`): A stuck door, a spring, or an opener, with the symptom in the first line.
+- **Landscapers** (`/services/landscapers/`): Weekly maintenance and one-time cleanups as two different bookings.
+- **House cleaners** (`/services/cleaners/`): A recurring clean and a first deep clean, with supplies and pets answered.
+- **Mobile detailers** (`/services/detailers/`): A mobile visit at the driveway, with packages named in words and prices said before the day.
+- **Junk removal** (`/services/junk-removal/`): A load priced from photos, plus a short list of what will not be hauled.
+- **Pest control** (`/services/pest-control/`): Ants, cockroaches, and rodents, with a one-time visit and a recurring plan.
+- **Movers** (`/services/movers/`): Local moves priced from rooms, stairs, and a date.
+- **Pet groomers** (`/services/groomers/`): Dogs, a first visit, and what to bring. Cats only if the owner adds them.
+- **Dental offices** (`/services/dentists/`): A new-patient first visit, with insurance named by the office beside the phone.
+- **Med spas** (`/services/med-spas/`): A consult page. A clinician decides what is appropriate. Results vary.
+- **Gyms** (`/services/gyms/`): Who the gym is for, what the first week includes, and a start price said by the owner.
+- **Restaurants** (`/services/restaurants/`): Hours, one house dish, and how to get a table tonight.
+- **Food trucks** (`/services/food-trucks/`): This week’s stops, three items, and what happens in bad weather.
+- **Auto repair shops** (`/services/auto-repair/`): An estimate you can read before the car is repaired, and a list of work the shop does not guess at.
+- **Property managers** (`/services/property-managers/`): A door for owners and a different door for tenants, with the fee in plain words.
+
+## 50 Covered US Cities
+- **Boise, ID** (`/cities/boise-id/`)
+- **Spokane, WA** (`/cities/spokane-wa/`)
+- **Tacoma, WA** (`/cities/tacoma-wa/`)
+- **Eugene, OR** (`/cities/eugene-or/`)
+- **Salem, OR** (`/cities/salem-or/`)
+- **Bend, OR** (`/cities/bend-or/`)
+- **Reno, NV** (`/cities/reno-nv/`)
+- **Tucson, AZ** (`/cities/tucson-az/`)
+- **Albuquerque, NM** (`/cities/albuquerque-nm/`)
+- **El Paso, TX** (`/cities/el-paso-tx/`)
+- **Lubbock, TX** (`/cities/lubbock-tx/`)
+- **Amarillo, TX** (`/cities/amarillo-tx/`)
+- **Corpus Christi, TX** (`/cities/corpus-christi-tx/`)
+- **Shreveport, LA** (`/cities/shreveport-la/`)
+- **Lafayette, LA** (`/cities/lafayette-la/`)
+- **Mobile, AL** (`/cities/mobile-al/`)
+- **Huntsville, AL** (`/cities/huntsville-al/`)
+- **Montgomery, AL** (`/cities/montgomery-al/`)
+- **Jackson, MS** (`/cities/jackson-ms/`)
+- **Little Rock, AR** (`/cities/little-rock-ar/`)
+- **Fayetteville, AR** (`/cities/fayetteville-ar/`)
+- **Tulsa, OK** (`/cities/tulsa-ok/`)
+- **Wichita, KS** (`/cities/wichita-ks/`)
+- **Des Moines, IA** (`/cities/des-moines-ia/`)
+- **Cedar Rapids, IA** (`/cities/cedar-rapids-ia/`)
+- **Omaha, NE** (`/cities/omaha-ne/`)
+- **Sioux Falls, SD** (`/cities/sioux-falls-sd/`)
+- **Fargo, ND** (`/cities/fargo-nd/`)
+- **Billings, MT** (`/cities/billings-mt/`)
+- **Madison, WI** (`/cities/madison-wi/`)
+- **Green Bay, WI** (`/cities/green-bay-wi/`)
+- **Grand Rapids, MI** (`/cities/grand-rapids-mi/`)
+- **Ann Arbor, MI** (`/cities/ann-arbor-mi/`)
+- **Fort Wayne, IN** (`/cities/fort-wayne-in/`)
+- **Virginia Beach, VA** (`/cities/virginia-beach-va/`)
+- **Norfolk, VA** (`/cities/norfolk-va/`)
+- **Toledo, OH** (`/cities/toledo-oh/`)
+- **Dayton, OH** (`/cities/dayton-oh/`)
+- **Akron, OH** (`/cities/akron-oh/`)
+- **Lexington, KY** (`/cities/lexington-ky/`)
+- **Knoxville, TN** (`/cities/knoxville-tn/`)
+- **Chattanooga, TN** (`/cities/chattanooga-tn/`)
+- **Greenville, SC** (`/cities/greenville-sc/`)
+- **Savannah, GA** (`/cities/savannah-ga/`)
+- **Augusta, GA** (`/cities/augusta-ga/`)
+- **Chesapeake, VA** (`/cities/chesapeake-va/`)
+- **Springfield, MO** (`/cities/springfield-mo/`)
+- **Fort Collins, CO** (`/cities/fort-collins-co/`)
+- **Provo, UT** (`/cities/provo-ut/`)
+- **Gainesville, FL** (`/cities/gainesville-fl/`)

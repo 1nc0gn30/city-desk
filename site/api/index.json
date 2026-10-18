@@ -1,0 +1,15 @@
+{
+  "status": "ok",
+  "name": "City Desk Local Trade Web API",
+  "creator": "Neal Frazier (Neal Frazier Tech)",
+  "url": "https://city-desk.netlify.app",
+  "totalPages": 1000,
+  "citiesCount": 50,
+  "servicesCount": 20,
+  "endpoints": {
+    "offers": "https://city-desk.netlify.app/offers.json",
+    "services": "https://city-desk.netlify.app/api/services.json",
+    "faq": "https://city-desk.netlify.app/api/faq.json",
+    "agentCard": "https://city-desk.netlify.app/.well-known/agent.json"
+  }
+}

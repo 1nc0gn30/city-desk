@@ -1,0 +1,157 @@
+{
+  "provider": "Neal Frazier Tech (City Desk)",
+  "checkoutTiers": [
+    {
+      "id": "dfy-1page",
+      "name": "Done-For-You 1-Page Custom Launch (48h Delivery)",
+      "priceUSD": 149,
+      "checkoutUrl": "https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O"
+    },
+    {
+      "id": "ai-receptionist",
+      "name": "24/7 AI Receptionist & Missed-Call SMS Text-Back",
+      "priceUSD": 299,
+      "checkoutUrl": "https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S"
+    },
+    {
+      "id": "turnkey-5page",
+      "name": "Turnkey 5-Page Custom Website & Local AEO",
+      "priceUSD": 499,
+      "checkoutUrl": "https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T"
+    },
+    {
+      "id": "kickoff-deposit",
+      "name": "Custom Build Kickoff Deposit",
+      "priceUSD": 99,
+      "checkoutUrl": "https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V"
+    },
+    {
+      "id": "self-serve-html",
+      "name": "Self-Serve Standalone HTML Bundle",
+      "priceUSD": 19,
+      "checkoutUrl": "https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N"
+    }
+  ],
+  "trades": [
+    {
+      "slug": "painters",
+      "name": "Painters",
+      "line": "Interior, exterior, and a written price before the first can opens.",
+      "agencyValueUSD": 800
+    },
+    {
+      "slug": "plumbers",
+      "name": "Plumbers",
+      "line": "Leaks, drains, fixtures, and water heaters, with emergency work kept separate.",
+      "agencyValueUSD": 900
+    },
+    {
+      "slug": "hvac",
+      "name": "HVAC shops",
+      "line": "A tune-up path and a no-cool or no-heat path, written as two different visits.",
+      "agencyValueUSD": 1100
+    },
+    {
+      "slug": "roofers",
+      "name": "Roofers",
+      "line": "Inspections, repairs, and full replacements, started from a ground photo.",
+      "agencyValueUSD": 1000
+    },
+    {
+      "slug": "electricians",
+      "name": "Electricians",
+      "line": "Small repairs and panel work sorted into two paths before the truck rolls.",
+      "agencyValueUSD": 1000
+    },
+    {
+      "slug": "garage-doors",
+      "name": "Garage door shops",
+      "line": "A stuck door, a spring, or an opener, with the symptom in the first line.",
+      "agencyValueUSD": 700
+    },
+    {
+      "slug": "landscapers",
+      "name": "Landscapers",
+      "line": "Weekly maintenance and one-time cleanups as two different bookings.",
+      "agencyValueUSD": 800
+    },
+    {
+      "slug": "cleaners",
+      "name": "House cleaners",
+      "line": "A recurring clean and a first deep clean, with supplies and pets answered.",
+      "agencyValueUSD": 700
+    },
+    {
+      "slug": "detailers",
+      "name": "Mobile detailers",
+      "line": "A mobile visit at the driveway, with packages named in words and prices said before the day.",
+      "agencyValueUSD": 700
+    },
+    {
+      "slug": "junk-removal",
+      "name": "Junk removal",
+      "line": "A load priced from photos, plus a short list of what will not be hauled.",
+      "agencyValueUSD": 700
+    },
+    {
+      "slug": "pest-control",
+      "name": "Pest control",
+      "line": "Ants, cockroaches, and rodents, with a one-time visit and a recurring plan.",
+      "agencyValueUSD": 800
+    },
+    {
+      "slug": "movers",
+      "name": "Movers",
+      "line": "Local moves priced from rooms, stairs, and a date.",
+      "agencyValueUSD": 900
+    },
+    {
+      "slug": "groomers",
+      "name": "Pet groomers",
+      "line": "Dogs, a first visit, and what to bring. Cats only if the owner adds them.",
+      "agencyValueUSD": 700
+    },
+    {
+      "slug": "dentists",
+      "name": "Dental offices",
+      "line": "A new-patient first visit, with insurance named by the office beside the phone.",
+      "agencyValueUSD": 1500
+    },
+    {
+      "slug": "med-spas",
+      "name": "Med spas",
+      "line": "A consult page. A clinician decides what is appropriate. Results vary.",
+      "agencyValueUSD": 1400
+    },
+    {
+      "slug": "gyms",
+      "name": "Gyms",
+      "line": "Who the gym is for, what the first week includes, and a start price said by the owner.",
+      "agencyValueUSD": 900
+    },
+    {
+      "slug": "restaurants",
+      "name": "Restaurants",
+      "line": "Hours, one house dish, and how to get a table tonight.",
+      "agencyValueUSD": 1200
+    },
+    {
+      "slug": "food-trucks",
+      "name": "Food trucks",
+      "line": "This week’s stops, three items, and what happens in bad weather.",
+      "agencyValueUSD": 800
+    },
+    {
+      "slug": "auto-repair",
+      "name": "Auto repair shops",
+      "line": "An estimate you can read before the car is repaired, and a list of work the shop does not guess at.",
+      "agencyValueUSD": 1000
+    },
+    {
+      "slug": "property-managers",
+      "name": "Property managers",
+      "line": "A door for owners and a different door for tenants, with the fee in plain words.",
+      "agencyValueUSD": 1300
+    }
+  ]
+}

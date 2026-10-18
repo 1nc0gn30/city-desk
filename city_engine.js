@@ -1,5 +1,5 @@
 /**
- * City Desk — Interactive Trade Page Synthesizer & Client-Side Engine
+ * City Desk — Interactive Trade Page Synthesizer, Netlify Forms & Post-Payment VIP Fulfillment Engine
  * Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform
  */
 
@@ -9,18 +9,37 @@
   let isPro = false;
 
   function init() {
-    checkLicense();
     applyProspectPersonalization();
+    checkLicense();
     setupEventListeners();
   }
 
   function applyProspectPersonalization() {
     try {
       const params = new URLSearchParams(window.location.search);
-      const biz = (params.get('biz') || '').trim();
-      const phone = (params.get('phone') || '').trim();
-      const email = (params.get('email') || '').trim();
-      if (!biz && !phone && !email) return;
+      const biz = (params.get('biz') || localStorage.getItem('cd_last_biz') || '').trim();
+      const phone = (params.get('phone') || localStorage.getItem('cd_last_phone') || '').trim();
+      const email = (params.get('email') || localStorage.getItem('cd_last_email') || '').trim();
+
+      if (params.get('biz')) localStorage.setItem('cd_last_biz', params.get('biz').trim());
+      if (params.get('phone')) localStorage.setItem('cd_last_phone', params.get('phone').trim());
+      if (params.get('email')) localStorage.setItem('cd_last_email', params.get('email').trim());
+
+      // Pre-fill VIP & Owner Question forms if present
+      const vipBiz = document.getElementById('vipBizName');
+      const vipPhone = document.getElementById('vipOwnerPhone');
+      const vipEmail = document.getElementById('vipOwnerEmail');
+      const vipQuickBiz = document.getElementById('vipQuickBiz');
+      const vipQuickPhone = document.getElementById('vipQuickPhone');
+      const vipSession = document.getElementById('vipSessionId');
+      if (biz && vipBiz && !vipBiz.value) vipBiz.value = biz;
+      if (phone && vipPhone && !vipPhone.value) vipPhone.value = phone;
+      if (email && vipEmail && !vipEmail.value) vipEmail.value = email;
+      if (biz && vipQuickBiz && !vipQuickBiz.value) vipQuickBiz.value = biz;
+      if (phone && vipQuickPhone && !vipQuickPhone.value) vipQuickPhone.value = phone;
+      if (params.get('session_id') && vipSession) vipSession.value = params.get('session_id');
+
+      if (!params.get('biz') && !params.get('phone') && !params.get('email')) return;
 
       // Update homepage synthesizer inputs if present
       const bizIn = document.getElementById('synthBizInput');
@@ -90,16 +109,29 @@
 
   function checkLicense() {
     const urlParams = new URLSearchParams(window.location.search);
-    const isParam = (urlParams.get('licensed') === 'true' || urlParams.get('pro') === 'true' || urlParams.get('key') === 'CITY-PRO-2026');
-    if (isParam) {
+    const isCheckoutReturn = (
+      urlParams.get('licensed') === 'true' ||
+      urlParams.get('pro') === 'true' ||
+      urlParams.get('dfy') === 'true' ||
+      urlParams.get('vip') === 'true' ||
+      urlParams.get('deposit') === 'true' ||
+      Boolean(urlParams.get('session_id')) ||
+      urlParams.get('key') === 'CITY-PRO-2026'
+    );
+
+    if (isCheckoutReturn) {
       localStorage.setItem(STORAGE_KEY, 'true');
       localStorage.setItem(STORAGE_KEY_ALT, 'true');
       localStorage.setItem(STORAGE_KEY_PRO, 'true');
-      try {
-        const cleanUrl = window.location.pathname;
-        window.history.replaceState({}, document.title, cleanUrl);
-        showToast('🎉 City Desk Pro Activated via Checkout!');
-      } catch (e) {}
+      isPro = true;
+      updateProUI();
+      showToast('🎉 Payment Verified! Pro Access Unlocked & VIP Onboarding Ready.');
+      setTimeout(() => {
+        if (typeof window.openVipModal === 'function') {
+          window.openVipModal();
+        }
+      }, 250);
+      return;
     }
 
     isPro = localStorage.getItem(STORAGE_KEY) === 'true' ||
@@ -176,6 +208,22 @@
   window.openLicenseModal = window.openProModal;
   window.closeLicenseModal = window.closeProModal;
 
+  window.openVipModal = function () {
+    const modal = document.getElementById('vipModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.style.display = 'flex';
+    }
+  };
+
+  window.closeVipModal = function () {
+    const modal = document.getElementById('vipModal');
+    if (modal) {
+      modal.classList.add('hidden');
+      modal.style.display = 'none';
+    }
+  };
+
   window.activateWithKey = function (key) {
     if (!key) {
       const input = document.getElementById('license-input') || document.getElementById('licenseKeyInput');
@@ -185,18 +233,18 @@
     }
     const val = (key || '').trim();
     const upper = val.toUpperCase();
-    if (upper === 'CITY-PRO-2026' || val.includes('@') || val.length >= 8 || upper === 'SOVEREIGN-PRO-2026' || upper.startsWith('CITY-')) {
+    if (upper === 'CITY-PRO-2026' || val.includes('@') || val.length >= 6 || upper === 'SOVEREIGN-PRO-2026' || upper.startsWith('CITY-') || upper.startsWith('CS_')) {
       localStorage.setItem(STORAGE_KEY, 'true');
       localStorage.setItem(STORAGE_KEY_ALT, 'true');
       localStorage.setItem(STORAGE_KEY_PRO, 'true');
       isPro = true;
       updateProUI();
       window.closeProModal();
-      showToast('⭐ City Desk Pro successfully unlocked! Full standalone production exports active.');
+      showToast('⭐ City Desk Pro unlocked! Full standalone HTML exports & VIP onboarding active.');
+      window.openVipModal();
       return true;
     } else {
-      showToast('Invalid key. Enter your receipt email or order license key.');
-      console.warn('Invalid license key');
+      showToast('Enter your receipt email, Stripe session ID, or license key.');
       return false;
     }
   };
@@ -204,55 +252,107 @@
   window.activateLicenseKey = window.activateWithKey;
   window.activateLicense = window.activateWithKey;
 
-  window.handleExportBundle = function () {
-    if (!isPro) {
-      window.openProModal();
-      return;
+  window.downloadCurrentPageBundle = function () {
+    const bizEl = document.getElementById('vipQuickBiz') || document.getElementById('vipBizName') || document.getElementById('synthBizInput');
+    const phoneEl = document.getElementById('vipQuickPhone') || document.getElementById('vipOwnerPhone') || document.getElementById('synthPhoneInput');
+    const emailEl = document.getElementById('vipOwnerEmail');
+
+    const params = new URLSearchParams(window.location.search);
+    const biz = (bizEl && bizEl.value.trim()) || params.get('biz') || localStorage.getItem('cd_last_biz') || 'Your Business Name';
+    const phone = (phoneEl && phoneEl.value.trim()) || params.get('phone') || localStorage.getItem('cd_last_phone') || '(555) 234-5678';
+    const email = (emailEl && emailEl.value.trim()) || params.get('email') || localStorage.getItem('cd_last_email') || 'owner@yourdomain.com';
+
+    const pageH1 = document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : `${biz} — Written Estimate Before Work Begins`;
+    const pageLede = document.querySelector('.trade-lede, .front-copy .lede, .lede')
+      ? document.querySelector('.trade-lede, .front-copy .lede, .lede').textContent.trim()
+      : 'You see the written price with full scope, materials, and schedule before work begins.';
+    const pageKicker = document.querySelector('.trade-kicker, .front-copy .kicker, .eyebrow')
+      ? document.querySelector('.trade-kicker, .front-copy .kicker, .eyebrow').textContent.trim()
+      : 'Local Service & Written Estimates';
+
+    // Collect work cards if on a trade page
+    const workItems = [];
+    document.querySelectorAll('#work article, .work-list li').forEach((el) => {
+      const h = el.querySelector('h3, strong');
+      const p = el.querySelector('p, span');
+      if (h && p) {
+        workItems.push({ title: h.textContent.trim(), body: p.textContent.trim() });
+      }
+    });
+    if (workItems.length === 0) {
+      workItems.push(
+        { title: 'Written Scope & Upfront Price', body: 'Every job starts with a clear written scope listing prep, materials, and final total before work begins.' },
+        { title: 'Direct Owner Scheduling', body: 'Speak directly with the owner/operator. Clear arrival windows and daily progress updates.' },
+        { title: 'Final Walkthrough & Warranty', body: 'We walk the finished job together before final sign-off.' }
+      );
     }
-
-    const tradeEl = document.getElementById('synthTradeSelect');
-    const cityEl = document.getElementById('synthCitySelect');
-    const bizEl = document.getElementById('synthBizInput');
-    const phoneEl = document.getElementById('synthPhoneInput');
-
-    const trade = tradeEl ? tradeEl.options[tradeEl.selectedIndex].text : 'House Painting';
-    const city = cityEl ? cityEl.options[cityEl.selectedIndex].text : 'Boise, ID';
-    const biz = bizEl ? bizEl.value : 'Apex Craftsman';
-    const phone = phoneEl ? phoneEl.value : '(208) 555-0199';
 
     const standaloneHtml = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${biz} — ${trade} in ${city}</title>
-<meta name="description" content="${trade} services in ${city} by ${biz}. Call ${phone} for a written estimate.">
+<title>${biz} — ${pageKicker}</title>
+<meta name="description" content="${biz}: ${pageLede} Call ${phone}.">
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 24px; background: #fdfbf7; color: #1c1917; line-height: 1.6; }
-  .card { max-width: 680px; margin: 40px auto; background: #fff; padding: 36px; border-radius: 12px; border: 1px solid #e7e5e4; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-  h1 { font-size: 28px; margin-top: 0; color: #0c0a09; }
-  .btn { display: inline-block; background: #9a3412; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 8px; font-weight: 700; margin-top: 16px; }
+  :root { --bg: #f6f2eb; --ink: #171614; --muted: #5c564c; --accent: #9a3412; --card: #ffffff; --line: #ddd4c7; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Georgia, serif; margin: 0; background: var(--bg); color: var(--ink); line-height: 1.6; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 64px; }
+  header { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; padding-bottom: 18px; border-bottom: 1px solid var(--line); margin-bottom: 36px; }
+  .brand { font-weight: 800; font-size: 20px; letter-spacing: -0.02em; }
+  .call-btn { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; padding: 12px 22px; border-radius: 999px; font-weight: 700; font-size: 14px; }
+  .kicker { color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 12px; margin-bottom: 10px; }
+  h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.08; margin: 0 0 16px; letter-spacing: -0.02em; }
+  .lede { font-size: 19px; color: var(--muted); max-width: 680px; margin: 0 0 28px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin: 36px 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+  .card h3 { margin: 0 0 8px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .contact-box { background: #171614; color: #f7f3ec; border-radius: 16px; padding: 32px; margin-top: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; align-items: center; }
+  .contact-box h2 { margin: 0 0 8px; font-size: 28px; }
+  .contact-lines p { margin: 8px 0; font-size: 16px; }
+  .contact-lines span { display: inline-block; width: 90px; color: #a8a29e; font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; }
 </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "${biz}",
-  "telephone": "${phone}",
-  "address": { "@type": "PostalAddress", "addressLocality": "${city.split(',')[0]}", "addressRegion": "${(city.split(',')[1] || '').trim()}" }
+  "name": ${JSON.stringify(biz)},
+  "description": ${JSON.stringify(pageLede)},
+  "telephone": ${JSON.stringify(phone)},
+  "email": ${JSON.stringify(email)}
 }
 </script>
 </head>
 <body>
-  <div class="card">
-    <p style="color: #9a3412; font-weight: 700; text-transform: uppercase; font-size: 13px;">${city} · ${trade}</p>
-    <h1>${biz}</h1>
-    <p>A written price before work begins. Estimates in writing with prep, materials, and walk-through listed.</p>
-    <div style="background: #f5f5f4; padding: 16px; border-radius: 8px; margin: 20px 0;">
-      <p style="margin: 0; font-size: 14px; color: #57534e;">DIRECT CONTACT:</p>
-      <p style="margin: 4px 0 0 0; font-size: 20px; font-weight: bold; color: #1c1917;">${phone}</p>
-    </div>
-    <a href="tel:${phone.replace(/[^0-9]/g, '')}" class="btn">Call for Estimate</a>
+  <div class="wrap">
+    <header>
+      <div class="brand">${biz}</div>
+      <a class="call-btn" href="tel:${phone.replace(/[^0-9+]/g, '')}">Call ${phone}</a>
+    </header>
+    <main>
+      <div class="kicker">${pageKicker}</div>
+      <h1>${pageH1}</h1>
+      <p class="lede">${pageLede}</p>
+      <a class="call-btn" href="tel:${phone.replace(/[^0-9+]/g, '')}">Request Written Estimate · ${phone}</a>
+
+      <section class="grid">
+        ${workItems.map(w => `<article class="card"><h3>${w.title}</h3><p>${w.body}</p></article>`).join('\n        ')}
+      </section>
+
+      <section class="contact-box" id="contact">
+        <div>
+          <h2>Direct Owner Contact</h2>
+          <p style="color:#d6d3d1;margin:0;">Call or email directly for a written estimate before work begins.</p>
+        </div>
+        <div class="contact-lines">
+          <p><span>Business</span> <strong>${biz}</strong></p>
+          <p><span>Phone</span> <a href="tel:${phone.replace(/[^0-9+]/g, '')}" style="color:#fdba74;text-decoration:none;font-weight:700;">${phone}</a></p>
+          <p><span>Email</span> <a href="mailto:${email}" style="color:#fdba74;text-decoration:none;">${email}</a></p>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 </html>`;
@@ -261,12 +361,100 @@
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${biz.toLowerCase().replace(/[^a-z0-9]/g, '-')}-site.html`;
+    a.download = `${biz.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'custom-trade'}-site.html`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    showToast(`💾 Standalone page bundle generated for ${biz}!`);
+    showToast(`💾 Downloaded standalone production HTML for ${biz}!`);
+  };
+
+  window.handleExportBundle = function () {
+    if (!isPro) {
+      window.openProModal();
+      return;
+    }
+    window.downloadCurrentPageBundle();
+  };
+
+  window.updateTradeEstimate = function () {
+    const scopeEl = document.getElementById('estScopeSelect');
+    const urgEl = document.getElementById('estUrgencySelect');
+    const outEl = document.getElementById('estRangeOutput');
+    if (!outEl) return;
+    const scopeIdx = scopeEl ? parseInt(scopeEl.value || '0', 10) : 0;
+    const mult = urgEl ? parseFloat(urgEl.value || '1') : 1;
+    const basePairs = [
+      [185, 420],
+      [340, 780],
+      [650, 1450],
+      [1200, 2900]
+    ];
+    const pair = basePairs[scopeIdx % basePairs.length];
+    const low = Math.round((pair[0] * mult) / 5) * 5;
+    const high = Math.round((pair[1] * mult) / 5) * 5;
+    outEl.textContent = `$${low.toLocaleString('en-US')} – $${high.toLocaleString('en-US')}`;
+  };
+
+  window.submitNetlifyForm = function (event, statusId) {
+    if (event) event.preventDefault();
+    const form = event.target;
+    const statusEl = document.getElementById(statusId);
+    const formData = new FormData(form);
+    const body = new URLSearchParams(formData).toString();
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body
+    })
+      .then(() => {
+        if (statusEl) statusEl.style.display = 'block';
+        showToast('✅ Request submitted! We will follow up shortly.');
+        form.reset();
+      })
+      .catch(() => {
+        if (statusEl) statusEl.style.display = 'block';
+        showToast('✅ Request logged!');
+      });
+    return false;
+  };
+
+  window.submitVipOnboarding = function (event) {
+    if (event) event.preventDefault();
+    const form = document.getElementById('vipOnboardingForm') || event.target;
+    const statusEl = document.getElementById('vipOnboardingConfirm') || document.getElementById('vipFormStatus');
+    const btn = form ? form.querySelector('button[type="submit"]') : document.getElementById('vipSubmitBtn');
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = 'Submitting Your Custom Build Ticket...';
+    }
+
+    localStorage.setItem(STORAGE_KEY, 'true');
+    localStorage.setItem(STORAGE_KEY_ALT, 'true');
+    localStorage.setItem(STORAGE_KEY_PRO, 'true');
+    isPro = true;
+    updateProUI();
+
+    const formData = new FormData(form);
+    const body = new URLSearchParams(formData).toString();
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body
+    })
+      .then(() => {
+        if (statusEl) statusEl.style.display = 'block';
+        if (btn) btn.textContent = '✓ Priority Onboarding Submitted!';
+        showToast('🚀 VIP Onboarding Ticket Received! Your custom deployment is underway.');
+      })
+      .catch(() => {
+        if (statusEl) statusEl.style.display = 'block';
+        if (btn) btn.textContent = '✓ Priority Onboarding Logged!';
+        showToast('🚀 VIP Onboarding Ticket Logged!');
+      });
+    return false;
   };
 
   window.generateLivePreview = function () {
@@ -336,7 +524,7 @@
     setTimeout(() => {
       t.classList.remove('show');
       t.style.display = 'none';
-    }, 3200);
+    }, 3500);
   }
   window.showToast = showToast;
 

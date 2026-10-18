@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "name": "City Desk — Neal Frazier Tech Local Trade Engine",
+  "url": "https://city-desk.netlify.app",
+  "contact": {
+    "email": "neal@nealfrazier.tech",
+    "phone": "+1-757-576-0980"
+  },
+  "apis": {
+    "index": "https://city-desk.netlify.app/api/index.json",
+    "services": "https://city-desk.netlify.app/api/services.json",
+    "offers": "https://city-desk.netlify.app/offers.json",
+    "llmsTxt": "https://city-desk.netlify.app/llms.txt"
+  }
+}

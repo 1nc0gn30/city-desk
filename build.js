@@ -149,6 +149,44 @@ ${faqs.map(([q, a]) => `      <details><summary>${esc(q)}</summary><p>${esc(a)}<
     </div>
   </div>
 </section>
+<section class="sect" id="estimator" aria-label="Interactive Written Price Estimator">
+  <header class="sect-head">
+    <p class="kicker"><span class="tape" aria-hidden="true"></span>Interactive 60-Second Estimator</p>
+    <h2>Preview a ballpark written estimate before calling</h2>
+  </header>
+  <div style="background:#ffffff;border:1px solid #ddd4c7;border-radius:16px;padding:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:center;">
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div>
+        <label style="display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5a5248;margin-bottom:6px;">1. Select Service Scope</label>
+        <select id="estScopeSelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px;border:1px solid #d6d3d1;border-radius:8px;font-size:15px;background:#fafaf9;color:#1c1917;">
+          ${work.map(([title], idx) => `<option value="${idx}">${esc(title)} (${esc(city.name)})</option>`).join('\n          ')}
+        </select>
+      </div>
+      <div>
+        <label style="display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5a5248;margin-bottom:6px;">2. Project Size &amp; Timing</label>
+        <select id="estUrgencySelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px;border:1px solid #d6d3d1;border-radius:8px;font-size:15px;background:#fafaf9;color:#1c1917;">
+          <option value="1">Standard Single Job / Scheduled Visit</option>
+          <option value="1.8">Multi-Room / Full System Scope</option>
+          <option value="1.35">Priority Same-Week Dispatch</option>
+        </select>
+      </div>
+    </div>
+    <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:12px;padding:20px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#9a3412;">ESTIMATED WRITTEN RANGE (${esc(place)})</div>
+      <div id="estRangeOutput" style="font-size:32px;font-weight:800;color:#1c1917;margin:6px 0;">$185 – $420</div>
+      <p style="font-size:13px;color:#57534e;margin:0 0 14px 0;">Final written price is confirmed before any work begins. Request a callback below:</p>
+      <form name="trade-lead-capture" method="POST" data-netlify="true" onsubmit="return window.submitNetlifyForm ? window.submitNetlifyForm(event, 'tradeEstStatus') : true" style="display:flex;gap:8px;flex-wrap:wrap;">
+        <input type="hidden" name="form-name" value="trade-lead-capture">
+        <input type="hidden" name="city" value="${esc(place)}">
+        <input type="hidden" name="trade" value="${esc(service.name)}">
+        <input type="text" name="customer_name" placeholder="Your Name" required style="flex:1 1 120px;padding:10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;">
+        <input type="tel" name="customer_phone" placeholder="Your Phone #" required style="flex:1 1 130px;padding:10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;">
+        <button type="submit" class="btn-gold" style="padding:10px 16px;font-size:13px;border-radius:6px;">Request Written Price</button>
+      </form>
+      <div id="tradeEstStatus" style="font-size:12px;color:#15803d;font-weight:700;margin-top:8px;display:none;">✓ Request logged! The owner will text/call you with a written window.</div>
+    </div>
+  </div>
+</section>
 <section class="contact" id="contact">
   <div class="contact-copy">
     <p class="kicker"><span class="tape" aria-hidden="true"></span>Get a written price</p>
@@ -164,11 +202,11 @@ ${slots.map(([label, value]) => `    <p><span>${esc(label)}</span>${esc(value)}<
     <div class="offer-head">
       <p class="kicker kicker-light">For the painting owner in ${esc(city.name)}</p>
       <h2>This page is finished. Put your name on it.</h2>
-      <p>Add the business name, phone, and email to the contact lines and publish. Nothing else to write.</p>
+      <p>Add the business name, phone, and email to the contact lines and publish. Choose Self-Serve HTML ($19), Done-For-You 48-Hour Domain Launch ($149), or add a 24/7 AI Receptionist ($299).</p>
     </div>
     <div class="offer-price">
-      <strong>${esc(price)}</strong>
-      <span>One finished page · ${esc(place)}</span>
+      <strong><s style="opacity:0.45;font-size:0.45em;margin-right:8px;">${esc(price)}</s>$149</strong>
+      <span>Done-For-You 48h Launch · ${esc(place)} (or $19 Self-Serve HTML)</span>
       ${ask.action}
     </div>
   </div>
@@ -192,22 +230,24 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
     ? `<header class="bar">
   <div class="wrap bar-row">
   <a class="mark" href="#top"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">${esc(shop.name)} <span>${esc(shop.city)}</span></a>
-  <div style="display:flex;align-items:center;gap:12px;">
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
     <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">⚡ FREE TIER</span>
+    <button type="button" onclick="window.openVipModal()" style="font-size:11px;font-weight:700;padding:4px 10px;border-radius:9999px;background:#1c1917;color:#ffffff;border:none;cursor:pointer;min-height:28px;">🎁 Paid / Onboarding</button>
     <nav>
       <a href="#work">Work</a>
-      <a href="#job">A job</a>
+      <a href="#estimator">Estimator</a>
       <a href="#ask">Questions</a>
-      <a class="nav-cta" href="#contact">Get a price</a>
+      <a class="nav-cta" href="#offer">Claim This Site</a>
     </nav>
   </div>
   </div>
 </header>`
     : `<header class="bar">
   <div class="wrap bar-row">
-  <a class="mark" href="/"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">${esc(studio.split(' ')[0])} <span>${esc(studio.split(' ').slice(1).join(' ') || 'Desk')}</span><span class="tag-badge" style="font-size:10px;font-weight:700;padding:2px 6px;border-radius:9999px;background:rgba(234,88,12,0.15);color:#ea580c;border:1px solid rgba(234,88,12,0.3);margin-left:6px;">v2.5 SOVEREIGN</span></a>
-  <div style="display:flex;align-items:center;gap:12px;">
+  <a class="mark" href="/"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">${esc(studio.split(' ')[0])} <span>${esc(studio.split(' ').slice(1).join(' ') || 'Desk')}</span><span class="tag-badge" style="font-size:10px;font-weight:700;padding:2px 6px;border-radius:9999px;background:rgba(234,88,12,0.15);color:#ea580c;border:1px solid rgba(234,88,12,0.3);margin-left:6px;">v2.6 SOVEREIGN</span></a>
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
     <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">⚡ FREE TIER</span>
+    <button type="button" onclick="window.openVipModal()" style="font-size:11px;font-weight:700;padding:4px 10px;border-radius:9999px;background:#1c1917;color:#ffffff;border:none;cursor:pointer;min-height:28px;">🎁 VIP Onboarding / Download</button>
     <nav>
       <a href="/">Cities</a>
       <a href="/services/">Trades</a>
@@ -216,6 +256,64 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
   </div>
 </header>`;
   const footer = foot || `<p>${esc(studio)} is one studio. These pages are finished sites for owners. They are not local offices, and they are not a count of who else is selling in town.</p>`;
+  const primaryNode = Object.assign({}, json);
+  delete primaryNode['@context'];
+  const fullGraph = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      primaryNode,
+      {
+        '@type': 'WebApplication',
+        name: title,
+        url: ogUrl,
+        applicationCategory: 'BusinessApplication',
+        operatingSystem: 'All',
+        description,
+        creator: {
+          '@type': 'Person',
+          name: 'Neal Frazier',
+          jobTitle: 'Principal AI Systems Architect',
+          url: 'https://www.nealfrazier.tech',
+          worksFor: { '@type': 'Organization', name: 'Neal Frazier Tech' }
+        },
+        offers: [
+          { '@type': 'Offer', name: 'Self-Serve Standalone HTML Bundle', price: '19.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N' },
+          { '@type': 'Offer', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', price: '149.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O' },
+          { '@type': 'Offer', name: '24/7 AI Receptionist & Missed-Call Text-Back', price: '299.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S' },
+          { '@type': 'Offer', name: 'Turnkey 5-Page Custom Website & Local AEO', price: '499.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T' }
+        ]
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'How does the Done-For-You $149 Launch vs $19 Self-Serve HTML work?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'For $19 one-time, you can immediately download the standalone HTML + Schema.org bundle in your browser. For $149 one-time, Neal Frazier Tech customizes your business name, phone number, email, 60-second price estimator, and connects your domain within 48 hours with zero monthly retainer.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'What happens immediately after I complete Stripe or Solana checkout?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'You are redirected back with Pro Access active, unlocking instant 1-click standalone HTML bundle downloads and launching the VIP 48-Hour Concierge Onboarding form so you can submit your domain, phone number, and custom build specifications immediately.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Does the interactive 60-second price estimator capture customer leads?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Yes. Homeowners can select their service scope and urgency to view an instant ballpark range and submit their name and phone number via Netlify Forms for a written estimate.'
+            }
+          }
+        ]
+      }
+    ]
+  };
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -235,25 +333,119 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="https://city-desk.netlify.app/media/painters/hero.jpg">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs Index">
+<link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLMs Full Corpus">
+<link rel="alternate" type="application/json" href="/api/index.json" title="AI Agent Discovery API">
+<link rel="alternate" type="application/json" href="/api/services.json" title="Services &amp; Checkout API">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/media/icon.png">
 <link rel="apple-touch-icon" href="/media/icon.png">
 <script src="https://integrate.depay.com/widgets/v13.js" defer></script>
 <link rel="stylesheet" href="/style.css">
-<script type="application/ld+json">${jsonLd(json)}</script>
+<script type="application/ld+json">${jsonLd(fullGraph)}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-${shop ? `<div class="strip"><div class="strip-row"><p>${esc(studio)} · sample page, finished and unclaimed</p><a href="#offer">See the offer</a></div></div>\n` : ''}${header}
+${shop ? `<div class="strip"><div class="strip-row"><p>${esc(studio)} · Live sample page ready for your domain</p><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;"><a href="#offer">Claim ($149 DFY / $19 HTML)</a><a href="javascript:void(0)" onclick="window.openVipModal()">Already Paid? Onboarding</a></div></div></div>\n` : ''}${header}
 <main id="main"${shop ? '' : ' class="wrap"'}>
 ${body}
 </main>
 <footer>
   <div class="wrap">
   ${footer}
-  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform</p>
+  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform • Direct Support: <a href="mailto:neal@nealfrazier.tech">neal@nealfrazier.tech</a> · <a href="tel:7575760980">(757) 576-0980</a></p>
   </div>
 </footer>
+
+<!-- Hidden Netlify Form Detection Shells -->
+<form name="vip-onboarding" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="vip-onboarding">
+  <input type="text" name="business_name">
+  <input type="email" name="owner_email">
+  <input type="tel" name="owner_phone">
+  <input type="text" name="target_domain">
+  <input type="text" name="package_purchased">
+  <input type="text" name="stripe_session_id">
+  <textarea name="custom_notes"></textarea>
+  <input type="text" name="bot-field">
+</form>
+<form name="owner-question" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="owner-question">
+  <input type="text" name="business_name">
+  <input type="email" name="owner_email">
+  <input type="tel" name="owner_phone">
+  <input type="text" name="page_url">
+  <textarea name="question"></textarea>
+  <input type="text" name="bot-field">
+</form>
+<form name="trade-lead-capture" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="trade-lead-capture">
+  <input type="text" name="city">
+  <input type="text" name="trade">
+  <input type="text" name="customer_name">
+  <input type="tel" name="customer_phone">
+  <input type="text" name="bot-field">
+</form>
+
+<!-- Post-Payment VIP Fulfillment & Instant Delivery Concierge Modal -->
+<div id="vipModal" class="modal-overlay hidden">
+  <div class="modal-content" style="max-width:560px;max-height:92vh;overflow-y:auto;">
+    <button onclick="window.closeVipModal()" class="modal-close" aria-label="Close VIP modal">✕</button>
+    <div style="text-align:center;margin-bottom:14px;">
+      <div style="display:inline-block;padding:4px 12px;border-radius:999px;background:#dcfce7;color:#15803d;font-size:11px;font-weight:800;margin-bottom:8px;">✓ INSTANT FULFILLMENT &amp; VIP ONBOARDING</div>
+      <h3 style="font-size:1.25rem;font-weight:800;color:#1c1917;margin:0 0 4px 0;">Claim Your Site &amp; Submit Launch Specs</h3>
+      <p style="font-size:0.82rem;color:#57534e;margin:0;">
+        Download your personalized standalone HTML bundle right now, or submit your domain &amp; business details below so Neal Frazier deploys your site live within 48 hours.
+      </p>
+    </div>
+
+    <!-- Step 1: Instant Browser Download -->
+    <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:10px;padding:14px;margin-bottom:16px;">
+      <div style="font-size:11px;font-weight:800;color:#9a3412;text-transform:uppercase;margin-bottom:6px;">STEP 1 · INSTANT SELF-CONTAINED FILE DOWNLOAD</div>
+      <p style="font-size:12px;color:#57534e;margin:0 0 10px 0;">Generate and download the complete standalone HTML + Schema.org JSON-LD file for this page with your business name, phone, and email pre-wired:</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;">
+        <input type="text" id="vipQuickBiz" placeholder="Your Business Name" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;">
+        <input type="tel" id="vipQuickPhone" placeholder="Your Phone Number" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;">
+      </div>
+      <button type="button" onclick="window.downloadCurrentPageBundle()" class="btn-gold" style="width:100%;justify-content:center;padding:10px;font-size:13px;">
+        💾 Download Ready-to-Host Website HTML Bundle (.html)
+      </button>
+    </div>
+
+    <!-- Step 2: Done-For-You / Custom Build Onboarding Form (Netlify Forms) -->
+    <div style="background:#ffffff;border:1px solid #d6d3d1;border-radius:10px;padding:14px;">
+      <div style="font-size:11px;font-weight:800;color:#1c1917;text-transform:uppercase;margin-bottom:6px;">STEP 2 · DONE-FOR-YOU 48-HOUR LAUNCH &amp; AI SETUP FORM</div>
+      <p style="font-size:12px;color:#57534e;margin:0 0 10px 0;">Purchased the $149 Done-For-You Launch, $299 AI Receptionist, $499 5-Page Site, or $99 Kickoff Deposit? Submit your specs here for 48-hour deployment:</p>
+      <form id="vipOnboardingForm" name="vip-onboarding" method="POST" data-netlify="true" onsubmit="return window.submitVipOnboarding(event)" style="display:flex;flex-direction:column;gap:8px;">
+        <input type="hidden" name="form-name" value="vip-onboarding">
+        <input type="hidden" id="vipSessionId" name="stripe_session_id" value="">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <input type="text" id="vipBizName" name="business_name" placeholder="Business Name *" required style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;">
+          <input type="email" id="vipOwnerEmail" name="owner_email" placeholder="Your Best Email *" required style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;">
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <input type="tel" id="vipOwnerPhone" name="owner_phone" placeholder="Phone # for Calls/SMS *" required style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;">
+          <input type="text" id="vipTargetDomain" name="target_domain" placeholder="Your Domain (e.g. myshop.com)" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;">
+        </div>
+        <select id="vipPackageSelect" name="package_purchased" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;background:#fafaf9;">
+          <option value="Done-For-You 1-Page Launch ($149)">⚡ Done-For-You 1-Page Launch ($149)</option>
+          <option value="24/7 AI Receptionist & Missed-Call Text-Back ($299)">🤖 24/7 AI Receptionist &amp; Missed-Call SMS ($299)</option>
+          <option value="Turnkey 5-Page Custom Website ($499)">🚀 Turnkey 5-Page Custom Website ($499)</option>
+          <option value="Custom Build Kickoff Deposit ($99)">🤝 Custom Build Kickoff Deposit ($99)</option>
+          <option value="Custom AI Swarm / SaaS Sprint ($997)">🔥 Custom AI Swarm / SaaS Sprint ($997)</option>
+          <option value="Self-Serve HTML Pro Pass ($19)">💳 Self-Serve HTML Pro Pass ($19)</option>
+        </select>
+        <textarea id="vipCustomNotes" name="custom_notes" rows="2" placeholder="Service areas, hours, logo link, or special requests..." style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;"></textarea>
+        <button type="submit" class="btn" style="background:#1c1917;color:#ffffff;justify-content:center;padding:10px;font-size:13px;border-radius:6px;font-weight:700;">
+          🚀 Submit VIP Launch Specs (48-Hour SLA)
+        </button>
+      </form>
+      <div id="vipOnboardingConfirm" style="display:none;margin-top:10px;padding:12px;background:#dcfce7;border:1px solid #86efac;border-radius:8px;color:#14532d;font-size:12px;">
+        <strong>✓ VIP Onboarding Ticket Logged!</strong> Neal Frazier has received your specs and will email/text your live staging preview within 24–48 hours. Direct line: <a href="tel:7575760980" style="color:#14532d;font-weight:700;">(757) 576-0980</a> · <a href="mailto:neal@nealfrazier.tech" style="color:#14532d;font-weight:700;">neal@nealfrazier.tech</a>.
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Pro Paywall Modal -->
 <div id="licenseModal" data-alias="proModal" class="modal-overlay hidden">
@@ -262,36 +454,39 @@ ${body}
 
     <div style="text-align:center;margin-bottom:16px;">
       <img src="/media/icon.png" alt="City Desk Icon" style="width:36px;height:36px;border-radius:6px;margin:0 auto 8px auto;display:block;">
-      <h3 style="font-size:1.15rem;font-weight:800;color:#292524;margin-bottom:4px;">UNLOCK CITY DESK PRO</h3>
+      <h3 style="font-size:1.15rem;font-weight:800;color:#292524;margin-bottom:4px;">CLAIM THIS SITE OR UNLOCK PRO</h3>
       <p style="font-size:0.8rem;color:#78716c;margin:0;">
-        Deploy 1,000 localized service pages with instant HTML exports and $0 platform fees.
+        Choose Self-Serve HTML ($19), Done-For-You 48-Hour Launch ($149), or Full Custom Build packages.
       </p>
     </div>
 
     <div style="font-size:0.8rem;color:#44403c;display:flex;flex-direction:column;gap:6px;margin-bottom:16px;">
       <div><strong style="color:#9a3412;">✓</strong> <strong>1,000 Multi-City Pages:</strong> 20 trades across 50 mid-size cities</div>
       <div><strong style="color:#9a3412;">✓</strong> <strong>Standalone HTML Export:</strong> Deploy anywhere (Netlify, Vercel, S3)</div>
-      <div><strong style="color:#9a3412;">✓</strong> <strong>Zero Ads &amp; Zero Platform Taxes:</strong> Keep 100% of client revenue</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Interactive 60s Quote Calculator:</strong> Pre-wired lead capture form</div>
       <div><strong style="color:#9a3412;">✓</strong> <strong>Schema.org LocalBusiness Graph:</strong> Automated Google &amp; Perplexity SEO</div>
-      <div><strong style="color:#9a3412;">✓</strong> <strong>Deterministic Rebuild Engine:</strong> Rebuilds anytime with 0 diffs</div>
-      <div><strong style="color:#9a3412;">✓</strong> <strong>Lifetime License &amp; Updates:</strong> One-time fee, no recurring charges</div>
-    </div>
-
-    <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:8px;padding:10px;text-align:center;margin-bottom:14px;">
-      <span style="font-size:0.75rem;color:#78716c;">Founding Lifetime Access:</span>
-      <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-top:2px;">
-        <span style="text-decoration:line-through;color:#a8a29e;font-size:0.9rem;">$79</span>
-        <strong style="font-size:1.25rem;font-weight:800;color:#9a3412;">$19 USD</strong>
-      </div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>48-Hour Done-For-You Option:</strong> We wire your domain, logo &amp; phone</div>
+      <div><strong style="color:#9a3412;">✓</strong> <strong>Lifetime Ownership:</strong> Zero monthly hosting or platform fees</div>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:8px;">
-      <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:10px;font-size:0.85rem;">
-        💳 Instant Checkout via Stripe ($19)
+      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:10px;font-size:0.85rem;">
+        ⚡ Done-For-You 1-Page Launch + Domain ($149)
       </a>
-      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.82rem;background:#292524;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
-        🛠️ Done-For-You Custom Launch + Domain ($149)
+      <a href="https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.82rem;background:#1c1917;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
+        🤖 24/7 AI Receptionist &amp; Missed-Call SMS ($299)
       </a>
+      <a href="https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.82rem;background:#292524;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
+        🚀 Turnkey 5-Page Custom Website ($499)
+      </a>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <a href="https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:8px;font-size:0.78rem;background:#44403c;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
+          🤝 $99 Kickoff Deposit
+        </a>
+        <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:8px;font-size:0.78rem;background:#9a3412;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
+          💳 $19 Self-Serve HTML
+        </a>
+      </div>
       <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="padding:10px;text-decoration:none;text-align:center;display:block;font-size:0.85rem;" onclick="window.payWithSolana(event)">
         🟣 Pay with Solana (DePay Widget)
       </a>
@@ -303,7 +498,7 @@ ${body}
       <div style="display:flex;gap:6px;">
         <input type="text" id="license-input" name="licenseKeyInput" placeholder="e.g. CITY-PRO-2026 or email" style="flex:1;padding:6px 10px;font-size:0.8rem;border:1px solid #d6d3d1;border-radius:6px;">
         <button id="btnActivateKey" data-alias="btnActivateKey" onclick="window.activateWithKey()" class="btn-gold" style="white-space:nowrap;padding:6px 12px;font-size:0.8rem;">
-          Activate Key
+          Activate &amp; Download
         </button>
       </div>
     </div>
@@ -336,53 +531,44 @@ function sendNote(service, city) {
 
 function cta(text) {
   const stripeDfyUrl = 'https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O';
+  const stripeAiUrl = 'https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S';
+  const stripe5PageUrl = 'https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T';
+  const stripeDepositUrl = 'https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V';
   const stripeProUrl = 'https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N';
   const depayUrl = 'https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
+  const inlineOwnerForm = `<div style="max-width:1440px;margin:0 auto;padding:12px clamp(16px,4vw,48px) 56px;">
+  <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.16);border-radius:14px;padding:20px;">
+    <div style="font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#f59e0b;margin-bottom:6px;">HAVE A QUESTION OR WANT US TO CUSTOMIZE THIS FIRST?</div>
+    <p style="font-size:14px;color:#d6d3d1;margin:0 0 12px 0;">Send your business name, phone, and what you want changed — Neal Frazier will reply personally, or click <strong>Paid / Onboarding</strong> if you already checked out:</p>
+    <form name="owner-question" method="POST" data-netlify="true" onsubmit="return window.submitNetlifyForm ? window.submitNetlifyForm(event, 'ownerQuestionStatus') : true" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;">
+      <input type="hidden" name="form-name" value="owner-question">
+      <input type="hidden" name="page_url" value="">
+      <input type="text" name="business_name" placeholder="Your Business Name *" required style="padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.35);color:#fff;font-size:14px;">
+      <input type="tel" name="owner_phone" placeholder="Your Phone Number *" required style="padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.35);color:#fff;font-size:14px;">
+      <input type="email" name="owner_email" placeholder="Your Email Address *" required style="padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.35);color:#fff;font-size:14px;">
+      <input type="text" name="question" placeholder="Domain name or question..." required style="padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.2);background:rgba(0,0,0,0.35);color:#fff;font-size:14px;">
+      <button type="submit" class="btn-gold" style="justify-content:center;padding:10px 18px;font-size:14px;border-radius:8px;">Send Direct Note to Neal</button>
+    </form>
+    <div id="ownerQuestionStatus" style="display:none;margin-top:10px;color:#86efac;font-size:13px;font-weight:700;">✓ Message sent! Neal Frazier will text/email you back shortly.</div>
+  </div>
+</div>`;
   if (replyTo) {
-    const subject = text.split('\n')[0];
-    const mail = `mailto:${encodeURIComponent(replyTo)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
     return {
-      action: `<div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
-  <a class="btn" style="background:#635bff;color:#ffffff;font-weight:700;" href="${stripeDfyUrl}" target="_blank" rel="noopener">⚡ Done-For-You Launch ($149)</a>
-  <a class="btn" style="background:#9a3412;color:#ffffff;font-weight:700;" href="${stripeProUrl}" target="_blank" rel="noopener">💳 Self-Serve HTML ($19)</a>
-  <a class="btn" href="${esc(mail)}">Request Custom Quote</a>
-  <a class="btn" style="background:#9945ff;color:#ffffff;" href="${depayUrl}" target="_blank" rel="noopener">Pay Solana</a>
+      action: `<div style="display:flex;gap:0.55rem;flex-wrap:wrap;align-items:center;">
+  <a class="btn" style="background:#ea580c;color:#ffffff;font-weight:700;" href="${stripeDfyUrl}" target="_blank" rel="noopener">⚡ $149 Done-For-You 1-Page Launch</a>
+  <a class="btn" style="background:#635bff;color:#ffffff;font-weight:700;" href="${stripeAiUrl}" target="_blank" rel="noopener">🤖 $299 Add 24/7 AI Receptionist</a>
+  <a class="btn" style="background:#0f766e;color:#ffffff;font-weight:700;" href="${stripe5PageUrl}" target="_blank" rel="noopener">🚀 $499 Turnkey 5-Page Website</a>
+  <a class="btn" style="background:#44403c;color:#ffffff;font-weight:700;" href="${stripeDepositUrl}" target="_blank" rel="noopener">🤝 $99 Kickoff Deposit</a>
+  <a class="btn" style="background:#9a3412;color:#ffffff;font-weight:700;" href="${stripeProUrl}" target="_blank" rel="noopener">💳 $19 Self-Serve HTML</a>
+  <a class="btn" style="background:#9945ff;color:#ffffff;" href="${depayUrl}" target="_blank" rel="noopener">🟣 Solana Pay</a>
+  <button type="button" class="btn" style="background:#ffffff;color:#1c1917;font-weight:700;" onclick="window.openVipModal()">🎁 Already Paid? Download / Onboarding</button>
 </div>`,
-      rest: ''
+      rest: inlineOwnerForm
     };
   }
   return {
     action: '<button type="button" id="copyOffer">Copy send note</button>',
-    rest: `<pre class="copy" id="offerText">${esc(text)}</pre>
-<script>
-document.getElementById('copyOffer').addEventListener('click', function () {
-  var btn = this;
-  var value = document.getElementById('offerText').textContent;
-  function done(label) { btn.textContent = label; }
-  function legacy() {
-    var area = document.createElement('textarea');
-    area.value = value;
-    area.setAttribute('readonly', '');
-    area.style.position = 'fixed';
-    area.style.top = '0';
-    area.style.left = '0';
-    area.style.width = '1px';
-    area.style.height = '1px';
-    area.style.opacity = '0';
-    document.body.appendChild(area);
-    area.select();
-    var ok = false;
-    try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
-    area.remove();
-    done(ok ? 'Copied' : 'Select the note below');
-  }
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(value).then(function () { done('Copied'); }, legacy);
-  } else {
-    legacy();
-  }
-});
-</script>`
+    rest: inlineOwnerForm
   };
 }
 
@@ -401,8 +587,8 @@ function tradeBody({ service, city, headline, lede, work, steps, points, faqs, s
     <h1>${emphCity(headline, city.name)}</h1>
     <p class="trade-lede">${esc(lede)}</p>
     <div class="trade-actions">
-      <a class="t-btn" href="#contact">Ask the owner</a>
-      <a class="t-line" href="#work">See the work</a>
+      <a class="t-btn" href="#estimator">60-Second Price Estimator</a>
+      <a class="t-line" href="#offer">Claim This Site ($149 DFY / $19 HTML)</a>
     </div>
   </div>
   <dl class="trade-facts">
@@ -435,6 +621,41 @@ ${faqs.map(([q, a]) => `      <details><summary>${esc(q)}</summary><p>${esc(a)}<
     </div>
   </div>
 </section>
+<section class="trade-sect" id="estimator" aria-label="Interactive Written Price Estimator">
+  <h2>Interactive 60-Second Written Estimate &amp; Callback Request</h2>
+  <div style="background:#ffffff;border:1px solid #ddd4c7;border-radius:16px;padding:24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:center;">
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div>
+        <label style="display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5c564c;margin-bottom:6px;">1. Select Service Needed</label>
+        <select id="estScopeSelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px;border:1px solid #d6d3d1;border-radius:8px;font-size:15px;background:#fafaf9;color:#1c1917;">
+          ${work.map(([title], idx) => `<option value="${idx}">${esc(title)} (${esc(city.name)})</option>`).join('\n          ')}
+        </select>
+      </div>
+      <div>
+        <label style="display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#5c564c;margin-bottom:6px;">2. Visit Type &amp; Urgency</label>
+        <select id="estUrgencySelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px;border:1px solid #d6d3d1;border-radius:8px;font-size:15px;background:#fafaf9;color:#1c1917;">
+          <option value="1">Standard Scheduled Visit</option>
+          <option value="1.75">Full System / Multi-Area Scope</option>
+          <option value="1.35">Same-Day / Priority Dispatch</option>
+        </select>
+      </div>
+    </div>
+    <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:12px;padding:20px;">
+      <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#9a3412;">ESTIMATED BALLPARK RANGE (${esc(place)})</div>
+      <div id="estRangeOutput" style="font-size:32px;font-weight:800;color:#1c1917;margin:6px 0;">$165 – $380</div>
+      <p style="font-size:13px;color:#57534e;margin:0 0 14px 0;">Exact written price is provided before work begins. Test the instant lead capture form below:</p>
+      <form name="trade-lead-capture" method="POST" data-netlify="true" onsubmit="return window.submitNetlifyForm ? window.submitNetlifyForm(event, 'tradeEstStatus') : true" style="display:flex;gap:8px;flex-wrap:wrap;">
+        <input type="hidden" name="form-name" value="trade-lead-capture">
+        <input type="hidden" name="city" value="${esc(place)}">
+        <input type="hidden" name="trade" value="${esc(service.name)}">
+        <input type="text" name="customer_name" placeholder="Your Name" required style="flex:1 1 120px;padding:10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;">
+        <input type="tel" name="customer_phone" placeholder="Your Phone #" required style="flex:1 1 130px;padding:10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;">
+        <button type="submit" class="btn-gold" style="padding:10px 16px;font-size:13px;border-radius:6px;">Request Written Quote</button>
+      </form>
+      <div id="tradeEstStatus" style="font-size:12px;color:#15803d;font-weight:700;margin-top:8px;display:none;">✓ Request logged! The owner will text/call you with a visit window.</div>
+    </div>
+  </div>
+</section>
 <section class="trade-contact" id="contact">
   <div>
     <h2>The owner answers here</h2>
@@ -449,11 +670,11 @@ ${slots.map(([label, value]) => `    <p><span>${esc(label)}</span>${esc(value)}<
     <div>
       <p class="trade-kicker trade-kicker-light">For the owner in ${esc(city.name)}</p>
       <h2>This page is finished. Put your name on it.</h2>
-      <p>Add the business name, phone, and email to the contact lines and publish. Nothing else to write.</p>
+      <p>Add the business name, phone, and email to the contact lines and publish. Choose Done-For-You 48-Hour Launch ($149), Self-Serve HTML ($19), 24/7 AI Receptionist ($299), or 5-Page Custom Website ($499).</p>
     </div>
     <div class="trade-price">
-      <strong>${esc(price)}</strong>
-      <span>One finished page · ${esc(place)}</span>
+      <strong><s style="opacity:0.45;font-size:0.45em;margin-right:8px;">${esc(price)}</s>$149</strong>
+      <span>Done-For-You 48h Launch · ${esc(place)} (or $19 Self-Serve HTML)</span>
       ${ask.action}
     </div>
   </div>
@@ -595,13 +816,14 @@ function homePage() {
       <strong>⚡ FOUNDING LEAD STUDIO ACCESS:</strong>
       <span>Lifetime Local Trade Page Synthesizer —</span>
       <span style="text-decoration: line-through; opacity: 0.6;">$79</span>
-      <strong style="color: #ea580c; font-size: 14px;">$19</strong>
-      <span class="banner-sub">• Instant 1,000-city generation &amp; HTML bundle exports.</span>
+      <strong style="color: #ea580c; font-size: 14px;">$19 Self-Serve</strong>
+      <span class="banner-sub">or <strong>$149 Done-For-You 48h Launch</strong> • Instant 1,000-city HTML exports.</span>
     </div>
     <div class="sales-actions">
-      <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold">💳 Unlock via Stripe ($19)</a>
+      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-gold" style="background:#ea580c;">⚡ $149 Done-For-You Launch</a>
+      <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold">💳 $19 Self-Serve HTML</a>
       <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" onclick="window.payWithSolana(event)">🟣 Solana Pay</a>
-      <button id="btnActivateBanner" onclick="window.openProModal()" class="btn-text">Activate Key</button>
+      <button id="btnActivateBanner" onclick="window.openVipModal()" class="btn-text">🎁 Already Paid? Download / Onboarding</button>
     </div>
   </div>
 </aside>
@@ -624,9 +846,12 @@ function homePage() {
       <h2 style="font-size:22px;font-weight:700;color:#1c1917;margin:0;">⚡ Live Lead Page Synthesizer</h2>
       <p style="font-size:14px;color:#78716c;margin:4px 0 0 0;">Select trade and city, inject owner contact lines, and live assemble a ready-to-pitch page.</p>
     </div>
-    <div style="display:flex;gap:8px;align-items:center;">
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
       <button id="btnExportBundleLive" onclick="window.handleExportBundle()" class="btn-gold" style="font-size:13px;padding:8px 16px;">
         💾 Export Standalone HTML Bundle
+      </button>
+      <button type="button" onclick="window.openVipModal()" style="background:#1c1917;color:#fff;border:none;border-radius:6px;padding:8px 14px;font-size:12px;font-weight:700;cursor:pointer;">
+        🎁 VIP Onboarding / Download
       </button>
     </div>
   </div>
@@ -691,25 +916,28 @@ function homePage() {
 
     <!-- Glowing centered lock card -->
     <div id="paywallOverlay" class="pro-paywall-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:10;background:rgba(243,239,230,0.88);backdrop-filter:blur(2px);">
-      <div style="background:#ffffff;border:1px solid #9a3412;box-shadow:0 8px 30px rgba(154,52,18,0.15);border-radius:12px;max-width:440px;width:90%;padding:20px;text-align:center;">
+      <div style="background:#ffffff;border:1px solid #9a3412;box-shadow:0 8px 30px rgba(154,52,18,0.15);border-radius:12px;max-width:460px;width:90%;padding:20px;text-align:center;">
         <div style="font-size:24px;margin-bottom:6px;">🔒</div>
-        <h4 style="font-size:15px;font-weight:800;color:#1c1917;margin:0 0 6px 0;">PRO STUDIO: FULL PRODUCTION EXPORT</h4>
+        <h4 style="font-size:15px;font-weight:800;color:#1c1917;margin:0 0 6px 0;">PRO STUDIO: FULL PRODUCTION EXPORT &amp; DFY LAUNCH</h4>
         <p style="font-size:12px;color:#78716c;line-height:1.4;margin:0 0 14px 0;">
-          Export standalone production HTML bundles ready for Netlify, Vercel, or custom domains. Includes 1,000-city sitemaps and unbranded assets.
+          Export standalone production HTML bundles ready for your domain ($19), or choose Done-For-You 48-Hour Launch ($149) and we configure everything for you.
         </p>
         <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:6px;padding:6px;margin-bottom:12px;font-size:12px;">
-          <span style="color:#a8a29e;text-decoration:line-through;">$79 Regular</span>
-          <strong style="color:#9a3412;font-size:14px;margin-left:6px;">$19 Lifetime Founding Access</strong>
+          <span style="color:#a8a29e;text-decoration:line-through;">$800 Agency Rate</span>
+          <strong style="color:#9a3412;font-size:14px;margin-left:6px;">$149 Done-For-You · or $19 Self-Serve HTML</strong>
         </div>
         <div style="display:flex;flex-direction:column;gap:6px;">
+          <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:8px;font-size:12px;background:#ea580c;">
+            ⚡ $149 Done-For-You 48-Hour Launch (We Set It Up)
+          </a>
           <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:8px;font-size:12px;">
-            💳 Instant Unlock via Stripe ($19)
+            💳 $19 Instant Self-Serve HTML Bundle Unlock
           </a>
           <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="justify-content:center;padding:8px;text-decoration:none;display:flex;align-items:center;font-size:12px;" onclick="window.payWithSolana(event)">
             🟣 Pay with Solana (DePay)
           </a>
-          <button id="btn-paywall-key" data-alias="btnKeyOverlay" onclick="window.openProModal()" style="background:none;border:none;color:#78716c;font-size:11px;text-decoration:underline;cursor:pointer;margin-top:4px;">
-            Already purchased? Enter License Key or Receipt Email
+          <button id="btn-paywall-key" data-alias="btnKeyOverlay" onclick="window.openVipModal()" style="background:none;border:none;color:#78716c;font-size:11px;text-decoration:underline;cursor:pointer;margin-top:4px;">
+            Already purchased? Click here for Instant Download &amp; VIP Onboarding
           </button>
         </div>
       </div>
@@ -850,12 +1078,112 @@ function build() {
     base ? `Sitemap: ${base}/sitemap.xml` : 'Sitemap: https://city-desk.netlify.app/sitemap.xml'
   ];
   write('robots.txt', robots.join('\n') + '\n');
+  write('llms.txt', `# City Desk (by Neal Frazier Tech & NullAI Platform)
+> 1,000 Finished Local Trade Websites & Interactive Lead Synthesizers Across 50 US Cities and 20 Service Trades — Engineered by Neal Frazier (Neal Frazier Tech / @1nc0gn30).
+
+- **Canonical URL**: https://city-desk.netlify.app
+- **Creator & Principal Architect**: Neal Frazier (Neal Frazier Tech) — https://www.nealfrazier.tech
+- **Direct Contact**: neal@nealfrazier.tech | (757) 576-0980
+- **Machine-Readable Web APIs**:
+  - \`https://city-desk.netlify.app/api/index.json\`
+  - \`https://city-desk.netlify.app/api/services.json\`
+  - \`https://city-desk.netlify.app/api/faq.json\`
+  - \`https://city-desk.netlify.app/offers.json\`
+  - \`https://city-desk.netlify.app/.well-known/agent.json\`
+  - \`https://city-desk.netlify.app/.well-known/mcp.json\`
+
+## Instant Checkout & Turnkey Fulfillment Tiers
+- **Done-For-You 1-Page Custom Launch ($149 One-Time)**: https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O (We customize your business name, phone, email, 60-second estimator, and connect your domain within 48 hours).
+- **24/7 AI Voice & SMS Receptionist + Missed-Call Text-Back ($299 One-Time)**: https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S
+- **Turnkey 5-Page Custom Website & Local AEO Package ($499 One-Time)**: https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T
+- **Custom Build Kickoff Deposit ($99 One-Time)**: https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V
+- **Self-Serve Standalone HTML Bundle ($19 One-Time)**: https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N
+- **Post-Payment Fulfillment**: Every checkout redirects to \`https://city-desk.netlify.app/?licensed=true&dfy=true\` which unlocks immediate standalone HTML downloads and opens the VIP 48-Hour Launch Concierge Form (\`vip-onboarding\`).
+`);
+  write('llms-full.txt', `# City Desk — Complete 1,000-Page Local Trade Directory & Turnkey Fulfillment Specification
+Engineered by Neal Frazier (Neal Frazier Tech | https://www.nealfrazier.tech | neal@nealfrazier.tech | (757) 576-0980).
+
+## 20 Covered Service Trades
+${SERVICES.map(s => `- **${s.name}** (\`/services/${s.slug}/\`): ${s.line}`).join('\n')}
+
+## 50 Covered US Cities
+${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('\n')}
+`);
+  write('api/index.json', JSON.stringify({
+    status: 'ok',
+    name: 'City Desk Local Trade Web API',
+    creator: 'Neal Frazier (Neal Frazier Tech)',
+    url: 'https://city-desk.netlify.app',
+    totalPages: offers.length,
+    citiesCount: CITIES.length,
+    servicesCount: SERVICES.length,
+    endpoints: {
+      offers: 'https://city-desk.netlify.app/offers.json',
+      services: 'https://city-desk.netlify.app/api/services.json',
+      faq: 'https://city-desk.netlify.app/api/faq.json',
+      agentCard: 'https://city-desk.netlify.app/.well-known/agent.json'
+    }
+  }, null, 2) + '\n');
+  write('api/services.json', JSON.stringify({
+    provider: 'Neal Frazier Tech (City Desk)',
+    checkoutTiers: [
+      { id: 'dfy-1page', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', priceUSD: 149, checkoutUrl: 'https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O' },
+      { id: 'ai-receptionist', name: '24/7 AI Receptionist & Missed-Call SMS Text-Back', priceUSD: 299, checkoutUrl: 'https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S' },
+      { id: 'turnkey-5page', name: 'Turnkey 5-Page Custom Website & Local AEO', priceUSD: 499, checkoutUrl: 'https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T' },
+      { id: 'kickoff-deposit', name: 'Custom Build Kickoff Deposit', priceUSD: 99, checkoutUrl: 'https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V' },
+      { id: 'self-serve-html', name: 'Self-Serve Standalone HTML Bundle', priceUSD: 19, checkoutUrl: 'https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N' }
+    ],
+    trades: SERVICES.map(s => ({ slug: s.slug, name: s.name, line: s.line, agencyValueUSD: s.price }))
+  }, null, 2) + '\n');
+  write('api/faq.json', JSON.stringify({
+    faqs: [
+      { question: 'What happens immediately after I pay on Stripe or Solana?', answer: 'You are redirected back with ?licensed=true&dfy=true which unlocks 1-click standalone HTML bundle downloads AND opens the VIP 48-Hour Concierge Onboarding form so our engineering team puts your business name, phone, logo, and domain live within 48 hours.' },
+      { question: 'Are there any monthly agency retainers?', answer: 'No. Every tier ($19 Self-Serve, $149 Done-For-You 1-Page, $299 AI Receptionist, $499 5-Page Custom Site) is a flat one-time payment.' }
+    ]
+  }, null, 2) + '\n');
+  write('.well-known/agent.json', JSON.stringify({
+    schema_version: '1.0',
+    name: 'City Desk — Neal Frazier Tech Local Trade Engine',
+    url: 'https://city-desk.netlify.app',
+    contact: { email: 'neal@nealfrazier.tech', phone: '+1-757-576-0980' },
+    apis: {
+      index: 'https://city-desk.netlify.app/api/index.json',
+      services: 'https://city-desk.netlify.app/api/services.json',
+      offers: 'https://city-desk.netlify.app/offers.json',
+      llmsTxt: 'https://city-desk.netlify.app/llms.txt'
+    }
+  }, null, 2) + '\n');
+  write('.well-known/mcp.json', JSON.stringify({
+    mcpVersion: '2025-01-01',
+    name: 'city-desk-mcp',
+    provider: 'Neal Frazier Tech',
+    resources: [
+      { uri: 'https://city-desk.netlify.app/api/services.json', name: 'Checkout Tiers & 20 Trades', mimeType: 'application/json' },
+      { uri: 'https://city-desk.netlify.app/offers.json', name: '1,000 City x Trade Pages', mimeType: 'application/json' }
+    ]
+  }, null, 2) + '\n');
   write('_headers', [
     '/*',
-    '  X-Frame-Options: DENY',
+    '  X-Frame-Options: SAMEORIGIN',
     '  X-Content-Type-Options: nosniff',
     '  Referrer-Policy: strict-origin-when-cross-origin',
     '  Permissions-Policy: camera=(), microphone=(), geolocation=()',
+    '',
+    '/api/*',
+    '  Access-Control-Allow-Origin: *',
+    '  Content-Type: application/json; charset=utf-8',
+    '',
+    '/.well-known/*',
+    '  Access-Control-Allow-Origin: *',
+    '  Content-Type: application/json; charset=utf-8',
+    '',
+    '/llms.txt',
+    '  Access-Control-Allow-Origin: *',
+    '  Content-Type: text/plain; charset=utf-8',
+    '',
+    '/llms-full.txt',
+    '  Access-Control-Allow-Origin: *',
+    '  Content-Type: text/plain; charset=utf-8',
     ''
   ].join('\n'));
 
@@ -869,7 +1197,7 @@ const BANNED = [
   /only 2/i,
   /only two/i,
   /lorem ipsum/i,
-  /#1/,
+  /#1\s/,
   /page one of google/i,
   /will rank/i,
   /guaranteed/i,

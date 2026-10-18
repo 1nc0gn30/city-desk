@@ -1,0 +1,21 @@
+# City Desk (by Neal Frazier Tech & NullAI Platform)
+> 1,000 Finished Local Trade Websites & Interactive Lead Synthesizers Across 50 US Cities and 20 Service Trades — Engineered by Neal Frazier (Neal Frazier Tech / @1nc0gn30).
+
+- **Canonical URL**: https://city-desk.netlify.app
+- **Creator & Principal Architect**: Neal Frazier (Neal Frazier Tech) — https://www.nealfrazier.tech
+- **Direct Contact**: neal@nealfrazier.tech | (757) 576-0980
+- **Machine-Readable Web APIs**:
+  - `https://city-desk.netlify.app/api/index.json`
+  - `https://city-desk.netlify.app/api/services.json`
+  - `https://city-desk.netlify.app/api/faq.json`
+  - `https://city-desk.netlify.app/offers.json`
+  - `https://city-desk.netlify.app/.well-known/agent.json`
+  - `https://city-desk.netlify.app/.well-known/mcp.json`
+
+## Instant Checkout & Turnkey Fulfillment Tiers
+- **Done-For-You 1-Page Custom Launch ($149 One-Time)**: https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O (We customize your business name, phone, email, 60-second estimator, and connect your domain within 48 hours).
+- **24/7 AI Voice & SMS Receptionist + Missed-Call Text-Back ($299 One-Time)**: https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S
+- **Turnkey 5-Page Custom Website & Local AEO Package ($499 One-Time)**: https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T
+- **Custom Build Kickoff Deposit ($99 One-Time)**: https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V
+- **Self-Serve Standalone HTML Bundle ($19 One-Time)**: https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N
+- **Post-Payment Fulfillment**: Every checkout redirects to `https://city-desk.netlify.app/?licensed=true&dfy=true` which unlocks immediate standalone HTML downloads and opens the VIP 48-Hour Launch Concierge Form (`vip-onboarding`).

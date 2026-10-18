@@ -1,0 +1,12 @@
+{
+  "faqs": [
+    {
+      "question": "What happens immediately after I pay on Stripe or Solana?",
+      "answer": "You are redirected back with ?licensed=true&dfy=true which unlocks 1-click standalone HTML bundle downloads AND opens the VIP 48-Hour Concierge Onboarding form so our engineering team puts your business name, phone, logo, and domain live within 48 hours."
+    },
+    {
+      "question": "Are there any monthly agency retainers?",
+      "answer": "No. Every tier ($19 Self-Serve, $149 Done-For-You 1-Page, $299 AI Receptionist, $499 5-Page Custom Site) is a flat one-time payment."
+    }
+  ]
+}

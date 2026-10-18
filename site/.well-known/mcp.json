@@ -1,0 +1,17 @@
+{
+  "mcpVersion": "2025-01-01",
+  "name": "city-desk-mcp",
+  "provider": "Neal Frazier Tech",
+  "resources": [
+    {
+      "uri": "https://city-desk.netlify.app/api/services.json",
+      "name": "Checkout Tiers & 20 Trades",
+      "mimeType": "application/json"
+    },
+    {
+      "uri": "https://city-desk.netlify.app/offers.json",
+      "name": "1,000 City x Trade Pages",
+      "mimeType": "application/json"
+    }
+  ]
+}
