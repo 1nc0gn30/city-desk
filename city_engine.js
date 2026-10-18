@@ -10,7 +10,77 @@
 
   function init() {
     checkLicense();
+    applyProspectPersonalization();
     setupEventListeners();
+  }
+
+  function applyProspectPersonalization() {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const biz = (params.get('biz') || '').trim();
+      const phone = (params.get('phone') || '').trim();
+      const email = (params.get('email') || '').trim();
+      if (!biz && !phone && !email) return;
+
+      // Update homepage synthesizer inputs if present
+      const bizIn = document.getElementById('synthBizInput');
+      const phoneIn = document.getElementById('synthPhoneInput');
+      if (biz && bizIn) bizIn.value = biz;
+      if (phone && phoneIn) phoneIn.value = phone;
+      if (bizIn && typeof window.generateLivePreview === 'function') {
+        window.generateLivePreview();
+      }
+
+      // Update trade page contact lines (.trade-lines p, .reach-lines p)
+      document.querySelectorAll('.trade-lines p, .reach-lines p').forEach((p) => {
+        const span = p.querySelector('span');
+        if (!span) return;
+        const label = span.textContent.trim().toLowerCase();
+        if (label === 'business' && biz) {
+          p.innerHTML = '';
+          p.appendChild(span);
+          p.appendChild(document.createTextNode(biz));
+        } else if (label === 'phone' && phone) {
+          p.innerHTML = '';
+          p.appendChild(span);
+          p.appendChild(document.createTextNode(phone));
+        } else if (label === 'email' && email) {
+          p.innerHTML = '';
+          p.appendChild(span);
+          p.appendChild(document.createTextNode(email));
+        }
+      });
+
+      if (biz) {
+        document.title = `${biz} — ${document.title}`;
+        const mark = document.querySelector('.bar .mark');
+        if (mark) {
+          const citySpan = mark.querySelector('span');
+          const img = mark.querySelector('img');
+          const cityText = citySpan ? citySpan.textContent : '';
+          mark.innerHTML = '';
+          if (img) mark.appendChild(img);
+          mark.appendChild(document.createTextNode(biz + ' '));
+          if (cityText) {
+            const s = document.createElement('span');
+            s.textContent = cityText;
+            mark.appendChild(s);
+          }
+        }
+        const stripP = document.querySelector('.strip-row p');
+        if (stripP) {
+          stripP.textContent = `Prepared for ${biz} · Live sample site ready for your domain`;
+        }
+        const kicker = document.querySelector('.trade-kicker, .front-copy .kicker');
+        if (kicker && !kicker.textContent.includes(biz)) {
+          kicker.textContent = `${biz} · ${kicker.textContent.trim()}`;
+        }
+        const offerH2 = document.querySelector('#offer h2');
+        if (offerH2) {
+          offerH2.textContent = `Prepared for ${biz}. Put it on your domain today.`;
+        }
+      }
+    } catch (e) {}
   }
 
   // Pro License Storage Keys
