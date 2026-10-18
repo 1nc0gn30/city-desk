@@ -277,6 +277,7 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
           worksFor: { '@type': 'Organization', name: 'Neal Frazier Tech' }
         },
         offers: [
+          { '@type': 'Offer', name: 'Instant AI Search & Lead Booster Pack ($7 Flash Starter)', price: '7.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W' },
           { '@type': 'Offer', name: 'Self-Serve Standalone HTML Bundle', price: '19.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N' },
           { '@type': 'Offer', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', price: '149.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O' },
           { '@type': 'Offer', name: '24/7 AI Receptionist & Missed-Call Text-Back', price: '299.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S' },
@@ -346,7 +347,7 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-${shop ? `<div class="strip"><div class="strip-row"><p>${esc(studio)} · Live sample page ready for your domain</p><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;"><a href="#offer">Claim ($149 DFY / $19 HTML)</a><a href="javascript:void(0)" onclick="window.openVipModal()">Already Paid? Onboarding</a></div></div></div>\n` : ''}${header}
+${shop ? `<div class="strip"><div class="strip-row"><p>${esc(studio)} · Live sample page ready for your domain</p><div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;"><a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" style="color:#86efac;font-weight:800;">★ $7 Instant AI + HTML Pack</a><a href="#offer">Claim ($149 DFY / $19 HTML)</a><a href="javascript:void(0)" onclick="window.openVipModal()">Already Paid? Onboarding</a></div></div></div>\n` : ''}${header}
 <main id="main"${shop ? '' : ' class="wrap"'}>
 ${body}
 </main>
@@ -415,7 +416,7 @@ ${body}
     <!-- Step 2: Done-For-You / Custom Build Onboarding Form (Netlify Forms) -->
     <div style="background:#ffffff;border:1px solid #d6d3d1;border-radius:10px;padding:14px;">
       <div style="font-size:11px;font-weight:800;color:#1c1917;text-transform:uppercase;margin-bottom:6px;">STEP 2 · DONE-FOR-YOU 48-HOUR LAUNCH &amp; AI SETUP FORM</div>
-      <p style="font-size:12px;color:#57534e;margin:0 0 10px 0;">Purchased the $149 Done-For-You Launch, $299 AI Receptionist, $499 5-Page Site, or $99 Kickoff Deposit? Submit your specs here for 48-hour deployment:</p>
+      <p style="font-size:12px;color:#57534e;margin:0 0 10px 0;">Purchased the $7 Starter Pack, $149 Done-For-You Launch, $299 AI Receptionist, $499 5-Page Site, or $99 Kickoff Deposit? Submit your specs here for 48-hour deployment:</p>
       <form id="vipOnboardingForm" name="vip-onboarding" method="POST" data-netlify="true" onsubmit="return window.submitVipOnboarding(event)" style="display:flex;flex-direction:column;gap:8px;">
         <input type="hidden" name="form-name" value="vip-onboarding">
         <input type="hidden" id="vipSessionId" name="stripe_session_id" value="">
@@ -428,6 +429,7 @@ ${body}
           <input type="text" id="vipTargetDomain" name="target_domain" placeholder="Your Domain (e.g. myshop.com)" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;">
         </div>
         <select id="vipPackageSelect" name="package_purchased" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;background:#fafaf9;">
+          <option value="$7 Flash Starter AI + HTML Pack ($7)">★ $7 Flash Starter AI + HTML Pack ($7)</option>
           <option value="Done-For-You 1-Page Launch ($149)">⚡ Done-For-You 1-Page Launch ($149)</option>
           <option value="24/7 AI Receptionist & Missed-Call Text-Back ($299)">🤖 24/7 AI Receptionist &amp; Missed-Call SMS ($299)</option>
           <option value="Turnkey 5-Page Custom Website ($499)">🚀 Turnkey 5-Page Custom Website ($499)</option>
@@ -456,7 +458,7 @@ ${body}
       <img src="/media/icon.png" alt="City Desk Icon" style="width:36px;height:36px;border-radius:6px;margin:0 auto 8px auto;display:block;">
       <h3 style="font-size:1.15rem;font-weight:800;color:#292524;margin-bottom:4px;">CLAIM THIS SITE OR UNLOCK PRO</h3>
       <p style="font-size:0.8rem;color:#78716c;margin:0;">
-        Choose Self-Serve HTML ($19), Done-For-You 48-Hour Launch ($149), or Full Custom Build packages.
+        Choose $7 Flash Starter Pack, Done-For-You 48-Hour Launch ($149), or Full Custom Build packages.
       </p>
     </div>
 
@@ -470,6 +472,9 @@ ${body}
     </div>
 
     <div style="display:flex;flex-direction:column;gap:8px;">
+      <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.85rem;background:#16a34a;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:800;">
+        ★ $7 Flash Starter: Instant AI Search + HTML Pack ($7)
+      </a>
       <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:10px;font-size:0.85rem;">
         ⚡ Done-For-You 1-Page Launch + Domain ($149)
       </a>
@@ -530,6 +535,7 @@ function sendNote(service, city) {
 }
 
 function cta(text) {
+  const stripeImpulse7Url = 'https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W';
   const stripeDfyUrl = 'https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O';
   const stripeAiUrl = 'https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S';
   const stripe5PageUrl = 'https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T';
@@ -555,11 +561,11 @@ function cta(text) {
   if (replyTo) {
     return {
       action: `<div style="display:flex;gap:0.55rem;flex-wrap:wrap;align-items:center;">
+  <a class="btn" style="background:#16a34a;color:#ffffff;font-weight:800;" href="${stripeImpulse7Url}" target="_blank" rel="noopener">★ $7 Instant AI + HTML Pack</a>
   <a class="btn" style="background:#ea580c;color:#ffffff;font-weight:700;" href="${stripeDfyUrl}" target="_blank" rel="noopener">⚡ $149 Done-For-You 1-Page Launch</a>
   <a class="btn" style="background:#635bff;color:#ffffff;font-weight:700;" href="${stripeAiUrl}" target="_blank" rel="noopener">🤖 $299 Add 24/7 AI Receptionist</a>
   <a class="btn" style="background:#0f766e;color:#ffffff;font-weight:700;" href="${stripe5PageUrl}" target="_blank" rel="noopener">🚀 $499 Turnkey 5-Page Website</a>
   <a class="btn" style="background:#44403c;color:#ffffff;font-weight:700;" href="${stripeDepositUrl}" target="_blank" rel="noopener">🤝 $99 Kickoff Deposit</a>
-  <a class="btn" style="background:#9a3412;color:#ffffff;font-weight:700;" href="${stripeProUrl}" target="_blank" rel="noopener">💳 $19 Self-Serve HTML</a>
   <a class="btn" style="background:#9945ff;color:#ffffff;" href="${depayUrl}" target="_blank" rel="noopener">🟣 Solana Pay</a>
   <button type="button" class="btn" style="background:#ffffff;color:#1c1917;font-weight:700;" onclick="window.openVipModal()">🎁 Already Paid? Download / Onboarding</button>
 </div>`,
