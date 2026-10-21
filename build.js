@@ -232,30 +232,33 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
   const header = shop
     ? `<header class="bar">
   <div class="wrap bar-row">
-  <a class="mark" href="#top"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">${esc(shop.name)} <span>${esc(shop.city)}</span></a>
-  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-    <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">FREE TIER</span>
-    <button type="button" onclick="window.openVipModal()" style="font-size:11px;font-weight:700;padding:4px 10px;border-radius:9999px;background:#1c1917;color:#ffffff;border:none;cursor:pointer;min-height:28px;">Paid / Onboarding</button>
-    <nav>
-      <a href="#work">Work</a>
-      <a href="#estimator">Estimator</a>
-      <a href="#ask">Questions</a>
-      <a class="nav-cta" href="#offer">Claim This Site</a>
+    <a class="mark" href="#top" title="${esc(shop.name)} — ${esc(shop.city)}">
+      <img src="/media/icon.png" alt="City Desk Icon" class="logo-img">
+      <strong class="mark-biz">${esc(shop.name)}</strong>
+      <span class="mark-city">${esc(shop.city)}</span>
+    </a>
+    <nav class="bar-nav" aria-label="Page navigation">
+      <a class="nav-link" href="#work">Scope</a>
+      <a class="nav-link" href="#estimator">Estimator</a>
+      <a class="nav-link" href="#ask">FAQ</a>
+      <button type="button" class="nav-onboard-btn" onclick="window.openVipModal()">Onboarding</button>
+      <a class="nav-cta" href="#offer">Claim Site</a>
     </nav>
-  </div>
   </div>
 </header>`
     : `<header class="bar">
   <div class="wrap bar-row">
-  <a class="mark" href="/"><img src="/media/icon.png" alt="City Desk Icon" class="logo-img" style="width:24px;height:24px;border-radius:4px;vertical-align:middle;margin-right:6px;">${esc(studio.split(' ')[0])} <span>${esc(studio.split(' ').slice(1).join(' ') || 'Desk')}</span><span class="tag-badge" style="font-size:10px;font-weight:700;padding:2px 6px;border-radius:9999px;background:rgba(234,88,12,0.15);color:#ea580c;border:1px solid rgba(234,88,12,0.3);margin-left:6px;">v2.6 SOVEREIGN</span></a>
-  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-    <span id="licenseBadge" class="license-badge" onclick="window.openProModal()" style="font-size:11px;font-weight:700;padding:3px 8px;border-radius:9999px;background:rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.12);color:#9A3412;cursor:pointer;">FREE TIER</span>
-    <button type="button" onclick="window.openVipModal()" style="font-size:11px;font-weight:700;padding:4px 10px;border-radius:9999px;background:#1c1917;color:#ffffff;border:none;cursor:pointer;min-height:28px;">VIP Onboarding / Download</button>
-    <nav>
-      <a href="/">Cities</a>
-      <a href="/services/">Trades</a>
+    <a class="mark" href="/">
+      <img src="/media/icon.png" alt="City Desk Icon" class="logo-img">
+      <strong class="mark-biz">${esc(studio)}</strong>
+      <span class="mark-city">v3.0 MOTION STUDIO</span>
+    </a>
+    <nav class="bar-nav" aria-label="Studio navigation">
+      <a class="nav-link" href="/">Cities</a>
+      <a class="nav-link" href="/services/">Trades</a>
+      <span id="licenseBadge" class="license-badge" onclick="window.openProModal()">FREE TIER</span>
+      <button type="button" class="nav-cta" onclick="window.openVipModal()">VIP Onboarding</button>
     </nav>
-  </div>
   </div>
 </header>`;
   const footer = foot || `<p>${esc(studio)} is one studio. These pages are finished sites for owners. They are not local offices, and they are not a count of who else is selling in town.</p>`;
@@ -350,7 +353,7 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-${shop ? `<div class="strip"><div class="strip-row"><p>${esc(studio)} · Live sample page ready for your domain</p><div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;"><a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" style="color:#4ade80;font-weight:700;">★ $7 Instant AI + HTML Pack</a><a href="#offer">Claim ($149 DFY / $19 HTML)</a><a href="javascript:void(0)" onclick="window.openVipModal()">Already Paid? Onboarding</a></div></div></div>\n` : ''}${header}
+${header}
 <main id="main"${shop ? '' : ' class="wrap"'}>
 ${body}
 </main>

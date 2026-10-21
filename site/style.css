@@ -16,7 +16,7 @@
   --max: 1200px;
 }
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+html, body { margin: 0; padding: 0; overflow-x: clip; }
 body {
   background: var(--paper);
   color: var(--ink);
@@ -30,25 +30,131 @@ img, svg { max-width: 100%; }
 header.bar {
   border-bottom: 1px solid var(--line);
   background: rgba(243, 239, 230, 0.94);
-  backdrop-filter: saturate(1.2) blur(10px);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 40;
 }
 .bar-row {
   display: flex;
   justify-content: space-between;
   gap: 16px;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 16px 0;
+  flex-wrap: nowrap;
+  min-height: 64px;
+  padding: 10px 0;
 }
-.mark { display: inline-flex; align-items: center; gap: 8px; font-family: var(--serif); font-size: 24px; font-weight: 500; letter-spacing: -0.025em; color: var(--ink); text-decoration: none; }
+.mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  max-width: 56%;
+  font-family: var(--serif);
+  font-size: clamp(18px, 1.9vw, 22px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+.mark .logo-img {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.mark .mark-biz {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  line-height: 1.2;
+}
+.mark .mark-city, .mark span {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--copper);
+  background: rgba(154, 52, 18, 0.08);
+  border: 1px solid rgba(154, 52, 18, 0.2);
+  padding: 4px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 2px;
+}
 .mark-svg { width: 32px; height: 32px; flex: none; }
-.mark span { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--copper); margin-left: 6px; }
-nav { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
-nav a { color: var(--ink); text-decoration: none; font-size: 15px; font-weight: 500; }
-nav a:hover { color: var(--copper); }
+nav, .bar-nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+nav a, .bar-nav a.nav-link {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 14.5px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 160ms ease;
+}
+nav a:hover, .bar-nav a.nav-link:hover { color: var(--copper); }
+.nav-onboard-btn {
+  appearance: none;
+  background: rgba(28, 25, 21, 0.06);
+  color: var(--ink);
+  border: 1px solid rgba(28, 25, 21, 0.16);
+  border-radius: 999px;
+  min-height: 36px;
+  padding: 0 14px;
+  font: 600 13px/1 var(--sans);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+.nav-onboard-btn:hover {
+  background: rgba(28, 25, 21, 0.12);
+  border-color: rgba(28, 25, 21, 0.3);
+}
+.license-badge {
+  font: 700 11px/1 var(--sans);
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(154, 52, 18, 0.08);
+  border: 1px solid rgba(154, 52, 18, 0.22);
+  color: var(--copper);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.bar-nav .nav-cta {
+  appearance: none;
+  background: var(--ink);
+  color: #fbf8f3 !important;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  min-height: 38px;
+  padding: 0 16px;
+  font: 600 13.5px/1 var(--sans);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+.bar-nav .nav-cta:hover {
+  background: var(--copper);
+  border-color: var(--copper);
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
 h1 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.035em; line-height: 1.02; font-size: clamp(40px, 6vw, 72px); margin: 18px 0 12px; text-wrap: balance; }
 .lede { font-size: 19px; max-width: 42rem; color: var(--muted); line-height: 1.5; }
 .eyebrow { color: var(--copper-ink); font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; margin: 28px 0 0; }
@@ -239,21 +345,20 @@ body:has(.front) .strip a:hover { border-color: #fff; }
 
 /* Header */
 body:has(.front) header.bar {
-  position: sticky; top: 0; z-index: 5;
-  background: rgba(244, 240, 234, 0.92);
-  backdrop-filter: saturate(1.2) blur(10px);
-  -webkit-backdrop-filter: saturate(1.2) blur(10px);
+  position: sticky; top: 0; z-index: 40;
+  background: rgba(244, 240, 234, 0.94);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
   border-bottom: 1px solid var(--line);
 }
-body:has(.front) .bar-row { width: auto; max-width: none; margin: 0; height: 64px; padding: 0 var(--gut); flex-wrap: nowrap; }
-body:has(.front) .mark { font-family: var(--serif); font-weight
-: 500; font-size: 26px; letter-spacing: -0.02em; gap: 0; color: var(--ink); }
-body:has(.front) .mark span { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--mut); margin-left: 12px; }
-body:has(.front) nav { display: flex; align-items: center; gap: 28px; }
-body:has(.front) nav a { color: var(--ink); font-size: 15px; text-decoration: none; }
-body:has(.front) nav a:hover { color: var(--tape-ink); }
-body:has(.front) nav a.nav-cta { background: var(--ink); color: var(--bg); padding: 10px 16px; min-height: 40px; display: inline-flex; align-items: center; }
-body:has(.front) nav a.nav-cta:hover { background: var(--tape); color: #fff; }
+body:has(.front) .bar-row { width: auto; max-width: 1440px; margin: 0 auto; min-height: 64px; height: auto; padding: 10px var(--gut); flex-wrap: nowrap; }
+body:has(.front) .mark { font-family: var(--serif); font-weight: 500; font-size: clamp(18px, 1.9vw, 22px); letter-spacing: -0.02em; gap: 10px; color: var(--ink); min-width: 0; max-width: 56%; }
+body:has(.front) .mark .mark-city, body:has(.front) .mark span { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--tape-ink); background: rgba(36, 86, 201, 0.08); border: 1px solid rgba(36, 86, 201, 0.22); padding: 4px 10px; border-radius: 999px; margin-left: 2px; }
+body:has(.front) nav, body:has(.front) .bar-nav { display: flex; align-items: center; gap: 18px; flex-wrap: nowrap; flex-shrink: 0; }
+body:has(.front) nav a.nav-link { color: var(--ink); font-size: 14.5px; text-decoration: none; }
+body:has(.front) nav a.nav-link:hover { color: var(--tape-ink); }
+body:has(.front) nav a.nav-cta { background: var(--ink); color: #fbf8f3 !important; padding: 0 18px; min-height: 38px; border-radius: 999px; display: inline-flex; align-items: center; }
+body:has(.front) nav a.nav-cta:hover { background: var(--tape); border-color: var(--tape); color: #fff !important; }
 
 /* Anchor: a strip of painter's tape marks every label */
 .kicker { display: flex; align-items: center; gap: 12px; margin: 0 0 18px; font: 500 12px/1 var(--sans); letter-spacing: 0.18em; text-transform: uppercase; color: var(--mut); }
@@ -315,8 +420,8 @@ body:has(.front) .btn-line:hover { background: var(--ink); color: var(--bg); }
 /* Contact */
 .contact { max-width: 1440px; margin: 0 auto; padding: clamp(56px, 7vw, 112px) var(--gut); border-top: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 80px); align-items: start; scroll-margin-top: 80px; }
 .contact-copy p:not(.kicker) { color: var(--mut); max-width: 40ch; margin: 18px 0 0; }
-.reach-lines { border-top: 2px solid var(--ink); }
-.reach-lines p { margin: 0; padding: 18px 0 20px; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: clamp(30px, 3.4vw, 48px); line-height: 1.05; letter-spacing: -0.03em; }
+.reach-lines { border-top: 2px solid var(--ink); min-width: 0; }
+.reach-lines p { margin: 0; padding: 18px 0 20px; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: clamp(22px, 3vw, 44px); line-height: 1.1; letter-spacing: -0.025em; overflow-wrap: anywhere; word-break: break-word; }
 .reach-lines span { display: block; margin: 0 0 6px; font: 500 12px/1 var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--tape-ink); }
 
 /* Offer: City Desk speaks here, on dark, apart from the homeowner page */
@@ -404,18 +509,19 @@ body:has(.trade) .strip a { color: #f4f0ea; text-decoration: none; border-bottom
 body:has(.trade) header.bar {
   position: sticky;
   top: 0;
-  z-index: 5;
-  background: rgba(244, 240, 234, 0.92);
-  backdrop-filter: saturate(1.2) blur(10px);
+  z-index: 40;
+  background: rgba(244, 240, 234, 0.94);
+  backdrop-filter: saturate(1.4) blur(14px);
+  -webkit-backdrop-filter: saturate(1.4) blur(14px);
   border-bottom: 1px solid var(--line);
 }
-body:has(.trade) .bar-row { width: auto; max-width: none; margin: 0; height: 64px; padding: 0 var(--gut); flex-wrap: nowrap; }
-body:has(.trade) .mark { font-family: var(--serif); font-weight: 500; font-size: 26px; letter-spacing: -0.02em; color: var(--ink); }
-body:has(.trade) .mark span { font-family: var(--sans); font-size: 12px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--mut); margin-left: 12px; }
-body:has(.trade) nav { display: flex; align-items: center; gap: 28px; }
-body:has(.trade) nav a { color: var(--ink); font-size: 15px; text-decoration: none; }
-body:has(.trade) nav a.nav-cta { background: var(--ink); color: var(--bg); padding: 10px 16px; min-height: 40px; display: inline-flex; align-items: center; }
-body:has(.trade) nav a.nav-cta:hover { background: #3c342c; }
+body:has(.trade) .bar-row { width: auto; max-width: 1440px; margin: 0 auto; min-height: 64px; height: auto; padding: 10px var(--gut); flex-wrap: nowrap; }
+body:has(.trade) .mark { font-family: var(--serif); font-weight: 500; font-size: clamp(18px, 1.9vw, 22px); letter-spacing: -0.02em; gap: 10px; color: var(--ink); min-width: 0; max-width: 56%; }
+body:has(.trade) .mark .mark-city, body:has(.trade) .mark span { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #9a3412; background: rgba(154, 52, 18, 0.08); border: 1px solid rgba(154, 52, 18, 0.22); padding: 4px 10px; border-radius: 999px; margin-left: 2px; }
+body:has(.trade) nav, body:has(.trade) .bar-nav { display: flex; align-items: center; gap: 18px; flex-wrap: nowrap; flex-shrink: 0; }
+body:has(.trade) nav a.nav-link { color: var(--ink); font-size: 14.5px; text-decoration: none; }
+body:has(.trade) nav a.nav-cta { background: var(--ink); color: #fbf8f3 !important; padding: 0 18px; min-height: 38px; border-radius: 999px; display: inline-flex; align-items: center; }
+body:has(.trade) nav a.nav-cta:hover { background: #9a3412; border-color: #9a3412; color: #ffffff !important; }
 body:has(.trade) a:focus-visible, body:has(.trade) button:focus-visible { outline-color: var(--ink); }
 
 .trade {
@@ -482,8 +588,8 @@ body:has(.trade) h1 em { font-style: italic; font-weight: 500; }
 .trade-faqs p { margin: 0 0 18px; max-width: 52ch; }
 .trade-contact { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(28px, 4vw, 72px); align-items: start; }
 .trade-contact p { max-width: 36ch; margin: 0; }
-.trade-lines { border-top: 2px solid var(--ink); }
-.trade-lines p { margin: 0; padding: 16px 0 18px; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: clamp(30px, 3.2vw, 46px); line-height: 1.05; letter-spacing: -0.03em; color: var(--ink); }
+.trade-lines { border-top: 2px solid var(--ink); min-width: 0; }
+.trade-lines p { margin: 0; padding: 16px 0 18px; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: clamp(22px, 3vw, 44px); line-height: 1.1; letter-spacing: -0.025em; color: var(--ink); overflow-wrap: anywhere; word-break: break-word; }
 .trade-lines span { display: block; margin: 0 0 6px; font: 500 12px/1 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--mut); }
 
 .trade-offer { background: #241e18; color: #e9e2d6; }
@@ -510,18 +616,22 @@ body:has(.trade) footer { background: var(--bg); border-top: 1px solid var(--lin
 }
 @keyframes trade-rise { from { transform: translateY(14px); } to { transform: none; } }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
+  .bar-nav a.nav-link { display: none; }
+  .mark { max-width: 62%; }
   .trade, .trade-split, .trade-contact, .trade-offer-inner { grid-template-columns: 1fr; }
   .trade-grid, .trade-steps { grid-template-columns: 1fr; }
   body:has(.trade) .trades { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 700px) {
-  body:has(.trade) .bar-row, body:has(.front) .bar-row { height: auto; min-height: 56px; padding: 10px 16px; flex-wrap: wrap; gap: 8px; }
-  body:has(.trade) nav a:not(.nav-cta), body:has(.front) nav a:not(.nav-cta) { display: none; }
-  body:has(.trade) .mark span, body:has(.front) .mark span { display: none; }
-  body:has(.trade) .mark, body:has(.front) .mark { font-size: 20px; }
-  body:has(.trade) .license-badge, body:has(.front) .license-badge { display: none; }
-  body:has(.trade) h1 { font-size: 42px; }
+  .bar-row, body:has(.trade) .bar-row, body:has(.front) .bar-row { height: auto; min-height: 58px; padding: 8px 16px; flex-wrap: nowrap; gap: 10px; }
+  .bar-nav a.nav-link, body:has(.trade) nav a:not(.nav-cta), body:has(.front) nav a:not(.nav-cta) { display: none; }
+  .mark .mark-city, .mark span, body:has(.trade) .mark span, body:has(.front) .mark span { display: none; }
+  .mark, body:has(.trade) .mark, body:has(.front) .mark { font-size: 17px; max-width: 54%; }
+  .nav-onboard-btn { padding: 0 10px; font-size: 12px; min-height: 34px; }
+  .bar-nav .nav-cta, body:has(.trade) nav a.nav-cta, body:has(.front) nav a.nav-cta { padding: 0 12px; font-size: 12.5px; min-height: 34px; }
+  .license-badge, body:has(.trade) .license-badge, body:has(.front) .license-badge { display: none; }
+  body:has(.trade) h1 { font-size: 40px; }
   .trade { padding: 28px 16px 48px; }
   .trade-actions a { flex: 1 1 100%; }
   .trade-facts dd { font-size: 22px; }

@@ -59,7 +59,7 @@
       if (biz && bizIn) bizIn.value = biz;
       if (phone && phoneIn) phoneIn.value = phone;
       if (bizIn && typeof window.generateLivePreview === 'function') {
-        window.generateLivePreview();
+        window.generateLivePreview(true);
       }
 
       // Update trade page contact lines (.trade-lines p, .reach-lines p)
@@ -86,7 +86,7 @@
         const cityOnly = customCity.split(',')[0].trim();
         const h1Em = document.querySelector('h1 em');
         if (h1Em && cityOnly) h1Em.textContent = cityOnly;
-        const markSpan = document.querySelector('.bar .mark span');
+        const markSpan = document.querySelector('.bar .mark .mark-city, .bar .mark span');
         if (markSpan) markSpan.textContent = customCity;
         // Replace fallback template city references across visible copy
         document.querySelectorAll('h1, h2, p, span, option, summary, dd').forEach((el) => {
@@ -104,16 +104,27 @@
         document.title = `${biz}${customCity ? ' (' + customCity + ')' : ''} — ${document.title.replace(/Virginia Beach,\s*VA/g, customCity || 'Local Preview')}`;
         const mark = document.querySelector('.bar .mark');
         if (mark) {
-          const citySpan = mark.querySelector('span');
-          const img = mark.querySelector('img');
+          mark.setAttribute('title', `${biz}${customCity ? ' — ' + customCity : ''}`);
+          const bizEl = mark.querySelector('.mark-biz');
+          const citySpan = mark.querySelector('.mark-city, span');
           const cityText = customCity || (citySpan ? citySpan.textContent : '');
-          mark.innerHTML = '';
-          if (img) mark.appendChild(img);
-          mark.appendChild(document.createTextNode(biz + ' '));
-          if (cityText) {
-            const s = document.createElement('span');
-            s.textContent = cityText;
-            mark.appendChild(s);
+          if (bizEl) {
+            bizEl.textContent = biz;
+            if (citySpan && cityText) citySpan.textContent = cityText;
+          } else {
+            const img = mark.querySelector('img');
+            mark.innerHTML = '';
+            if (img) mark.appendChild(img);
+            const strong = document.createElement('strong');
+            strong.className = 'mark-biz';
+            strong.textContent = biz;
+            mark.appendChild(strong);
+            if (cityText) {
+              const s = document.createElement('span');
+              s.className = 'mark-city';
+              s.textContent = cityText;
+              mark.appendChild(s);
+            }
           }
         }
         const stripP = document.querySelector('.strip-row p');
@@ -122,7 +133,9 @@
         }
         const kicker = document.querySelector('.trade-kicker, .front-copy .kicker');
         if (kicker && !kicker.textContent.includes(biz)) {
+          const tape = kicker.querySelector('.tape');
           kicker.textContent = `${biz} · ${customCity || kicker.textContent.trim()}`;
+          if (tape) kicker.insertBefore(tape, kicker.firstChild);
         }
         const offerH2 = document.querySelector('#offer h2');
         if (offerH2) {
@@ -135,16 +148,19 @@
           const banner = document.createElement('div');
           banner.id = 'personalizedOwnerBanner';
           banner.className = 'owner-preview-wrap';
-          const siteLabel = siteUrl ? ` · ${siteUrl.replace(/^https?:\/\//, '')}` : '';
+          const safeBiz = biz.replace(/[&<>"']/g, '');
+          const safePhone = (phone || '(757) 555-0199').replace(/[&<>"']/g, '');
+          const safeCity = (customCity || 'Local Market').replace(/[&<>"']/g, '');
+          const siteLabel = siteUrl ? ` · ${siteUrl.replace(/^https?:\/\//, '').replace(/[&<>"']/g, '')}` : '';
           banner.innerHTML = `<div class="owner-preview-bar">
             <div class="owner-preview-copy">
-              <div class="owner-preview-kicker"><span class="dot"></span>LIVE CUSTOM SPEC &amp; AI SEARCH GRAPH PREPARED FOR ${biz.replace(/[&<>"']/g, '')}${siteLabel.replace(/[&<>"']/g, '')}</div>
-              <p class="owner-preview-desc">Your business name, direct line <strong>${(phone || 'on file').replace(/[&<>"']/g, '')}</strong>, and <strong>${(customCity || 'local market').replace(/[&<>"']/g, '')}</strong> Schema.org JSON-LD are pre-wired below. Export the complete standalone HTML + AI Search Booster Pack for <strong>$7</strong> or have our engineering desk deploy it on your domain in 48 hours.</p>
+              <div class="owner-preview-kicker"><span class="dot"></span>LIVE PREVIEW &amp; AI SEARCH GRAPH · ${safeBiz}${siteLabel}</div>
+              <p class="owner-preview-desc">Pre-configured for <strong>${safeBiz}</strong> (${safePhone} · ${safeCity}). Export the standalone HTML + Schema.org JSON-LD pack for <strong>$7</strong>, or have our engineering desk deploy it on your domain in 48 hours.</p>
             </div>
             <div class="owner-preview-actions">
-              <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener" class="btn-arch-primary">★ Unlock $7 AI + HTML Pack</a>
-              <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener" class="btn-arch-copper">$149 Done-For-You Launch &rarr;</a>
-              <button type="button" onclick="window.openVipModal()" class="btn-arch-ghost">Already Paid? Onboarding</button>
+              <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener" class="btn-arch-primary">★ $7 AI + HTML Pack</a>
+              <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener" class="btn-arch-copper">$149 DFY 48h Launch &rarr;</a>
+              <button type="button" onclick="window.openVipModal()" class="btn-arch-ghost">Onboarding / Download</button>
             </div>
           </div>`;
           topSect.parentNode.insertBefore(banner, topSect);
@@ -508,7 +524,7 @@
     return false;
   };
 
-  window.generateLivePreview = function () {
+  window.generateLivePreview = function (silent) {
     const tradeEl = document.getElementById('synthTradeSelect');
     const cityEl = document.getElementById('synthCitySelect');
     const bizEl = document.getElementById('synthBizInput');
@@ -533,7 +549,9 @@
     if (c) c.textContent = cityName;
     if (stat) stat.textContent = `Synthesized at ${new Date().toLocaleTimeString()}`;
 
-    showToast(`⚡ Assembled live preview for ${biz} in ${cityName}!`);
+    if (silent !== true) {
+      showToast(`⚡ Assembled live preview for ${biz} in ${cityName}!`);
+    }
   };
 
   window.payWithSolana = function (e) {
