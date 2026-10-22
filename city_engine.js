@@ -142,14 +142,14 @@
           offerH2.textContent = `Prepared for ${biz}. Put it on your domain today.`;
         }
 
-        // Inject above-the-fold personalized diagnostic + $7 Instant Unlock banner on trade pages
-        const topSect = document.getElementById('top');
-        if (topSect && !document.getElementById('personalizedOwnerBanner')) {
+        // Inject personalized diagnostic + $7 Instant Unlock banner above #offer (never above #top so header.bar stays ultra-clean)
+        const offerSect = document.getElementById('offer') || document.getElementById('estimator');
+        if (offerSect && !document.getElementById('personalizedOwnerBanner')) {
           const banner = document.createElement('div');
           banner.id = 'personalizedOwnerBanner';
           banner.className = 'owner-preview-wrap';
           const safeBiz = biz.replace(/[&<>"']/g, '');
-          const safePhone = (phone || '(757) 555-0199').replace(/[&<>"']/g, '');
+          const safePhone = (phone || '(948) 204-7987').replace(/[&<>"']/g, '');
           const safeCity = (customCity || 'Local Market').replace(/[&<>"']/g, '');
           const siteLabel = siteUrl ? ` · ${siteUrl.replace(/^https?:\/\//, '').replace(/[&<>"']/g, '')}` : '';
           banner.innerHTML = `<div class="owner-preview-bar">
@@ -163,7 +163,7 @@
               <button type="button" onclick="window.openVipModal()" class="btn-arch-ghost">Onboarding / Download</button>
             </div>
           </div>`;
-          topSect.parentNode.insertBefore(banner, topSect);
+          offerSect.parentNode.insertBefore(banner, offerSect);
         }
       }
     } catch (e) {}
@@ -326,7 +326,7 @@
 
     const params = new URLSearchParams(window.location.search);
     const biz = (bizEl && bizEl.value.trim()) || params.get('biz') || localStorage.getItem('cd_last_biz') || 'Your Business Name';
-    const phone = (phoneEl && phoneEl.value.trim()) || params.get('phone') || localStorage.getItem('cd_last_phone') || '(555) 234-5678';
+    const phone = (phoneEl && phoneEl.value.trim()) || params.get('phone') || localStorage.getItem('cd_last_phone') || '(948) 204-7987';
     const email = (emailEl && emailEl.value.trim()) || params.get('email') || localStorage.getItem('cd_last_email') || 'owner@yourdomain.com';
 
     const pageH1 = document.querySelector('h1') ? document.querySelector('h1').textContent.trim() : `${biz} — Written Estimate Before Work Begins`;
@@ -533,7 +533,7 @@
     const tradeName = tradeEl ? tradeEl.options[tradeEl.selectedIndex].text.split('(')[0].trim() : 'Painters';
     const cityName = cityEl ? cityEl.options[cityEl.selectedIndex].text : 'Boise, ID';
     const biz = bizEl && bizEl.value.trim() ? bizEl.value.trim() : 'Apex Craftsman';
-    const phone = phoneEl && phoneEl.value.trim() ? phoneEl.value.trim() : '(208) 555-0199';
+    const phone = phoneEl && phoneEl.value.trim() ? phoneEl.value.trim() : '(948) 204-7987';
 
     const h = document.getElementById('previewHeadline');
     const l = document.getElementById('previewLede');

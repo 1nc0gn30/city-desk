@@ -241,7 +241,6 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
       <a class="nav-link" href="#work">Scope</a>
       <a class="nav-link" href="#estimator">Estimator</a>
       <a class="nav-link" href="#ask">FAQ</a>
-      <button type="button" class="nav-onboard-btn" onclick="window.openVipModal()">Onboarding</button>
       <a class="nav-cta" href="#offer">Claim Site</a>
     </nav>
   </div>
@@ -251,13 +250,12 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
     <a class="mark" href="/">
       <img src="/media/icon.png" alt="City Desk Icon" class="logo-img">
       <strong class="mark-biz">${esc(studio)}</strong>
-      <span class="mark-city">v3.0 MOTION STUDIO</span>
+      <span class="mark-city">1,000 PAGES</span>
     </a>
     <nav class="bar-nav" aria-label="Studio navigation">
-      <a class="nav-link" href="/">Cities</a>
-      <a class="nav-link" href="/services/">Trades</a>
-      <span id="licenseBadge" class="license-badge" onclick="window.openProModal()">FREE TIER</span>
-      <button type="button" class="nav-cta" onclick="window.openVipModal()">VIP Onboarding</button>
+      <a class="nav-link" href="/">Synthesizer</a>
+      <a class="nav-link" href="/services/">20 Trades</a>
+      <button type="button" class="nav-cta" onclick="window.openVipModal()">Launch Concierge</button>
     </nav>
   </div>
 </header>`;
@@ -360,7 +358,7 @@ ${body}
 <footer>
   <div class="wrap">
   ${footer}
-  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform • Direct Support: <a href="mailto:neal@nealfrazier.tech">neal@nealfrazier.tech</a> · <a href="tel:7575760980">(757) 576-0980</a></p>
+  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform • Direct Support: <a href="mailto:neal@nealfrazier.tech">neal@nealfrazier.tech</a> · <a href="tel:9482047987">(948) 204-7987</a></p>
   </div>
 </footer>
 
@@ -449,7 +447,7 @@ ${body}
         </button>
       </form>
       <div id="vipOnboardingConfirm" style="display:none;margin-top:10px;padding:12px;background:#dcfce7;border:1px solid #86efac;border-radius:8px;color:#14532d;font-size:12px;">
-        <strong>✓ VIP Onboarding Ticket Logged!</strong> Neal Frazier has received your specs and will email/text your live staging preview within 24–48 hours. Direct line: <a href="tel:7575760980" style="color:#14532d;font-weight:700;">(757) 576-0980</a> · <a href="mailto:neal@nealfrazier.tech" style="color:#14532d;font-weight:700;">neal@nealfrazier.tech</a>.
+        <strong>✓ VIP Onboarding Ticket Logged!</strong> Neal Frazier has received your specs and will email/text your live staging preview within 24–48 hours. Direct line: <a href="tel:9482047987" style="color:#14532d;font-weight:700;">(948) 204-7987</a> · <a href="mailto:neal@nealfrazier.tech" style="color:#14532d;font-weight:700;">neal@nealfrazier.tech</a>.
       </div>
     </div>
   </div>
@@ -882,38 +880,59 @@ function homePage() {
   const low = Math.min(...SERVICES.map((s) => s.price));
   const high = Math.max(...SERVICES.map((s) => s.price));
   const body = `
+<section class="claude-hero">
+  <div class="claude-hero-copy">
+    <p class="eyebrow"><span class="pulse-dot"></span>One studio · ${SERVICES.length} trades · ${CITIES.length} cities</p>
+    <h1>Finished pages for one trade in one city</h1>
+    <p class="lede">${esc(studio)} writes the page complete. You send that page. The owner adds their name, phone, and email and can publish it. The first month is a few cities you can finish.</p>
+    <div class="claude-hero-actions">
+      <a href="#studioWorkspace" class="btn-arch-copper">Open Live Synthesizer &darr;</a>
+      <a href="/services/" class="btn-line" style="min-height:44px;display:inline-flex;align-items:center;padding:0 18px;border-radius:8px;border:1px solid var(--line);text-decoration:none;color:var(--ink);font-weight:500;">Browse 20 Trades</a>
+      <span id="licenseBadge" class="license-badge" onclick="window.openProModal()">FREE TIER</span>
+    </div>
+  </div>
+  <div class="claude-hero-card">
+    <div class="spec-head">
+      <span>ARCHITECTURAL STUDIO LEDGER</span>
+      <span class="spec-status">1,000 LIVE PAGES</span>
+    </div>
+    <div class="price" style="margin:0 0 16px 0;padding:16px;background:#f4f0ea;color:#1c1915;border-radius:8px;border:1px solid var(--line);">
+      <div>
+        <strong style="font-family:var(--serif);font-size:32px;color:#1c1915;display:block;letter-spacing:-0.02em;">$149 <small style="font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:400;">Done-For-You 48h Launch (vs ${esc(money(low))}–${esc(money(high))} agency)</small></strong>
+        <p style="margin:6px 0 0 0;font-size:13.5px;color:var(--muted);">A finished page. No ads. No rank promise. No reviews written by us.</p>
+      </div>
+    </div>
+    <div class="spec-grid">
+      <div><span class="spec-label">Self-Serve HTML</span><span class="spec-val">$19 Instant</span></div>
+      <div><span class="spec-label">48h DFY Setup</span><span class="spec-val">$149 Flat</span></div>
+      <div><span class="spec-label">Quote Intake</span><span class="spec-val">60s Written</span></div>
+      <div><span class="spec-label">Monthly Retainer</span><span class="spec-val">$0 / Forever</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Compact Founding Studio Banner directly above the Synthesizer Workspace -->
 <aside id="salesBanner" aria-label="Founding Studio Promotion" class="sales-banner">
   <div class="sales-content">
     <div class="sales-left">
       <span class="pulse-dot"></span>
-      <strong>FOUNDING LEAD STUDIO ACCESS:</strong>
-      <span>Lifetime Local Trade Page Synthesizer —</span>
+      <strong>FOUNDING STUDIO ACCESS:</strong>
+      <span>Standalone HTML + Schema.org Synthesizer —</span>
       <span style="text-decoration: line-through; opacity: 0.6;">$79</span>
       <strong style="color: #ea580c; font-size: 14px;">$19 Self-Serve</strong>
-      <span class="banner-sub">or <strong>$149 Done-For-You 48h Launch</strong> • Instant 1,000-city HTML exports.</span>
+      <span class="banner-sub">or <strong>$149 Done-For-You 48h Launch</strong></span>
     </div>
     <div class="sales-actions">
-      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-gold" style="background:#ea580c;">★ $149 Done-For-You Launch</a>
-      <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold">$19 Self-Serve HTML &rarr;</a>
+      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-gold" style="background:#ea580c;">★ $149 DFY Launch</a>
+      <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold">$19 HTML Pass &rarr;</a>
       <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" onclick="window.payWithSolana(event)">Solana Pay &rarr;</a>
-      <button id="btnActivateBanner" onclick="window.openVipModal()" class="btn-text">Already Paid? Download / Onboarding</button>
+      <button id="btnActivateBanner" onclick="window.openVipModal()" class="btn-text">Onboarding / Key</button>
     </div>
   </div>
 </aside>
 
-<p class="eyebrow">One studio · ${SERVICES.length} trades · ${CITIES.length} cities</p>
-<h1>Finished pages for one trade in one city</h1>
-<hr class="rule">
-<p class="lede">${esc(studio)} writes the page complete. You send that page. The owner adds their name, phone, and email and can publish it. The first month is a few cities you can finish.</p>
-<div class="price">
-  <div>
-    <strong>${esc(money(low))}–${esc(money(high))}</strong>
-    <p>A finished page. No ads. No rank promise. No reviews written by us.</p>
-  </div>
-</div>
-
 <!-- Interactive Studio Workspace -->
-<section class="sect studio-workspace" style="margin-top:28px;margin-bottom:32px;padding:24px;background:#ffffff;border:1px solid #e7e5e4;border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,0.04);">
+<section id="studioWorkspace" class="sect studio-workspace" style="margin-top:16px;margin-bottom:36px;padding:28px;background:#ffffff;border:1px solid #e7e5e4;border-radius:14px;box-shadow:0 10px 30px rgba(28,25,21,0.05);">
   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:16px;border-bottom:1px solid #f5f5f4;padding-bottom:12px;">
     <div>
       <h2 style="font-size:22px;font-weight:700;color:#1c1917;margin:0;">Live Lead Page Synthesizer</h2>
@@ -948,7 +967,7 @@ function homePage() {
     </div>
     <div>
       <label style="display:block;font-size:11px;font-weight:700;color:#78716c;text-transform:uppercase;margin-bottom:4px;">Phone Number</label>
-      <input type="text" id="synthPhoneInput" value="(208) 555-0199" style="width:100%;padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;background:#fafaf9;">
+      <input type="text" id="synthPhoneInput" value="(948) 204-7987" style="width:100%;padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:14px;background:#fafaf9;">
     </div>
   </div>
 
@@ -969,7 +988,7 @@ function homePage() {
     <p style="font-size:14px;color:#57534e;line-height:1.5;margin:0 0 12px 0;" id="previewLede">Three rooms or the whole house, inside or out. You see the price in writing with prep, coats, and paint all listed before work begins.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:10px;font-size:13px;background:#ffffff;padding:12px;border-radius:6px;border:1px solid #e7e5e4;">
       <div><strong>Company:</strong> <span id="previewBiz">Apex Craftsman</span></div>
-      <div><strong>Phone:</strong> <span id="previewPhone">(208) 555-0199</span></div>
+      <div><strong>Phone:</strong> <span id="previewPhone">(948) 204-7987</span></div>
       <div><strong>Target Market:</strong> <span id="previewCity">Boise, ID</span></div>
     </div>
   </div>
@@ -980,10 +999,10 @@ function homePage() {
       <div style="font-family:monospace;font-size:11px;color:#78716c;line-height:1.6;">
         <div>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;</div>
         <div>&lt;title&gt;Apex Craftsman — House Painting in Boise, ID&lt;/title&gt;</div>
-        <div>&lt;meta name="description" content="Written price before the first can opens. Call (208) 555-0199."&gt;</div>
+        <div>&lt;meta name="description" content="Written price before the first can opens. Call (948) 204-7987."&gt;</div>
         <div>&lt;link rel="canonical" href="https://apexboise.com/"&gt;</div>
         <div>&lt;!-- Full 20kb self-contained single-page bundle with responsive CSS, semantic schema.org graph, and client contact handler --&gt;</div>
-        <div>&lt;script type="application/ld+json"&gt;{"@context":"https://schema.org","@type":"LocalBusiness","name":"Apex Craftsman","telephone":"(208) 555-0199"}&lt;/script&gt;</div>
+        <div>&lt;script type="application/ld+json"&gt;{"@context":"https://schema.org","@type":"LocalBusiness","name":"Apex Craftsman","telephone":"(948) 204-7987"}&lt;/script&gt;</div>
       </div>
     </div>
 
@@ -1156,7 +1175,7 @@ function build() {
 
 - **Canonical URL**: https://city-desk.netlify.app
 - **Creator & Principal Architect**: Neal Frazier (Neal Frazier Tech) — https://www.nealfrazier.tech
-- **Direct Contact**: neal@nealfrazier.tech | (757) 576-0980
+- **Direct Contact**: neal@nealfrazier.tech | (948) 204-7987
 - **Machine-Readable Web APIs**:
   - \`https://city-desk.netlify.app/api/index.json\`
   - \`https://city-desk.netlify.app/api/services.json\`
@@ -1174,7 +1193,7 @@ function build() {
 - **Post-Payment Fulfillment**: Every checkout redirects to \`https://city-desk.netlify.app/?licensed=true&dfy=true\` which unlocks immediate standalone HTML downloads and opens the VIP 48-Hour Launch Concierge Form (\`vip-onboarding\`).
 `);
   write('llms-full.txt', `# City Desk — Complete 1,000-Page Local Trade Directory & Turnkey Fulfillment Specification
-Engineered by Neal Frazier (Neal Frazier Tech | https://www.nealfrazier.tech | neal@nealfrazier.tech | (757) 576-0980).
+Engineered by Neal Frazier (Neal Frazier Tech | https://www.nealfrazier.tech | neal@nealfrazier.tech | (948) 204-7987).
 
 ## 20 Covered Service Trades
 ${SERVICES.map(s => `- **${s.name}** (\`/services/${s.slug}/\`): ${s.line}`).join('\n')}
@@ -1218,7 +1237,7 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
     schema_version: '1.0',
     name: 'City Desk — Neal Frazier Tech Local Trade Engine',
     url: 'https://city-desk.netlify.app',
-    contact: { email: 'neal@nealfrazier.tech', phone: '+1-757-576-0980' },
+    contact: { email: 'neal@nealfrazier.tech', phone: '+1-948-204-7987' },
     apis: {
       index: 'https://city-desk.netlify.app/api/index.json',
       services: 'https://city-desk.netlify.app/api/services.json',
