@@ -6,7 +6,7 @@
 (function () {
   'use strict';
 
-  let isPro = false;
+  let isPro = true;
 
   function init() {
     applyProspectPersonalization();
@@ -154,12 +154,12 @@
           const siteLabel = siteUrl ? ` · ${siteUrl.replace(/^https?:\/\//, '').replace(/[&<>"']/g, '')}` : '';
           banner.innerHTML = `<div class="owner-preview-bar">
             <div class="owner-preview-copy">
-              <div class="owner-preview-kicker"><span class="dot"></span>LIVE PREVIEW &amp; AI SEARCH GRAPH · ${safeBiz}${siteLabel}</div>
+              <div class="owner-preview-kicker"><span class="dot"></span>LIVE PREVIEW & AI SEARCH GRAPH · ${safeBiz}${siteLabel}</div>
               <p class="owner-preview-desc">Pre-configured for <strong>${safeBiz}</strong> (${safePhone} · ${safeCity}). Export the standalone HTML + Schema.org JSON-LD pack for <strong>$7</strong>, or have our engineering desk deploy it on your domain in 48 hours.</p>
             </div>
             <div class="owner-preview-actions">
-              <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener" class="btn-arch-primary">★ $7 AI + HTML Pack</a>
-              <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener" class="btn-arch-copper">$149 DFY 48h Launch &rarr;</a>
+              <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener" class="btn-arch-primary">★ $7 AI + HTML Pack</a>
+              <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener" class="btn-arch-copper">$149 DFY 48h Launch &rarr;</a>
               <button type="button" onclick="window.openVipModal()" class="btn-arch-ghost">Onboarding / Download</button>
             </div>
           </div>`;
@@ -175,35 +175,10 @@
   const STORAGE_KEY_PRO = 'pro_licensed';
 
   function checkLicense() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const isCheckoutReturn = (
-      urlParams.get('licensed') === 'true' ||
-      urlParams.get('pro') === 'true' ||
-      urlParams.get('dfy') === 'true' ||
-      urlParams.get('vip') === 'true' ||
-      urlParams.get('deposit') === 'true' ||
-      Boolean(urlParams.get('session_id')) ||
-      urlParams.get('key') === 'CITY-PRO-2026'
-    );
-
-    if (isCheckoutReturn) {
-      localStorage.setItem(STORAGE_KEY, 'true');
-      localStorage.setItem(STORAGE_KEY_ALT, 'true');
-      localStorage.setItem(STORAGE_KEY_PRO, 'true');
-      isPro = true;
-      updateProUI();
-      showToast('🎉 Payment Verified! Pro Access Unlocked & VIP Onboarding Ready.');
-      setTimeout(() => {
-        if (typeof window.openVipModal === 'function') {
-          window.openVipModal();
-        }
-      }, 250);
-      return;
-    }
-
-    isPro = localStorage.getItem(STORAGE_KEY) === 'true' ||
-            localStorage.getItem(STORAGE_KEY_ALT) === 'true' ||
-            localStorage.getItem(STORAGE_KEY_PRO) === 'true';
+    isPro = true;
+    localStorage.setItem(STORAGE_KEY, 'true');
+    localStorage.setItem(STORAGE_KEY_ALT, 'true');
+    localStorage.setItem(STORAGE_KEY_PRO, 'true');
     updateProUI();
   }
 
@@ -215,50 +190,26 @@
     const proPaywallContent = document.getElementById('proPaywallContent');
     const salesBanner = document.getElementById('salesBanner') || document.querySelector('.sales-banner');
 
-    if (isPro) {
-      if (licenseBadge) {
-        licenseBadge.textContent = '⭐ PRO ACTIVE';
-        licenseBadge.style.background = '#dcfce7';
-        licenseBadge.style.color = '#15803d';
-        licenseBadge.style.borderColor = '#86efac';
-      }
-      if (salesBanner) {
-        salesBanner.style.display = 'none';
-      }
-      paywallBlur.forEach(el => {
-        el.style.filter = 'none';
-        el.style.userSelect = 'auto';
-      });
-      if (proPaywallContent) {
-        proPaywallContent.style.filter = 'none';
-        proPaywallContent.style.userSelect = 'auto';
-      }
-      paywallOverlay.forEach(el => el.classList.add('hidden'));
-      if (paywallOverlaySingle) {
-        paywallOverlaySingle.style.display = 'none';
-      }
-    } else {
-      if (licenseBadge) {
-        licenseBadge.textContent = '⚡ FREE TIER';
-        licenseBadge.style.background = 'rgba(0,0,0,0.06)';
-        licenseBadge.style.color = '#9a3412';
-        licenseBadge.style.borderColor = 'rgba(0,0,0,0.12)';
-      }
-      if (salesBanner) {
-        salesBanner.style.display = 'block';
-      }
-      paywallBlur.forEach(el => {
-        el.style.filter = 'blur(6px)';
-        el.style.userSelect = 'none';
-      });
-      if (proPaywallContent) {
-        proPaywallContent.style.filter = 'blur(6px)';
-        proPaywallContent.style.userSelect = 'none';
-      }
-      paywallOverlay.forEach(el => el.classList.remove('hidden'));
-      if (paywallOverlaySingle) {
-        paywallOverlaySingle.style.display = 'flex';
-      }
+    if (licenseBadge) {
+      licenseBadge.textContent = '✦ 100% FREE & OPEN ACCESS';
+      licenseBadge.style.background = '#dcfce7';
+      licenseBadge.style.color = '#15803d';
+      licenseBadge.style.borderColor = '#86efac';
+    }
+    if (salesBanner) {
+      salesBanner.style.display = 'none';
+    }
+    paywallBlur.forEach(el => {
+      el.style.filter = 'none';
+      el.style.userSelect = 'auto';
+    });
+    if (proPaywallContent) {
+      proPaywallContent.style.filter = 'none';
+      proPaywallContent.style.userSelect = 'auto';
+    }
+    paywallOverlay.forEach(el => el.classList.add('hidden'));
+    if (paywallOverlaySingle) {
+      paywallOverlaySingle.style.display = 'none';
     }
   }
 
@@ -556,19 +507,11 @@
 
   window.payWithSolana = function (e) {
     if (e) e.preventDefault();
-    if (window.DePay && window.DePay.Payment) {
-      try {
-        window.DePay.Payment({
-          accept: [
-            { blockchain: 'solana', token: '11111111111111111111111111111111', receiver: 'GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK', amount: 19 }
-          ]
-        });
-        return;
-      } catch (err) {
-        console.warn('DePay fallback:', err);
-      }
+    const addr = 'GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(addr);
     }
-    window.open('https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amount=19', '_blank');
+    showToast('⚡ Solana Tip Address copied: ' + addr);
   };
 
   function setupEventListeners() {

@@ -836,19 +836,14 @@ body:has(.trade) footer { background: var(--bg); border-top: 1px solid var(--lin
   color: #78716c;
 }
 
-/* Paywall Blur & Overlay */
+/* Sovereign Open Access — Zero Paywalls & Zero Blurs */
 .pro-paywall-blur {
-  transition: filter 0.3s ease;
+  filter: none !important;
+  -webkit-filter: none !important;
+  user-select: auto !important;
 }
 .pro-paywall-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-  background: rgba(243, 239, 230, 0.88);
-  backdrop-filter: blur(2px);
+  display: none !important;
 }
 
 @media (max-width: 640px) {

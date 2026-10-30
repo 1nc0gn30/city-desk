@@ -5,31 +5,31 @@
       "id": "dfy-1page",
       "name": "Done-For-You 1-Page Custom Launch (48h Delivery)",
       "priceUSD": 149,
-      "checkoutUrl": "https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O"
+      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
     },
     {
       "id": "ai-receptionist",
       "name": "24/7 AI Receptionist & Missed-Call SMS Text-Back",
       "priceUSD": 299,
-      "checkoutUrl": "https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S"
+      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
     },
     {
       "id": "turnkey-5page",
       "name": "Turnkey 5-Page Custom Website & Local AEO",
       "priceUSD": 499,
-      "checkoutUrl": "https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T"
+      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
     },
     {
       "id": "kickoff-deposit",
       "name": "Custom Build Kickoff Deposit",
       "priceUSD": 99,
-      "checkoutUrl": "https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V"
+      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
     },
     {
       "id": "self-serve-html",
       "name": "Self-Serve Standalone HTML Bundle",
       "priceUSD": 19,
-      "checkoutUrl": "https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N"
+      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
     }
   ],
   "trades": [

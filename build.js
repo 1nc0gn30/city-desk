@@ -30,7 +30,7 @@ function rotate(list, seed) {
 
 function esc(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    '&': '&', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   }[c]));
 }
 
@@ -163,7 +163,7 @@ ${faqs.map(([q, a]) => `      <details><summary>${esc(q)}</summary><p>${esc(a)}<
         </select>
       </div>
       <div>
-        <label for="estUrgencySelect" style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#5a5248;margin-bottom:6px;">02 · Project Size &amp; Dispatch Window</label>
+        <label for="estUrgencySelect" style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#5a5248;margin-bottom:6px;">02 · Project Size & Dispatch Window</label>
         <select id="estUrgencySelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px 14px;border:1px solid #d6d3d1;border-radius:6px;font-size:15px;font-family:inherit;background:#ffffff;color:#1c1917;">
           <option value="1">Standard Single Job / Scheduled Visit</option>
           <option value="1.8">Multi-Room / Full System Scope</option>
@@ -281,11 +281,11 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
           worksFor: { '@type': 'Organization', name: 'Neal Frazier Tech' }
         },
         offers: [
-          { '@type': 'Offer', name: 'Instant AI Search & Lead Booster Pack ($7 Flash Starter)', price: '7.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W' },
-          { '@type': 'Offer', name: 'Self-Serve Standalone HTML Bundle', price: '19.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N' },
-          { '@type': 'Offer', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', price: '149.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O' },
-          { '@type': 'Offer', name: '24/7 AI Receptionist & Missed-Call Text-Back', price: '299.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S' },
-          { '@type': 'Offer', name: 'Turnkey 5-Page Custom Website & Local AEO', price: '499.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T' }
+          { '@type': 'Offer', name: 'Instant AI Search & Lead Booster Pack ($7 Flash Starter)', price: '7.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
+          { '@type': 'Offer', name: 'Self-Serve Standalone HTML Bundle', price: '19.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
+          { '@type': 'Offer', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', price: '149.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
+          { '@type': 'Offer', name: '24/7 AI Receptionist & Missed-Call Text-Back', price: '299.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
+          { '@type': 'Offer', name: 'Turnkey 5-Page Custom Website & Local AEO', price: '499.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' }
         ]
       },
       {
@@ -341,11 +341,10 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
 <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs Index">
 <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLMs Full Corpus">
 <link rel="alternate" type="application/json" href="/api/index.json" title="AI Agent Discovery API">
-<link rel="alternate" type="application/json" href="/api/services.json" title="Services &amp; Checkout API">
+<link rel="alternate" type="application/json" href="/api/services.json" title="Services & Checkout API">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/media/icon.png">
 <link rel="apple-touch-icon" href="/media/icon.png">
-<script src="https://integrate.depay.com/widgets/v13.js" defer></script>
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">${jsonLd(fullGraph)}</script>
 </head>
@@ -397,10 +396,10 @@ ${body}
   <div class="modal-content" style="max-width:560px;max-height:92vh;overflow-y:auto;">
     <button onclick="window.closeVipModal()" class="modal-close" aria-label="Close VIP modal">✕</button>
     <div style="text-align:center;margin-bottom:14px;">
-      <div style="display:inline-block;padding:4px 12px;border-radius:999px;background:#dcfce7;color:#15803d;font-size:11px;font-weight:800;margin-bottom:8px;">✓ INSTANT FULFILLMENT &amp; VIP ONBOARDING</div>
-      <h3 style="font-size:1.25rem;font-weight:800;color:#1c1917;margin:0 0 4px 0;">Claim Your Site &amp; Submit Launch Specs</h3>
+      <div style="display:inline-block;padding:4px 12px;border-radius:999px;background:#dcfce7;color:#15803d;font-size:11px;font-weight:800;margin-bottom:8px;">✓ INSTANT FULFILLMENT & VIP ONBOARDING</div>
+      <h3 style="font-size:1.25rem;font-weight:800;color:#1c1917;margin:0 0 4px 0;">Claim Your Site & Submit Launch Specs</h3>
       <p style="font-size:0.82rem;color:#57534e;margin:0;">
-        Download your personalized standalone HTML bundle right now, or submit your domain &amp; business details below so Neal Frazier deploys your site live within 48 hours.
+        Download your personalized standalone HTML bundle right now, or submit your domain & business details below so Neal Frazier deploys your site live within 48 hours.
       </p>
     </div>
 
@@ -419,7 +418,7 @@ ${body}
 
     <!-- Step 2: Done-For-You / Custom Build Onboarding Form (Netlify Forms) -->
     <div style="background:#ffffff;border:1px solid #d6d3d1;border-radius:10px;padding:14px;">
-      <div style="font-size:11px;font-weight:800;color:#1c1917;text-transform:uppercase;margin-bottom:6px;">STEP 2 · DONE-FOR-YOU 48-HOUR LAUNCH &amp; AI SETUP FORM</div>
+      <div style="font-size:11px;font-weight:800;color:#1c1917;text-transform:uppercase;margin-bottom:6px;">STEP 2 · DONE-FOR-YOU 48-HOUR LAUNCH & AI SETUP FORM</div>
       <p style="font-size:12px;color:#57534e;margin:0 0 10px 0;">Purchased the $7 Starter Pack, $149 Done-For-You Launch, $299 AI Receptionist, $499 5-Page Site, or $99 Kickoff Deposit? Submit your specs here for 48-hour deployment:</p>
       <form id="vipOnboardingForm" name="vip-onboarding" method="POST" data-netlify="true" onsubmit="return window.submitVipOnboarding(event)" style="display:flex;flex-direction:column;gap:8px;">
         <input type="hidden" name="form-name" value="vip-onboarding">
@@ -435,7 +434,7 @@ ${body}
         <select id="vipPackageSelect" name="package_purchased" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;background:#fafaf9;">
           <option value="$7 Flash Starter AI + HTML Pack ($7)">★ $7 Flash Starter AI + HTML Pack ($7)</option>
           <option value="Done-For-You 1-Page Launch ($149)">★ Done-For-You 1-Page Launch ($149)</option>
-          <option value="24/7 AI Receptionist & Missed-Call Text-Back ($299)">• 24/7 AI Receptionist &amp; Missed-Call SMS ($299)</option>
+          <option value="24/7 AI Receptionist & Missed-Call Text-Back ($299)">• 24/7 AI Receptionist & Missed-Call SMS ($299)</option>
           <option value="Turnkey 5-Page Custom Website ($499)">• Turnkey 5-Page Custom Website ($499)</option>
           <option value="Custom Build Kickoff Deposit ($99)">• Custom Build Kickoff Deposit ($99)</option>
           <option value="Custom AI Swarm / SaaS Sprint ($997)">• Custom AI Swarm / SaaS Sprint ($997)</option>
@@ -453,63 +452,34 @@ ${body}
   </div>
 </div>
 
-<!-- Pro Paywall Modal -->
+<!-- Sovereign Support & Info Modal -->
 <div id="licenseModal" data-alias="proModal" class="modal-overlay hidden">
   <div class="modal-content">
     <button id="closeProModal" onclick="window.closeProModal()" class="modal-close" aria-label="Close modal">✕</button>
 
     <div style="text-align:center;margin-bottom:16px;">
       <img src="/media/icon.png" alt="City Desk Icon" style="width:36px;height:36px;border-radius:6px;margin:0 auto 8px auto;display:block;">
-      <h3 style="font-size:1.15rem;font-weight:800;color:#292524;margin-bottom:4px;">CLAIM THIS SITE OR UNLOCK PRO</h3>
+      <h3 style="font-size:1.15rem;font-weight:800;color:#292524;margin-bottom:4px;">100% FREE &amp; OPEN ACCESS</h3>
       <p style="font-size:0.8rem;color:#78716c;margin:0;">
-        Choose $7 Flash Starter Pack, Done-For-You 48-Hour Launch ($149), or Full Custom Build packages.
+        All 1,000 multi-city pages, standalone exports, and synthesis tools are completely unlocked. Tips are voluntary.
       </p>
     </div>
 
     <div style="font-size:0.8rem;color:#44403c;display:flex;flex-direction:column;gap:6px;margin-bottom:16px;">
-      <div><strong style="color:#9a3412;">✓</strong> <strong>1,000 Multi-City Pages:</strong> 20 trades across 50 mid-size cities</div>
-      <div><strong style="color:#9a3412;">✓</strong> <strong>Standalone HTML Export:</strong> Deploy anywhere (Netlify, Vercel, S3)</div>
-      <div><strong style="color:#9a3412;">✓</strong> <strong>Interactive 60s Quote Calculator:</strong> Pre-wired lead capture form</div>
-      <div><strong style="color:#9a3412;">✓</strong> <strong>Schema.org LocalBusiness Graph:</strong> Automated Google &amp; Perplexity SEO</div>
-      <div><strong style="color:#9a3412;">✓</strong> <strong>48-Hour Done-For-You Option:</strong> We wire your domain, logo &amp; phone</div>
-      <div><strong style="color:#9a3412;">✓</strong> <strong>Lifetime Ownership:</strong> Zero monthly hosting or platform fees</div>
+      <div><strong style="color:#10b981;">✓</strong> <strong>1,000 Multi-City Pages:</strong> 20 trades across 50 mid-size cities</div>
+      <div><strong style="color:#10b981;">✓</strong> <strong>Standalone HTML Export:</strong> Deploy anywhere (Netlify, Vercel, S3)</div>
+      <div><strong style="color:#10b981;">✓</strong> <strong>Interactive 60s Quote Calculator:</strong> Pre-wired lead capture form</div>
+      <div><strong style="color:#10b981;">✓</strong> <strong>Schema.org LocalBusiness Graph:</strong> Automated Google & Perplexity SEO</div>
+      <div><strong style="color:#10b981;">✓</strong> <strong>100% Free &amp; Unlocked:</strong> Zero paywalls, zero license locks</div>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:8px;">
-      <a href="https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W" target="_blank" rel="noopener noreferrer" class="btn-arch-primary" style="width:100%;">
-        ★ $7 Flash Starter: Instant AI Search + HTML Pack ($7)
+      <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener noreferrer" class="btn-arch-primary" style="width:100%;text-align:center;">
+        ☕ Buy Us a Coffee (Stripe)
       </a>
-      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-arch-copper" style="width:100%;">
-        ★ Done-For-You 1-Page Launch + Domain ($149)
-      </a>
-      <a href="https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.82rem;background:#1c1917;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
-        24/7 AI Receptionist &amp; Missed-Call SMS ($299) &rarr;
-      </a>
-      <a href="https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:10px;font-size:0.82rem;background:#292524;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
-        Turnkey 5-Page Custom Website ($499) &rarr;
-      </a>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-        <a href="https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:8px;font-size:0.78rem;background:#44403c;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
-          $99 Kickoff Deposit
-        </a>
-        <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn" style="justify-content:center;padding:8px;font-size:0.78rem;background:#9a3412;color:#ffffff;text-decoration:none;text-align:center;border-radius:6px;font-weight:700;">
-          $19 Self-Serve HTML
-        </a>
-      </div>
-      <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="padding:10px;text-decoration:none;text-align:center;display:block;font-size:0.85rem;" onclick="window.payWithSolana(event)">
-        Pay with Solana / USDC (DePay) &rarr;
-      </a>
-    </div>
-
-    <!-- Instant Key Activation -->
-    <div style="margin-top:14px;padding-top:12px;border-top:1px solid #e7e5e4;">
-      <label for="license-input" style="display:block;font-size:0.75rem;color:#78716c;margin-bottom:4px;">Already purchased? Enter License Key or Receipt Email:</label>
-      <div style="display:flex;gap:6px;">
-        <input type="text" id="license-input" name="licenseKeyInput" placeholder="e.g. CITY-PRO-2026 or email" style="flex:1;padding:6px 10px;font-size:0.8rem;border:1px solid #d6d3d1;border-radius:6px;">
-        <button id="btnActivateKey" data-alias="btnActivateKey" onclick="window.activateWithKey()" class="btn-gold" style="white-space:nowrap;padding:6px 12px;font-size:0.8rem;">
-          Activate &amp; Download
-        </button>
-      </div>
+      <button onclick="window.payWithSolana(event)" class="btn-gold" style="width:100%;padding:10px;text-align:center;background:#10b981;color:#ffffff;border:none;cursor:pointer;font-weight:700;">
+        Solana Tip Address (GG2e...XoK) ⚡
+      </button>
     </div>
   </div>
 </div>
@@ -539,13 +509,13 @@ function sendNote(service, city) {
 }
 
 function cta(text) {
-  const stripeImpulse7Url = 'https://buy.stripe.com/fZu00i7s9gWA3Ha4Ocfw40W';
-  const stripeDfyUrl = 'https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O';
-  const stripeAiUrl = 'https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S';
-  const stripe5PageUrl = 'https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T';
-  const stripeDepositUrl = 'https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V';
-  const stripeProUrl = 'https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N';
-  const depayUrl = 'https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
+  const stripeImpulse7Url = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
+  const stripeDfyUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
+  const stripeAiUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
+  const stripe5PageUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
+  const stripeDepositUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
+  const stripeProUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
+  const depayUrl = 'solana:GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
   const inlineOwnerForm = `<div style="max-width:1440px;margin:0 auto;padding:12px clamp(16px,4vw,48px) 56px;">
   <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:22px;">
     <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;color:#f59e0b;margin-bottom:6px;">DIRECT ENGINEERING DESK · ASK A QUESTION OR REQUEST CUSTOM SCOPE</div>
@@ -581,10 +551,10 @@ function cta(text) {
       <a class="btn-arch-copper" href="${stripeDfyUrl}" target="_blank" rel="noopener">Order $149 DFY Launch</a>
     </article>
     <article class="offer-tier-card">
-      <span class="tier-badge">24/7 CALL &amp; SMS AUTOMATION</span>
-      <h3>AI Voice &amp; SMS Receptionist</h3>
+      <span class="tier-badge">24/7 CALL & SMS AUTOMATION</span>
+      <h3>AI Voice & SMS Receptionist</h3>
       <div class="tier-price">$299 <small>one-time · $0/mo</small></div>
-      <p>Trained on your trade scopes &amp; pricing. Answers customer questions 24/7, calculates quotes, and texts missed-call leads directly to your phone.</p>
+      <p>Trained on your trade scopes & pricing. Answers customer questions 24/7, calculates quotes, and texts missed-call leads directly to your phone.</p>
       <a class="btn-arch-ghost" style="border-color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.08);" href="${stripeAiUrl}" target="_blank" rel="noopener">Order $299 AI Receptionist</a>
     </article>
     <article class="offer-tier-card">
@@ -601,7 +571,7 @@ function cta(text) {
       <a href="${stripeDepositUrl}" target="_blank" rel="noopener">$99 Kickoff Deposit &rarr;</a>
       <a href="${stripeProUrl}" target="_blank" rel="noopener">$19 Self-Serve HTML &rarr;</a>
       <a href="${depayUrl}" target="_blank" rel="noopener" onclick="window.payWithSolana(event)">Solana / USDC Pay &rarr;</a>
-      <button type="button" onclick="window.openVipModal()" style="background:#ffffff;color:#171614;border:none;font-weight:700;">Already Paid? Download &amp; Onboarding</button>
+      <button type="button" onclick="window.openVipModal()" style="background:#ffffff;color:#171614;border:none;font-weight:700;">Already Paid? Download & Onboarding</button>
     </div>
   </div>
 </div>`,
@@ -690,7 +660,7 @@ ${faqs.map(([q, a]) => `      <details><summary>${esc(q)}</summary><p>${esc(a)}<
   </div>
 </section>
 <section class="trade-sect" id="estimator" aria-label="Interactive Written Price Estimator">
-  <h2>Interactive 60-Second Written Estimate &amp; Callback Request</h2>
+  <h2>Interactive 60-Second Written Estimate & Callback Request</h2>
   <div class="estimator-ledger">
     <div style="display:flex;flex-direction:column;gap:14px;">
       <div>
@@ -700,7 +670,7 @@ ${faqs.map(([q, a]) => `      <details><summary>${esc(q)}</summary><p>${esc(a)}<
         </select>
       </div>
       <div>
-        <label for="estUrgencySelect" style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#5c564c;margin-bottom:6px;">02 · Visit Type &amp; Dispatch Window</label>
+        <label for="estUrgencySelect" style="display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#5c564c;margin-bottom:6px;">02 · Visit Type & Dispatch Window</label>
         <select id="estUrgencySelect" onchange="window.updateTradeEstimate && window.updateTradeEstimate()" style="width:100%;padding:12px 14px;border:1px solid #d6d3d1;border-radius:6px;font-size:15px;font-family:inherit;background:#ffffff;color:#1c1917;">
           <option value="1">Standard Scheduled Visit</option>
           <option value="1.75">Full System / Multi-Area Scope</option>
@@ -888,7 +858,7 @@ function homePage() {
     <div class="claude-hero-actions">
       <a href="#studioWorkspace" class="btn-arch-copper">Open Live Synthesizer &darr;</a>
       <a href="/services/" class="btn-line" style="min-height:44px;display:inline-flex;align-items:center;padding:0 18px;border-radius:8px;border:1px solid var(--line);text-decoration:none;color:var(--ink);font-weight:500;">Browse 20 Trades</a>
-      <span id="licenseBadge" class="license-badge" onclick="window.openProModal()">FREE TIER</span>
+      <span id="licenseBadge" class="license-badge" style="background:#dcfce7;color:#15803d;border:1px solid #86efac;font-weight:700;">✦ 100% FREE &amp; OPEN ACCESS</span>
     </div>
   </div>
   <div class="claude-hero-card">
@@ -898,35 +868,30 @@ function homePage() {
     </div>
     <div class="price" style="margin:0 0 16px 0;padding:16px;background:#f4f0ea;color:#1c1915;border-radius:8px;border:1px solid var(--line);">
       <div>
-        <strong style="font-family:var(--serif);font-size:32px;color:#1c1915;display:block;letter-spacing:-0.02em;">$149 <small style="font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:400;">Done-For-You 48h Launch (vs ${esc(money(low))}–${esc(money(high))} agency)</small></strong>
-        <p style="margin:6px 0 0 0;font-size:13.5px;color:var(--muted);">A finished page. No ads. No rank promise. No reviews written by us.</p>
+        <strong style="font-family:var(--serif);font-size:32px;color:#1c1915;display:block;letter-spacing:-0.02em;">100% Free <small style="font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:400;">Zero Paywalls · All 1,000 Multi-City Pages Unlocked</small></strong>
+        <p style="margin:6px 0 0 0;font-size:13.5px;color:var(--muted);">A finished page. No ads. No rank promise. Zero artificial gating.</p>
       </div>
     </div>
     <div class="spec-grid">
-      <div><span class="spec-label">Self-Serve HTML</span><span class="spec-val">$19 Instant</span></div>
-      <div><span class="spec-label">48h DFY Setup</span><span class="spec-val">$149 Flat</span></div>
+      <div><span class="spec-label">Standalone HTML</span><span class="spec-val">100% Free</span></div>
+      <div><span class="spec-label">Multi-City Forge</span><span class="spec-val">Unlocked</span></div>
       <div><span class="spec-label">Quote Intake</span><span class="spec-val">60s Written</span></div>
       <div><span class="spec-label">Monthly Retainer</span><span class="spec-val">$0 / Forever</span></div>
     </div>
   </div>
 </section>
 
-<!-- Compact Founding Studio Banner directly above the Synthesizer Workspace -->
-<aside id="salesBanner" aria-label="Founding Studio Promotion" class="sales-banner">
+<!-- Sovereign Support & Tip Bar directly above the Synthesizer Workspace -->
+<aside id="salesBanner" aria-label="Sovereign Open Access Bar" class="sales-banner" style="background:linear-gradient(90deg, rgba(16,185,129,0.12), rgba(212,175,55,0.14));border:1px solid rgba(212,175,55,0.35);">
   <div class="sales-content">
     <div class="sales-left">
       <span class="pulse-dot"></span>
-      <strong>FOUNDING STUDIO ACCESS:</strong>
-      <span>Standalone HTML + Schema.org Synthesizer —</span>
-      <span style="text-decoration: line-through; opacity: 0.6;">$79</span>
-      <strong style="color: #ea580c; font-size: 14px;">$19 Self-Serve</strong>
-      <span class="banner-sub">or <strong>$149 Done-For-You 48h Launch</strong></span>
+      <strong style="color:#10b981;">SOVEREIGN OPEN ACCESS:</strong>
+      <span>All 1,000 trade pages and standalone HTML synthesizers are 100% free and open. Voluntary tips support development.</span>
     </div>
     <div class="sales-actions">
-      <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-gold" style="background:#ea580c;">★ $149 DFY Launch</a>
-      <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold">$19 HTML Pass &rarr;</a>
-      <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" onclick="window.payWithSolana(event)">Solana Pay &rarr;</a>
-      <button id="btnActivateBanner" onclick="window.openVipModal()" class="btn-text">Onboarding / Key</button>
+      <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener noreferrer" class="btn-gold" style="background:#D4AF37;color:#08080B;font-weight:800;">☕ Buy Us a Coffee (Stripe)</a>
+      <a href="solana:GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK" target="_blank" rel="noopener noreferrer" class="btn-purple" style="background:#10b981;color:#fff;font-weight:700;" onclick="window.payWithSolana(event)">Solana Tip ⚡</a>
     </div>
   </div>
 </aside>
@@ -993,45 +958,16 @@ function homePage() {
     </div>
   </div>
 
-  <!-- Pro Output Paywall Section -->
+  <!-- Standalone Output Preview Section -->
   <div id="proPaywallSection" style="position:relative;margin-top:20px;border-radius:8px;overflow:hidden;border:1px solid #e7e5e4;">
-    <div id="proPaywallContent" class="pro-paywall-blur" style="filter:blur(6px);user-select:none;padding:16px;background:#ffffff;">
-      <div style="font-family:monospace;font-size:11px;color:#78716c;line-height:1.6;">
+    <div id="proPaywallContent" style="padding:16px;background:#ffffff;">
+      <div style="font-family:monospace;font-size:11px;color:#1c1917;line-height:1.6;">
         <div>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;</div>
         <div>&lt;title&gt;Apex Craftsman — House Painting in Boise, ID&lt;/title&gt;</div>
         <div>&lt;meta name="description" content="Written price before the first can opens. Call (948) 204-7987."&gt;</div>
         <div>&lt;link rel="canonical" href="https://apexboise.com/"&gt;</div>
         <div>&lt;!-- Full 20kb self-contained single-page bundle with responsive CSS, semantic schema.org graph, and client contact handler --&gt;</div>
         <div>&lt;script type="application/ld+json"&gt;{"@context":"https://schema.org","@type":"LocalBusiness","name":"Apex Craftsman","telephone":"(948) 204-7987"}&lt;/script&gt;</div>
-      </div>
-    </div>
-
-    <!-- Glowing centered lock card -->
-    <div id="paywallOverlay" class="pro-paywall-overlay" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:10;background:rgba(243,239,230,0.88);backdrop-filter:blur(2px);">
-      <div style="background:#ffffff;border:1px solid #9a3412;box-shadow:0 8px 30px rgba(154,52,18,0.15);border-radius:12px;max-width:460px;width:90%;padding:20px;text-align:center;">
-        <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;color:#9a3412;margin-bottom:6px;">PRO EXPORT &amp; TURNKEY DEPLOYMENT</div>
-        <h4 style="font-size:15px;font-weight:800;color:#1c1917;margin:0 0 6px 0;">PRO STUDIO: FULL PRODUCTION EXPORT &amp; DFY LAUNCH</h4>
-        <p style="font-size:12px;color:#78716c;line-height:1.4;margin:0 0 14px 0;">
-          Export standalone production HTML bundles ready for your domain ($19), or choose Done-For-You 48-Hour Launch ($149) and we configure everything for you.
-        </p>
-        <div style="background:#fafaf9;border:1px solid #e7e5e4;border-radius:6px;padding:6px;margin-bottom:12px;font-size:12px;">
-          <span style="color:#a8a29e;text-decoration:line-through;">$800 Agency Rate</span>
-          <strong style="color:#9a3412;font-size:14px;margin-left:6px;">$149 Done-For-You · or $19 Self-Serve HTML</strong>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:6px;">
-          <a href="https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:8px;font-size:12px;background:#ea580c;">
-            ★ $149 Done-For-You 48-Hour Launch (We Set It Up)
-          </a>
-          <a href="https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N" target="_blank" rel="noopener noreferrer" class="btn-gold" style="justify-content:center;padding:8px;font-size:12px;">
-            $19 Instant Self-Serve HTML Bundle Unlock &rarr;
-          </a>
-          <a href="https://depay.com/pay?integration=428790dd-7ad1-407c-8ecf-c048c77a4cb8&amp;receiver=GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK&amp;amount=19" target="_blank" rel="noopener noreferrer" class="btn-purple" style="justify-content:center;padding:8px;text-decoration:none;display:flex;align-items:center;font-size:12px;" onclick="window.payWithSolana(event)">
-            Pay with Solana / USDC (DePay) &rarr;
-          </a>
-          <button id="btn-paywall-key" data-alias="btnKeyOverlay" onclick="window.openVipModal()" style="background:none;border:none;color:#78716c;font-size:11px;text-decoration:underline;cursor:pointer;margin-top:4px;">
-            Already purchased? Click here for Instant Download &amp; VIP Onboarding
-          </button>
-        </div>
       </div>
     </div>
   </div>
@@ -1185,11 +1121,11 @@ function build() {
   - \`https://city-desk.netlify.app/.well-known/mcp.json\`
 
 ## Instant Checkout & Turnkey Fulfillment Tiers
-- **Done-For-You 1-Page Custom Launch ($149 One-Time)**: https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O (We customize your business name, phone, email, 60-second estimator, and connect your domain within 48 hours).
-- **24/7 AI Voice & SMS Receptionist + Missed-Call Text-Back ($299 One-Time)**: https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S
-- **Turnkey 5-Page Custom Website & Local AEO Package ($499 One-Time)**: https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T
-- **Custom Build Kickoff Deposit ($99 One-Time)**: https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V
-- **Self-Serve Standalone HTML Bundle ($19 One-Time)**: https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N
+- **Done-For-You 1-Page Custom Launch ($149 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X (We customize your business name, phone, email, 60-second estimator, and connect your domain within 48 hours).
+- **24/7 AI Voice & SMS Receptionist + Missed-Call Text-Back ($299 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
+- **Turnkey 5-Page Custom Website & Local AEO Package ($499 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
+- **Custom Build Kickoff Deposit ($99 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
+- **Self-Serve Standalone HTML Bundle ($19 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
 - **Post-Payment Fulfillment**: Every checkout redirects to \`https://city-desk.netlify.app/?licensed=true&dfy=true\` which unlocks immediate standalone HTML downloads and opens the VIP 48-Hour Launch Concierge Form (\`vip-onboarding\`).
 `);
   write('llms-full.txt', `# City Desk — Complete 1,000-Page Local Trade Directory & Turnkey Fulfillment Specification
@@ -1219,11 +1155,11 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
   write('api/services.json', JSON.stringify({
     provider: 'Neal Frazier Tech (City Desk)',
     checkoutTiers: [
-      { id: 'dfy-1page', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', priceUSD: 149, checkoutUrl: 'https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O' },
-      { id: 'ai-receptionist', name: '24/7 AI Receptionist & Missed-Call SMS Text-Back', priceUSD: 299, checkoutUrl: 'https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S' },
-      { id: 'turnkey-5page', name: 'Turnkey 5-Page Custom Website & Local AEO', priceUSD: 499, checkoutUrl: 'https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T' },
-      { id: 'kickoff-deposit', name: 'Custom Build Kickoff Deposit', priceUSD: 99, checkoutUrl: 'https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V' },
-      { id: 'self-serve-html', name: 'Self-Serve Standalone HTML Bundle', priceUSD: 19, checkoutUrl: 'https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N' }
+      { id: 'dfy-1page', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', priceUSD: 149, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
+      { id: 'ai-receptionist', name: '24/7 AI Receptionist & Missed-Call SMS Text-Back', priceUSD: 299, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
+      { id: 'turnkey-5page', name: 'Turnkey 5-Page Custom Website & Local AEO', priceUSD: 499, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
+      { id: 'kickoff-deposit', name: 'Custom Build Kickoff Deposit', priceUSD: 99, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
+      { id: 'self-serve-html', name: 'Self-Serve Standalone HTML Bundle', priceUSD: 19, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' }
     ],
     trades: SERVICES.map(s => ({ slug: s.slug, name: s.name, line: s.line, agencyValueUSD: s.price }))
   }, null, 2) + '\n');

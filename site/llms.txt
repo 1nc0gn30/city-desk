@@ -13,9 +13,9 @@
   - `https://city-desk.netlify.app/.well-known/mcp.json`
 
 ## Instant Checkout & Turnkey Fulfillment Tiers
-- **Done-For-You 1-Page Custom Launch ($149 One-Time)**: https://buy.stripe.com/9B6fZg7s96hWa5ya8wfw40O (We customize your business name, phone, email, 60-second estimator, and connect your domain within 48 hours).
-- **24/7 AI Voice & SMS Receptionist + Missed-Call Text-Back ($299 One-Time)**: https://buy.stripe.com/00w8wO6o50XC2D60xWfw40S
-- **Turnkey 5-Page Custom Website & Local AEO Package ($499 One-Time)**: https://buy.stripe.com/3cIcN48wdbCgelOeoMfw40T
-- **Custom Build Kickoff Deposit ($99 One-Time)**: https://buy.stripe.com/eVqbJ05k1gWA3HacgEfw40V
-- **Self-Serve Standalone HTML Bundle ($19 One-Time)**: https://buy.stripe.com/6oU7sK3bTcGk5Pia8wfw40N
+- **Done-For-You 1-Page Custom Launch ($149 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X (We customize your business name, phone, email, 60-second estimator, and connect your domain within 48 hours).
+- **24/7 AI Voice & SMS Receptionist + Missed-Call Text-Back ($299 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
+- **Turnkey 5-Page Custom Website & Local AEO Package ($499 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
+- **Custom Build Kickoff Deposit ($99 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
+- **Self-Serve Standalone HTML Bundle ($19 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
 - **Post-Payment Fulfillment**: Every checkout redirects to `https://city-desk.netlify.app/?licensed=true&dfy=true` which unlocks immediate standalone HTML downloads and opens the VIP 48-Hour Launch Concierge Form (`vip-onboarding`).
