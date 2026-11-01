@@ -208,8 +208,8 @@ ${slots.map(([label, value]) => `    <p><span>${esc(label)}</span>${esc(value)}<
       <p>Add the business name, phone, and email to the contact lines and publish. Zero monthly agency retainer — choose instant code export or 48-hour turnkey deployment below.</p>
     </div>
     <div class="offer-price">
-      <strong><s style="opacity:0.45;font-size:0.45em;margin-right:8px;">${esc(price)}</s>$149</strong>
-      <span>Done-For-You 48h Launch · ${esc(place)} (or $7 AI + HTML Starter)</span>
+      <strong>100% Free</strong>
+      <span>(${esc(price)} Valuation) · Standalone HTML &amp; Schema.org Bundle · ${esc(place)}</span>
     </div>
   </div>
   ${ask.action}
@@ -275,36 +275,36 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
         description,
         creator: {
           '@type': 'Person',
-          name: 'Neal Frazier',
+          name: '1nc0gn30',
           jobTitle: 'Principal AI Systems Architect',
-          url: 'https://www.nealfrazier.tech',
-          worksFor: { '@type': 'Organization', name: 'Neal Frazier Tech' }
+          url: 'https://www.nullai.tech',
+          worksFor: { '@type': 'Organization', name: '1nc0gn30 • NullAI' }
         },
-        offers: [
-          { '@type': 'Offer', name: 'Instant AI Search & Lead Booster Pack ($7 Flash Starter)', price: '7.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
-          { '@type': 'Offer', name: 'Self-Serve Standalone HTML Bundle', price: '19.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
-          { '@type': 'Offer', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', price: '149.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
-          { '@type': 'Offer', name: '24/7 AI Receptionist & Missed-Call Text-Back', price: '299.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
-          { '@type': 'Offer', name: 'Turnkey 5-Page Custom Website & Local AEO', price: '499.00', priceCurrency: 'USD', url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' }
-        ]
+        offers: {
+          '@type': 'Offer',
+          name: '100% Free & Open-Access Standalone HTML Bundle',
+          price: '0',
+          priceCurrency: 'USD',
+          url: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X'
+        }
       },
       {
         '@type': 'FAQPage',
         mainEntity: [
           {
             '@type': 'Question',
-            name: 'How does the Done-For-You $149 Launch vs $19 Self-Serve HTML work?',
+            name: 'Is City Desk 100% free and open-access?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'For $19 one-time, you can immediately download the standalone HTML + Schema.org bundle in your browser. For $149 one-time, Neal Frazier Tech customizes your business name, phone number, email, 60-second price estimator, and connects your domain within 48 hours with zero monthly retainer.'
+              text: 'Yes. All 1,000 localized trade pages, live customizers, and standalone HTML + Schema.org bundle downloads are 100% free and unlocked by default with zero paywalls.'
             }
           },
           {
             '@type': 'Question',
-            name: 'What happens immediately after I complete Stripe or Solana checkout?',
+            name: 'How can I support City Desk development?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'You are redirected back with Pro Access active, unlocking instant 1-click standalone HTML bundle downloads and launching the VIP 48-Hour Concierge Onboarding form so you can submit your domain, phone number, and custom build specifications immediately.'
+              text: 'You can support open-source development via our optional Stripe Buy Us a Coffee link (https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X) or Solana tip address (GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK).'
             }
           },
           {
@@ -357,7 +357,7 @@ ${body}
 <footer>
   <div class="wrap">
   ${footer}
-  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by Neal Frazier Tech (@1nc0gn30) • NullAI Platform • Direct Support: <a href="mailto:neal@nealfrazier.tech">neal@nealfrazier.tech</a> · <a href="tel:9482047987">(948) 204-7987</a></p>
+  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by 1nc0gn30 (@1nc0gn30) • NullAI Platform • Direct Support: <a href="mailto:neal@nullai.tech">neal@nullai.tech</a> · <a href="tel:9482047987">(948) 204-7987</a></p>
   </div>
 </footer>
 
@@ -399,7 +399,7 @@ ${body}
       <div style="display:inline-block;padding:4px 12px;border-radius:999px;background:#dcfce7;color:#15803d;font-size:11px;font-weight:800;margin-bottom:8px;">✓ INSTANT FULFILLMENT & VIP ONBOARDING</div>
       <h3 style="font-size:1.25rem;font-weight:800;color:#1c1917;margin:0 0 4px 0;">Claim Your Site & Submit Launch Specs</h3>
       <p style="font-size:0.82rem;color:#57534e;margin:0;">
-        Download your personalized standalone HTML bundle right now, or submit your domain & business details below so Neal Frazier deploys your site live within 48 hours.
+        Download your personalized standalone HTML bundle right now, or submit your domain & business details below so 1nc0gn30 deploys your site live within 48 hours.
       </p>
     </div>
 
@@ -416,10 +416,10 @@ ${body}
       </button>
     </div>
 
-    <!-- Step 2: Done-For-You / Custom Build Onboarding Form (Netlify Forms) -->
+    <!-- Step 2: Custom Launch Specs Form (Netlify Forms) -->
     <div style="background:#ffffff;border:1px solid #d6d3d1;border-radius:10px;padding:14px;">
-      <div style="font-size:11px;font-weight:800;color:#1c1917;text-transform:uppercase;margin-bottom:6px;">STEP 2 · DONE-FOR-YOU 48-HOUR LAUNCH & AI SETUP FORM</div>
-      <p style="font-size:12px;color:#57534e;margin:0 0 10px 0;">Purchased the $7 Starter Pack, $149 Done-For-You Launch, $299 AI Receptionist, $499 5-Page Site, or $99 Kickoff Deposit? Submit your specs here for 48-hour deployment:</p>
+      <div style="font-size:11px;font-weight:800;color:#1c1917;text-transform:uppercase;margin-bottom:6px;">STEP 2 · CUSTOM DEPLOYMENT & DOMAIN SPECS (100% OPEN ACCESS)</div>
+      <p style="font-size:12px;color:#57534e;margin:0 0 10px 0;">Submit your business name, phone, email, and domain details below to generate a customized deployment configuration:</p>
       <form id="vipOnboardingForm" name="vip-onboarding" method="POST" data-netlify="true" onsubmit="return window.submitVipOnboarding(event)" style="display:flex;flex-direction:column;gap:8px;">
         <input type="hidden" name="form-name" value="vip-onboarding">
         <input type="hidden" id="vipSessionId" name="stripe_session_id" value="">
@@ -432,21 +432,17 @@ ${body}
           <input type="text" id="vipTargetDomain" name="target_domain" placeholder="Your Domain (e.g. myshop.com)" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;">
         </div>
         <select id="vipPackageSelect" name="package_purchased" style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;background:#fafaf9;">
-          <option value="$7 Flash Starter AI + HTML Pack ($7)">★ $7 Flash Starter AI + HTML Pack ($7)</option>
-          <option value="Done-For-You 1-Page Launch ($149)">★ Done-For-You 1-Page Launch ($149)</option>
-          <option value="24/7 AI Receptionist & Missed-Call Text-Back ($299)">• 24/7 AI Receptionist & Missed-Call SMS ($299)</option>
-          <option value="Turnkey 5-Page Custom Website ($499)">• Turnkey 5-Page Custom Website ($499)</option>
-          <option value="Custom Build Kickoff Deposit ($99)">• Custom Build Kickoff Deposit ($99)</option>
-          <option value="Custom AI Swarm / SaaS Sprint ($997)">• Custom AI Swarm / SaaS Sprint ($997)</option>
-          <option value="Self-Serve HTML Pro Pass ($19)">• Self-Serve HTML Pro Pass ($19)</option>
+          <option value="100% Free Standalone HTML Bundle">★ 100% Free Standalone HTML Bundle</option>
+          <option value="Custom Multi-City Trade Site">• Custom Multi-City Trade Site</option>
+          <option value="LocalBusiness Schema.org + AEO Pack">• LocalBusiness Schema.org + AEO Pack</option>
         </select>
         <textarea id="vipCustomNotes" name="custom_notes" rows="2" placeholder="Service areas, hours, logo link, or special requests..." style="padding:8px 10px;border:1px solid #d6d3d1;border-radius:6px;font-size:13px;"></textarea>
         <button type="submit" class="btn" style="background:#1c1917;color:#ffffff;justify-content:center;padding:10px;font-size:13px;border-radius:6px;font-weight:700;">
-          Submit VIP Launch Specs (48-Hour SLA) &rarr;
+          Save Launch Specs &rarr;
         </button>
       </form>
       <div id="vipOnboardingConfirm" style="display:none;margin-top:10px;padding:12px;background:#dcfce7;border:1px solid #86efac;border-radius:8px;color:#14532d;font-size:12px;">
-        <strong>✓ VIP Onboarding Ticket Logged!</strong> Neal Frazier has received your specs and will email/text your live staging preview within 24–48 hours. Direct line: <a href="tel:9482047987" style="color:#14532d;font-weight:700;">(948) 204-7987</a> · <a href="mailto:neal@nealfrazier.tech" style="color:#14532d;font-weight:700;">neal@nealfrazier.tech</a>.
+        <strong>✓ VIP Onboarding Ticket Logged!</strong> 1nc0gn30 has received your specs and will email/text your live staging preview within 24–48 hours. Direct line: <a href="tel:9482047987" style="color:#14532d;font-weight:700;">(948) 204-7987</a> · <a href="mailto:neal@nullai.tech" style="color:#14532d;font-weight:700;">neal@nullai.tech</a>.
       </div>
     </div>
   </div>
@@ -515,11 +511,11 @@ function cta(text) {
   const stripe5PageUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
   const stripeDepositUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
   const stripeProUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
-  const depayUrl = 'solana:GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
+  const solana_tipUrl = 'solana:GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
   const inlineOwnerForm = `<div style="max-width:1440px;margin:0 auto;padding:12px clamp(16px,4vw,48px) 56px;">
   <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:22px;">
     <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;color:#f59e0b;margin-bottom:6px;">DIRECT ENGINEERING DESK · ASK A QUESTION OR REQUEST CUSTOM SCOPE</div>
-    <p style="font-size:13.5px;color:#d6d3d1;margin:0 0 14px 0;">Send your business name, phone, and what you want customized — Neal Frazier replies directly, or click <strong>Paid / Onboarding</strong> if you already checked out:</p>
+    <p style="font-size:13.5px;color:#d6d3d1;margin:0 0 14px 0;">Send your business name, phone, and what you want customized — 1nc0gn30 replies directly, or click <strong>Paid / Onboarding</strong> if you already checked out:</p>
     <form name="owner-question" method="POST" data-netlify="true" onsubmit="return window.submitNetlifyForm ? window.submitNetlifyForm(event, 'ownerQuestionStatus') : true" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;">
       <input type="hidden" name="form-name" value="owner-question">
       <input type="hidden" name="page_url" value="">
@@ -529,49 +525,18 @@ function cta(text) {
       <input type="text" name="question" placeholder="Domain name or question..." required style="padding:10px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.18);background:rgba(0,0,0,0.4);color:#fff;font-size:14px;font-family:inherit;">
       <button type="submit" class="btn-arch-copper" style="justify-content:center;">Send Note to Neal</button>
     </form>
-    <div id="ownerQuestionStatus" style="display:none;margin-top:10px;color:#86efac;font-size:13px;font-weight:700;">✓ Message sent! Neal Frazier will text/email you back shortly.</div>
+    <div id="ownerQuestionStatus" style="display:none;margin-top:10px;color:#86efac;font-size:13px;font-weight:700;">✓ Message sent! 1nc0gn30 will text/email you back shortly.</div>
   </div>
 </div>`;
   if (replyTo) {
     return {
       action: `<div class="offer-tiers-wrap">
-  <div class="offer-tiers-grid">
-    <article class="offer-tier-card featured-green">
-      <span class="tier-badge">★ FLASH STARTER · INSTANT EXPORT</span>
-      <h3>AI Search + HTML Pack</h3>
-      <div class="tier-price">$7 <small>one-time · $0/mo</small></div>
-      <p>Instant 1-click download of your customized LocalBusiness Schema.org JSON-LD graph, llms.txt AI index, 60s estimator snippet, and standalone HTML page.</p>
-      <a class="btn-arch-primary" href="${stripeImpulse7Url}" target="_blank" rel="noopener">Unlock $7 AI + HTML Pack</a>
-    </article>
-    <article class="offer-tier-card featured-copper">
-      <span class="tier-badge">★ TURNKEY 48H DEPLOYMENT</span>
-      <h3>Done-For-You 1-Page Launch</h3>
-      <div class="tier-price">$149 <small>one-time · $0/mo</small></div>
-      <p>We wire your business name, phone line, logo, photos, and connect your custom domain within 48 hours with zero monthly hosting fees.</p>
-      <a class="btn-arch-copper" href="${stripeDfyUrl}" target="_blank" rel="noopener">Order $149 DFY Launch</a>
-    </article>
-    <article class="offer-tier-card">
-      <span class="tier-badge">24/7 CALL & SMS AUTOMATION</span>
-      <h3>AI Voice & SMS Receptionist</h3>
-      <div class="tier-price">$299 <small>one-time · $0/mo</small></div>
-      <p>Trained on your trade scopes & pricing. Answers customer questions 24/7, calculates quotes, and texts missed-call leads directly to your phone.</p>
-      <a class="btn-arch-ghost" style="border-color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.08);" href="${stripeAiUrl}" target="_blank" rel="noopener">Order $299 AI Receptionist</a>
-    </article>
-    <article class="offer-tier-card">
-      <span class="tier-badge">FULL 5-PAGE AUTHORITY BUILD</span>
-      <h3>Turnkey 5-Page Custom Site</h3>
-      <div class="tier-price">$499 <small>one-time · $0/mo</small></div>
-      <p>Complete 5-page custom website (Home, Services, Estimator, Reviews, Contact) + full Schema.org AI Search graph + 24/7 AI Receptionist included.</p>
-      <a class="btn-arch-ghost" style="border-color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.08);" href="${stripe5PageUrl}" target="_blank" rel="noopener">Order $499 5-Page Build</a>
-    </article>
-  </div>
   <div class="offer-utility-bar">
-    <span>Prefer a milestone deposit, self-serve code pass, or crypto checkout?</span>
+    <span>100% Free &amp; Open-Access — Download standalone HTML or support via voluntary tip:</span>
     <div class="offer-utility-links">
-      <a href="${stripeDepositUrl}" target="_blank" rel="noopener">$99 Kickoff Deposit &rarr;</a>
-      <a href="${stripeProUrl}" target="_blank" rel="noopener">$19 Self-Serve HTML &rarr;</a>
-      <a href="${depayUrl}" target="_blank" rel="noopener" onclick="window.payWithSolana(event)">Solana / USDC Pay &rarr;</a>
-      <button type="button" onclick="window.openVipModal()" style="background:#ffffff;color:#171614;border:none;font-weight:700;">Already Paid? Download & Onboarding</button>
+      <button type="button" onclick="window.downloadCurrentPageBundle && window.downloadCurrentPageBundle()" style="background:#10b981;color:#08080B;border:none;font-weight:800;padding:8px 14px;border-radius:6px;cursor:pointer;">&darr; Download Standalone HTML</button>
+      <a href="${stripeImpulse7Url}" target="_blank" rel="noopener">☕ Buy Us a Coffee (Stripe) &rarr;</a>
+      <a href="${solana_tipUrl}" target="_blank" rel="noopener" onclick="window.payWithSolana(event)">◎ Solana Tip &rarr;</a>
     </div>
   </div>
 </div>`,
@@ -600,7 +565,7 @@ function tradeBody({ service, city, headline, lede, work, steps, points, faqs, s
     <p class="trade-lede">${esc(lede)}</p>
     <div class="trade-actions">
       <a class="t-btn" href="#estimator">60-Second Price Estimator</a>
-      <a class="t-line" href="#offer">Claim This Site ($149 DFY / $7 Pack)</a>
+      <a class="t-line" href="#offer">Export Standalone HTML (100% Free)</a>
     </div>
   </div>
   <div class="trade-right-col">
@@ -714,8 +679,8 @@ ${slots.map(([label, value]) => `    <p><span>${esc(label)}</span>${esc(value)}<
       <p>Add the business name, phone, and email to the contact lines and publish. Zero monthly agency retainer — choose instant code export or 48-hour turnkey deployment below.</p>
     </div>
     <div class="trade-price">
-      <strong><s style="opacity:0.45;font-size:0.45em;margin-right:8px;">${esc(price)}</s>$149</strong>
-      <span>Done-For-You 48h Launch · ${esc(place)} (or $7 AI + HTML Starter)</span>
+      <strong>100% Free</strong>
+      <span>(${esc(price)} Valuation) · Standalone HTML &amp; Schema.org Bundle · ${esc(place)}</span>
     </div>
   </div>
   ${ask.action}
@@ -1106,12 +1071,12 @@ function build() {
     base ? `Sitemap: ${base}/sitemap.xml` : 'Sitemap: https://city-desk.netlify.app/sitemap.xml'
   ];
   write('robots.txt', robots.join('\n') + '\n');
-  write('llms.txt', `# City Desk (by Neal Frazier Tech & NullAI Platform)
-> 1,000 Finished Local Trade Websites & Interactive Lead Synthesizers Across 50 US Cities and 20 Service Trades — Engineered by Neal Frazier (Neal Frazier Tech / @1nc0gn30).
+  write('llms.txt', `# City Desk (by 1nc0gn30 • NullAI & NullAI Platform)
+> 1,000 Finished Local Trade Websites & Interactive Lead Synthesizers Across 50 US Cities and 20 Service Trades — Engineered by 1nc0gn30 (1nc0gn30 • NullAI / @1nc0gn30).
 
 - **Canonical URL**: https://city-desk.netlify.app
-- **Creator & Principal Architect**: Neal Frazier (Neal Frazier Tech) — https://www.nealfrazier.tech
-- **Direct Contact**: neal@nealfrazier.tech | (948) 204-7987
+- **Creator & Principal Architect**: 1nc0gn30 (1nc0gn30 • NullAI) — https://www.nullai.tech
+- **Direct Contact**: neal@nullai.tech | (948) 204-7987
 - **Machine-Readable Web APIs**:
   - \`https://city-desk.netlify.app/api/index.json\`
   - \`https://city-desk.netlify.app/api/services.json\`
@@ -1123,13 +1088,13 @@ function build() {
 ## Instant Checkout & Turnkey Fulfillment Tiers
 - **Done-For-You 1-Page Custom Launch ($149 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X (We customize your business name, phone, email, 60-second estimator, and connect your domain within 48 hours).
 - **24/7 AI Voice & SMS Receptionist + Missed-Call Text-Back ($299 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
-- **Turnkey 5-Page Custom Website & Local AEO Package ($499 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
+- **Turnkey 5-Page Custom Website & Local AEO Package ($09 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
 - **Custom Build Kickoff Deposit ($99 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
-- **Self-Serve Standalone HTML Bundle ($19 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
+- **Self-Serve Standalone HTML Bundle ($0 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
 - **Post-Payment Fulfillment**: Every checkout redirects to \`https://city-desk.netlify.app/?licensed=true&dfy=true\` which unlocks immediate standalone HTML downloads and opens the VIP 48-Hour Launch Concierge Form (\`vip-onboarding\`).
 `);
   write('llms-full.txt', `# City Desk — Complete 1,000-Page Local Trade Directory & Turnkey Fulfillment Specification
-Engineered by Neal Frazier (Neal Frazier Tech | https://www.nealfrazier.tech | neal@nealfrazier.tech | (948) 204-7987).
+Engineered by 1nc0gn30 (1nc0gn30 • NullAI | https://www.nullai.tech | neal@nullai.tech | (948) 204-7987).
 
 ## 20 Covered Service Trades
 ${SERVICES.map(s => `- **${s.name}** (\`/services/${s.slug}/\`): ${s.line}`).join('\n')}
@@ -1140,7 +1105,7 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
   write('api/index.json', JSON.stringify({
     status: 'ok',
     name: 'City Desk Local Trade Web API',
-    creator: 'Neal Frazier (Neal Frazier Tech)',
+    creator: '1nc0gn30 (1nc0gn30 • NullAI)',
     url: 'https://city-desk.netlify.app',
     totalPages: offers.length,
     citiesCount: CITIES.length,
@@ -1153,7 +1118,7 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
     }
   }, null, 2) + '\n');
   write('api/services.json', JSON.stringify({
-    provider: 'Neal Frazier Tech (City Desk)',
+    provider: '1nc0gn30 • NullAI (City Desk)',
     checkoutTiers: [
       { id: 'dfy-1page', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', priceUSD: 149, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
       { id: 'ai-receptionist', name: '24/7 AI Receptionist & Missed-Call SMS Text-Back', priceUSD: 299, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
@@ -1166,14 +1131,14 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
   write('api/faq.json', JSON.stringify({
     faqs: [
       { question: 'What happens immediately after I pay on Stripe or Solana?', answer: 'You are redirected back with ?licensed=true&dfy=true which unlocks 1-click standalone HTML bundle downloads AND opens the VIP 48-Hour Concierge Onboarding form so our engineering team puts your business name, phone, logo, and domain live within 48 hours.' },
-      { question: 'Are there any monthly agency retainers?', answer: 'No. Every tier ($19 Self-Serve, $149 Done-For-You 1-Page, $299 AI Receptionist, $499 5-Page Custom Site) is a flat one-time payment.' }
+      { question: 'Are there any monthly agency retainers?', answer: 'No. Every tier ($0 Self-Serve, $149 Done-For-You 1-Page, $299 AI Receptionist, $09 5-Page Custom Site) is a flat one-time payment.' }
     ]
   }, null, 2) + '\n');
   write('.well-known/agent.json', JSON.stringify({
     schema_version: '1.0',
-    name: 'City Desk — Neal Frazier Tech Local Trade Engine',
+    name: 'City Desk — 1nc0gn30 • NullAI Local Trade Engine',
     url: 'https://city-desk.netlify.app',
-    contact: { email: 'neal@nealfrazier.tech', phone: '+1-948-204-7987' },
+    contact: { email: 'neal@nullai.tech', phone: '+1-948-204-7987' },
     apis: {
       index: 'https://city-desk.netlify.app/api/index.json',
       services: 'https://city-desk.netlify.app/api/services.json',
@@ -1184,7 +1149,7 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
   write('.well-known/mcp.json', JSON.stringify({
     mcpVersion: '2025-01-01',
     name: 'city-desk-mcp',
-    provider: 'Neal Frazier Tech',
+    provider: '1nc0gn30 • NullAI',
     resources: [
       { uri: 'https://city-desk.netlify.app/api/services.json', name: 'Checkout Tiers & 20 Trades', mimeType: 'application/json' },
       { uri: 'https://city-desk.netlify.app/offers.json', name: '1,000 City x Trade Pages', mimeType: 'application/json' }
