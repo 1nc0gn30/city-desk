@@ -65,7 +65,7 @@ city-desk --json
 # Start the standalone server daemon on port 8087
 city-desk --serve
 # Or directly via Python:
-python3 /home/zoth/NullAITech/city-desk/server.py --port 8087
+python3 ~/NullAITech/city-desk/server.py --port 8087
 ```
 
 ---

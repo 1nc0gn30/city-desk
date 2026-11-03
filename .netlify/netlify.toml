@@ -7,7 +7,7 @@ plugins = []
 [functions."*"]
 
 [build]
-publish = "/home/zoth/NullAITech/city-desk/site"
+publish = "~/NullAITech/city-desk/site"
 publishOrigin = "config"
 commandOrigin = "config"
 command = "node build.js"
