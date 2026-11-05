@@ -67,6 +67,22 @@
       document.getElementById("out").textContent = "[ZOTHOS-ENCLAVE] Executed at " + new Date().toISOString() + "\n" + v;
     }
   </script>
-  <script src="/assets/sovereign-upgrade.js" defer></script>
+  
+
+  <script src="/sovereign_tutorial.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      if (window.createSovereignTutorial) {
+        window.createSovereignTutorial({
+          toolId: "city-desk",
+          toolName: "City Desk",
+          tagline: "Autonomous local business OSINT, SEO auditing, and service footprint engine!",
+          accentColor: "#3B82F6",
+          steps: [{"icon": "\ud83c\udfd9\ufe0f", "title": "Explore Local Business Footprints", "desc": "Search any city or region to audit tech stacks, schema data, and online visibility for local companies."}, {"icon": "\ud83d\udcca", "title": "Automated SEO & Speed Check", "desc": "Test Core Web Vitals, mobile responsiveness, and Google Search rankings in one click."}, {"icon": "\ud83d\udcbc", "title": "Generate Client Proposals", "desc": "Export clean PDF and Markdown audits you can send to business owners to help upgrade their websites."}]
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>
