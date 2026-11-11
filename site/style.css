@@ -836,16 +836,6 @@ body:has(.trade) footer { background: var(--bg); border-top: 1px solid var(--lin
   color: #78716c;
 }
 
-/* Sovereign Open Access — Zero Paywalls & Zero Blurs */
-.pro-paywall-blur {
-  filter: none !important;
-  -webkit-filter: none !important;
-  user-select: auto !important;
-}
-.pro-paywall-overlay {
-  display: none !important;
-}
-
 @media (max-width: 640px) {
   .sales-content { flex-direction: column; align-items: flex-start; }
   .sales-actions { width: 100%; justify-content: flex-start; }

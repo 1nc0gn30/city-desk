@@ -1,5 +1,5 @@
-# City Desk — Complete 1,000-Page Local Trade Directory & Turnkey Fulfillment Specification
-Engineered by 1nc0gn30 (1nc0gn30 • NullAI | https://www.nullai.tech | neal@nullai.tech | (948) 204-7987).
+# City Desk — Complete 1,000-Page Local Trade Directory Specification
+Engineered by 1nc0gn30 (NullAI | https://nullai.tech | ops@nullai.tech | (948) 204-7987).
 
 ## 20 Covered Service Trades
 - **Painters** (`/services/painters/`): Interior, exterior, and a written price before the first can opens.

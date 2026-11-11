@@ -123,10 +123,9 @@ class CityDeskHandler(BaseHTTPRequestHandler):
                 "category": "Growth & SEO",
                 "site_dir": str(SITE_DIR),
                 "pages_indexed": 1000,
-                "studio_workbench_url": "http://127.0.0.1:3000/tools/city-desk",
+                "studio_workbench_url": "https://zoth.nullai.tech/tools/city-desk",
                 "local_endpoint": "http://127.0.0.1:8087",
-                "support_coffee": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X",
-                "solana_tip": "GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK"
+                "support_coffee": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
             })
             return
 
@@ -205,12 +204,31 @@ def run_server(host: str = "127.0.0.1", port: int = 8087) -> ThreadingHTTPServer
     return server
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="City Desk Server")
+    parser = argparse.ArgumentParser(description="City Desk Local Publisher & REST Server")
+    parser.add_argument("--version", "-v", action="version", version="city-desk 2.5.0")
     parser.add_argument("--host", default="127.0.0.1", help="Host interface (default: 127.0.0.1)")
     parser.add_argument("--port", "-p", type=int, default=8087, help="Port to listen on (default: 8087)")
+    parser.add_argument("--status", action="store_true", help="Print service status metadata and exit")
+    parser.add_argument("--json", action="store_true", help="Output service metadata as JSON and exit")
     args = parser.parse_args()
 
-    print(f"✦ City Desk Server starting on http://{args.host}:{args.port}")
+    if args.status or args.json:
+        info = {
+            "service": "city-desk",
+            "version": "2.5.0",
+            "host": args.host,
+            "port": args.port,
+            "trades_count": len(TRADES),
+            "cities_count": 50,
+            "total_pages": 1000,
+        }
+        if args.json:
+            print(json.dumps(info, indent=2))
+        else:
+            print(f"city-desk v2.5.0 ({args.host}:{args.port}) | trades={len(TRADES)} | cities=50 | pages=1000")
+        sys.exit(0)
+
+    print(f"City Desk Server starting on http://{args.host}:{args.port}")
     httpd = run_server(host=args.host, port=args.port)
     try:
         httpd.serve_forever()

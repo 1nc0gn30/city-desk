@@ -304,7 +304,7 @@ function page({ from, title, description, json, body, shop, foot, theme }) {
             name: 'How can I support City Desk development?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'You can support open-source development via our optional Stripe Buy Us a Coffee link (https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X) or Solana tip address (GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK).'
+              text: 'You can support open-source development via our optional Stripe Buy Us a Coffee link (https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X).'
             }
           },
           {
@@ -357,7 +357,7 @@ ${body}
 <footer>
   <div class="wrap">
   ${footer}
-  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by 1nc0gn30 (@1nc0gn30) • NullAI Platform • Direct Support: <a href="mailto:neal@nullai.tech">neal@nullai.tech</a> · <a href="tel:9482047987">(948) 204-7987</a></p>
+  <p style="margin-top:1.5rem;font-size:0.75rem;color:#78716c;">Engineered by 1nc0gn30 (@1nc0gn30) • NullAI Platform • Direct Support: <a href="mailto:ops@nullai.tech">ops@nullai.tech</a> · <a href="tel:9482047987">(948) 204-7987</a></p>
   </div>
 </footer>
 
@@ -442,7 +442,7 @@ ${body}
         </button>
       </form>
       <div id="vipOnboardingConfirm" style="display:none;margin-top:10px;padding:12px;background:#dcfce7;border:1px solid #86efac;border-radius:8px;color:#14532d;font-size:12px;">
-        <strong>✓ VIP Onboarding Ticket Logged!</strong> 1nc0gn30 has received your specs and will email/text your live staging preview within 24–48 hours. Direct line: <a href="tel:9482047987" style="color:#14532d;font-weight:700;">(948) 204-7987</a> · <a href="mailto:neal@nullai.tech" style="color:#14532d;font-weight:700;">neal@nullai.tech</a>.
+        <strong>✓ VIP Onboarding Ticket Logged!</strong> 1nc0gn30 has received your specs and will email/text your live staging preview within 24–48 hours. Direct line: <a href="tel:9482047987" style="color:#14532d;font-weight:700;">(948) 204-7987</a> · <a href="mailto:ops@nullai.tech" style="color:#14532d;font-weight:700;">ops@nullai.tech</a>.
       </div>
     </div>
   </div>
@@ -466,16 +466,13 @@ ${body}
       <div><strong style="color:#10b981;">✓</strong> <strong>Standalone HTML Export:</strong> Deploy anywhere (Netlify, Vercel, S3)</div>
       <div><strong style="color:#10b981;">✓</strong> <strong>Interactive 60s Quote Calculator:</strong> Pre-wired lead capture form</div>
       <div><strong style="color:#10b981;">✓</strong> <strong>Schema.org LocalBusiness Graph:</strong> Automated Google & Perplexity SEO</div>
-      <div><strong style="color:#10b981;">✓</strong> <strong>100% Free &amp; Unlocked:</strong> Zero paywalls, zero license locks</div>
+      <div><strong style="color:#10b981;">✓</strong> <strong>100% Free &amp; Unlocked:</strong> Open-access standalone bundle</div>
     </div>
 
     <div style="display:flex;flex-direction:column;gap:8px;">
       <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener noreferrer" class="btn-arch-primary" style="width:100%;text-align:center;">
-        ☕ Buy Us a Coffee (Stripe)
+        Buy Us a Coffee (Stripe)
       </a>
-      <button onclick="window.payWithSolana(event)" class="btn-gold" style="width:100%;padding:10px;text-align:center;background:#10b981;color:#ffffff;border:none;cursor:pointer;font-weight:700;">
-        Solana Tip Address (GG2e...XoK) ⚡
-      </button>
     </div>
   </div>
 </div>
@@ -505,17 +502,11 @@ function sendNote(service, city) {
 }
 
 function cta(text) {
-  const stripeImpulse7Url = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
-  const stripeDfyUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
-  const stripeAiUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
-  const stripe5PageUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
-  const stripeDepositUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
-  const stripeProUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
-  const solana_tipUrl = 'solana:GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
+  const stripeCoffeeUrl = 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X';
   const inlineOwnerForm = `<div style="max-width:1440px;margin:0 auto;padding:12px clamp(16px,4vw,48px) 56px;">
   <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:22px;">
     <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.14em;color:#f59e0b;margin-bottom:6px;">DIRECT ENGINEERING DESK · ASK A QUESTION OR REQUEST CUSTOM SCOPE</div>
-    <p style="font-size:13.5px;color:#d6d3d1;margin:0 0 14px 0;">Send your business name, phone, and what you want customized — 1nc0gn30 replies directly, or click <strong>Paid / Onboarding</strong> if you already checked out:</p>
+    <p style="font-size:13.5px;color:#d6d3d1;margin:0 0 14px 0;">Send your business name, phone, and what you want customized — 1nc0gn30 replies directly:</p>
     <form name="owner-question" method="POST" data-netlify="true" onsubmit="return window.submitNetlifyForm ? window.submitNetlifyForm(event, 'ownerQuestionStatus') : true" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;">
       <input type="hidden" name="form-name" value="owner-question">
       <input type="hidden" name="page_url" value="">
@@ -523,7 +514,7 @@ function cta(text) {
       <input type="tel" name="owner_phone" placeholder="Your Phone Number *" required style="padding:10px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.18);background:rgba(0,0,0,0.4);color:#fff;font-size:14px;font-family:inherit;">
       <input type="email" name="owner_email" placeholder="Your Email Address *" required style="padding:10px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.18);background:rgba(0,0,0,0.4);color:#fff;font-size:14px;font-family:inherit;">
       <input type="text" name="question" placeholder="Domain name or question..." required style="padding:10px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.18);background:rgba(0,0,0,0.4);color:#fff;font-size:14px;font-family:inherit;">
-      <button type="submit" class="btn-arch-copper" style="justify-content:center;">Send Note to Neal</button>
+      <button type="submit" class="btn-arch-copper" style="justify-content:center;">Send Note to Desk</button>
     </form>
     <div id="ownerQuestionStatus" style="display:none;margin-top:10px;color:#86efac;font-size:13px;font-weight:700;">✓ Message sent! 1nc0gn30 will text/email you back shortly.</div>
   </div>
@@ -535,8 +526,7 @@ function cta(text) {
     <span>100% Free &amp; Open-Access — Download standalone HTML or support via voluntary tip:</span>
     <div class="offer-utility-links">
       <button type="button" onclick="window.downloadCurrentPageBundle && window.downloadCurrentPageBundle()" style="background:#10b981;color:#08080B;border:none;font-weight:800;padding:8px 14px;border-radius:6px;cursor:pointer;">&darr; Download Standalone HTML</button>
-      <a href="${stripeImpulse7Url}" target="_blank" rel="noopener">☕ Buy Us a Coffee (Stripe) &rarr;</a>
-      <a href="${solana_tipUrl}" target="_blank" rel="noopener" onclick="window.payWithSolana(event)">◎ Solana Tip &rarr;</a>
+      <a href="${stripeCoffeeUrl}" target="_blank" rel="noopener">Buy Us a Coffee (Stripe) &rarr;</a>
     </div>
   </div>
 </div>`,
@@ -855,8 +845,7 @@ function homePage() {
       <span>All 1,000 trade pages and standalone HTML synthesizers are 100% free and open. Voluntary tips support development.</span>
     </div>
     <div class="sales-actions">
-      <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener noreferrer" class="btn-gold" style="background:#D4AF37;color:#08080B;font-weight:800;">☕ Buy Us a Coffee (Stripe)</a>
-      <a href="solana:GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK" target="_blank" rel="noopener noreferrer" class="btn-purple" style="background:#10b981;color:#fff;font-weight:700;" onclick="window.payWithSolana(event)">Solana Tip ⚡</a>
+      <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener noreferrer" class="btn-gold" style="background:#D4AF37;color:#08080B;font-weight:800;">Buy Us a Coffee (Stripe)</a>
     </div>
   </div>
 </aside>
@@ -924,8 +913,8 @@ function homePage() {
   </div>
 
   <!-- Standalone Output Preview Section -->
-  <div id="proPaywallSection" style="position:relative;margin-top:20px;border-radius:8px;overflow:hidden;border:1px solid #e7e5e4;">
-    <div id="proPaywallContent" style="padding:16px;background:#ffffff;">
+  <div id="bundlePreviewSection" style="position:relative;margin-top:20px;border-radius:8px;overflow:hidden;border:1px solid #e7e5e4;">
+    <div id="bundlePreviewContent" style="padding:16px;background:#ffffff;">
       <div style="font-family:monospace;font-size:11px;color:#1c1917;line-height:1.6;">
         <div>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;</div>
         <div>&lt;title&gt;Apex Craftsman — House Painting in Boise, ID&lt;/title&gt;</div>
@@ -1071,12 +1060,12 @@ function build() {
     base ? `Sitemap: ${base}/sitemap.xml` : 'Sitemap: https://city-desk.netlify.app/sitemap.xml'
   ];
   write('robots.txt', robots.join('\n') + '\n');
-  write('llms.txt', `# City Desk (by 1nc0gn30 • NullAI & NullAI Platform)
-> 1,000 Finished Local Trade Websites & Interactive Lead Synthesizers Across 50 US Cities and 20 Service Trades — Engineered by 1nc0gn30 (1nc0gn30 • NullAI / @1nc0gn30).
+  write('llms.txt', `# City Desk (by 1nc0gn30 • NullAI Platform)
+> 1,000 Finished Local Trade Websites & Interactive Lead Synthesizers Across 50 US Cities and 20 Service Trades — Engineered by 1nc0gn30 (@1nc0gn30).
 
 - **Canonical URL**: https://city-desk.netlify.app
-- **Creator & Principal Architect**: 1nc0gn30 (1nc0gn30 • NullAI) — https://www.nullai.tech
-- **Direct Contact**: neal@nullai.tech | (948) 204-7987
+- **Creator & Principal Architect**: 1nc0gn30 — https://nullai.tech
+- **Direct Contact**: ops@nullai.tech | (948) 204-7987
 - **Machine-Readable Web APIs**:
   - \`https://city-desk.netlify.app/api/index.json\`
   - \`https://city-desk.netlify.app/api/services.json\`
@@ -1085,16 +1074,12 @@ function build() {
   - \`https://city-desk.netlify.app/.well-known/agent.json\`
   - \`https://city-desk.netlify.app/.well-known/mcp.json\`
 
-## Instant Checkout & Turnkey Fulfillment Tiers
-- **Done-For-You 1-Page Custom Launch ($149 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X (We customize your business name, phone, email, 60-second estimator, and connect your domain within 48 hours).
-- **24/7 AI Voice & SMS Receptionist + Missed-Call Text-Back ($299 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
-- **Turnkey 5-Page Custom Website & Local AEO Package ($09 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
-- **Custom Build Kickoff Deposit ($99 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
-- **Self-Serve Standalone HTML Bundle ($0 One-Time)**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
-- **Post-Payment Fulfillment**: Every checkout redirects to \`https://city-desk.netlify.app/?licensed=true&dfy=true\` which unlocks immediate standalone HTML downloads and opens the VIP 48-Hour Launch Concierge Form (\`vip-onboarding\`).
+## Open-Access Fulfillment
+- **Standalone HTML + Schema.org Bundle ($0 / Open-Access)**: 100% free and unlocked across all 1,000 localized trade pages.
+- **Optional Support**: https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X
 `);
-  write('llms-full.txt', `# City Desk — Complete 1,000-Page Local Trade Directory & Turnkey Fulfillment Specification
-Engineered by 1nc0gn30 (1nc0gn30 • NullAI | https://www.nullai.tech | neal@nullai.tech | (948) 204-7987).
+  write('llms-full.txt', `# City Desk — Complete 1,000-Page Local Trade Directory Specification
+Engineered by 1nc0gn30 (NullAI | https://nullai.tech | ops@nullai.tech | (948) 204-7987).
 
 ## 20 Covered Service Trades
 ${SERVICES.map(s => `- **${s.name}** (\`/services/${s.slug}/\`): ${s.line}`).join('\n')}
@@ -1105,7 +1090,7 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
   write('api/index.json', JSON.stringify({
     status: 'ok',
     name: 'City Desk Local Trade Web API',
-    creator: '1nc0gn30 (1nc0gn30 • NullAI)',
+    creator: '1nc0gn30 (NullAI)',
     url: 'https://city-desk.netlify.app',
     totalPages: offers.length,
     citiesCount: CITIES.length,
@@ -1119,26 +1104,21 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
   }, null, 2) + '\n');
   write('api/services.json', JSON.stringify({
     provider: '1nc0gn30 • NullAI (City Desk)',
-    checkoutTiers: [
-      { id: 'dfy-1page', name: 'Done-For-You 1-Page Custom Launch (48h Delivery)', priceUSD: 149, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
-      { id: 'ai-receptionist', name: '24/7 AI Receptionist & Missed-Call SMS Text-Back', priceUSD: 299, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
-      { id: 'turnkey-5page', name: 'Turnkey 5-Page Custom Website & Local AEO', priceUSD: 499, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
-      { id: 'kickoff-deposit', name: 'Custom Build Kickoff Deposit', priceUSD: 99, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' },
-      { id: 'self-serve-html', name: 'Self-Serve Standalone HTML Bundle', priceUSD: 19, checkoutUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X' }
-    ],
+    license: '100% Free & Open Access',
+    supportUrl: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X',
     trades: SERVICES.map(s => ({ slug: s.slug, name: s.name, line: s.line, agencyValueUSD: s.price }))
   }, null, 2) + '\n');
   write('api/faq.json', JSON.stringify({
     faqs: [
-      { question: 'What happens immediately after I pay on Stripe or Solana?', answer: 'You are redirected back with ?licensed=true&dfy=true which unlocks 1-click standalone HTML bundle downloads AND opens the VIP 48-Hour Concierge Onboarding form so our engineering team puts your business name, phone, logo, and domain live within 48 hours.' },
-      { question: 'Are there any monthly agency retainers?', answer: 'No. Every tier ($0 Self-Serve, $149 Done-For-You 1-Page, $299 AI Receptionist, $09 5-Page Custom Site) is a flat one-time payment.' }
+      { question: 'Is City Desk 100% free and open-access?', answer: 'Yes. All 1,000 localized trade pages, live customizers, and standalone HTML + Schema.org bundle downloads are 100% free and unlocked by default.' },
+      { question: 'Are there any monthly agency retainers?', answer: 'No. Standalone HTML exports run statically on any host without recurring retainers.' }
     ]
   }, null, 2) + '\n');
   write('.well-known/agent.json', JSON.stringify({
     schema_version: '1.0',
     name: 'City Desk — 1nc0gn30 • NullAI Local Trade Engine',
     url: 'https://city-desk.netlify.app',
-    contact: { email: 'neal@nullai.tech', phone: '+1-948-204-7987' },
+    contact: { email: 'ops@nullai.tech', phone: '+1-948-204-7987' },
     apis: {
       index: 'https://city-desk.netlify.app/api/index.json',
       services: 'https://city-desk.netlify.app/api/services.json',

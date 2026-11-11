@@ -155,11 +155,11 @@
           banner.innerHTML = `<div class="owner-preview-bar">
             <div class="owner-preview-copy">
               <div class="owner-preview-kicker"><span class="dot"></span>LIVE PREVIEW & AI SEARCH GRAPH · ${safeBiz}${siteLabel}</div>
-              <p class="owner-preview-desc">Pre-configured for <strong>${safeBiz}</strong> (${safePhone} · ${safeCity}). Export the standalone HTML + Schema.org JSON-LD pack for <strong>$7</strong>, or have our engineering desk deploy it on your domain in 48 hours.</p>
+              <p class="owner-preview-desc">Pre-configured for <strong>${safeBiz}</strong> (${safePhone} · ${safeCity}). Export the standalone HTML + Schema.org JSON-LD pack for free, or open the onboarding modal to save deployment specs.</p>
             </div>
             <div class="owner-preview-actions">
-              <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener" class="btn-arch-primary">★ $7 AI + HTML Pack</a>
-              <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener" class="btn-arch-copper">$149 DFY 48h Launch &rarr;</a>
+              <button type="button" onclick="window.downloadCurrentPageBundle()" class="btn-arch-primary">&darr; Download Standalone HTML</button>
+              <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener" class="btn-arch-copper">Buy Us a Coffee (Stripe) &rarr;</a>
               <button type="button" onclick="window.openVipModal()" class="btn-arch-ghost">Onboarding / Download</button>
             </div>
           </div>`;
@@ -184,32 +184,11 @@
 
   function updateProUI() {
     const licenseBadge = document.getElementById('licenseBadge');
-    const paywallBlur = document.querySelectorAll('.pro-paywall-blur');
-    const paywallOverlay = document.querySelectorAll('.pro-paywall-overlay');
-    const paywallOverlaySingle = document.getElementById('paywallOverlay');
-    const proPaywallContent = document.getElementById('proPaywallContent');
-    const salesBanner = document.getElementById('salesBanner') || document.querySelector('.sales-banner');
-
     if (licenseBadge) {
-      licenseBadge.textContent = '✦ 100% FREE & OPEN ACCESS';
+      licenseBadge.textContent = '100% FREE & OPEN ACCESS';
       licenseBadge.style.background = '#dcfce7';
       licenseBadge.style.color = '#15803d';
       licenseBadge.style.borderColor = '#86efac';
-    }
-    if (salesBanner) {
-      salesBanner.style.display = 'none';
-    }
-    paywallBlur.forEach(el => {
-      el.style.filter = 'none';
-      el.style.userSelect = 'auto';
-    });
-    if (proPaywallContent) {
-      proPaywallContent.style.filter = 'none';
-      proPaywallContent.style.userSelect = 'auto';
-    }
-    paywallOverlay.forEach(el => el.classList.add('hidden'));
-    if (paywallOverlaySingle) {
-      paywallOverlaySingle.style.display = 'none';
     }
   }
 
@@ -503,15 +482,6 @@
     if (silent !== true) {
       showToast(`⚡ Assembled live preview for ${biz} in ${cityName}!`);
     }
-  };
-
-  window.payWithSolana = function (e) {
-    if (e) e.preventDefault();
-    const addr = 'GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK';
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(addr);
-    }
-    showToast('⚡ Solana Tip Address copied: ' + addr);
   };
 
   function setupEventListeners() {

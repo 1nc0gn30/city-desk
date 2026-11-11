@@ -1,141 +1,108 @@
-<div align="center">
-  <img src="assets/hero-banner.svg" alt="City Desk — Sovereign Architecture Banner" width="100%" />
-</div>
+<p align="center">
+  <img src="assets/hero-banner.svg" alt="City Desk" width="100%">
+</p>
 
-<br />
+# City Desk
 
-<div align="center">
-  <a href="https://zoth.nullai.tech/tools/city-desk"><img src="https://img.shields.io/badge/Zoth_Studio_v2-Workspace-D4AF37?style=for-the-badge&logo=sparkles&logoColor=black" alt="Zoth Studio Workspace" /></a>
-  <a href="http://127.0.0.1:8087"><img src="https://img.shields.io/badge/Daemon-Port_:8087-38BDF8?style=for-the-badge&logo=fastapi&logoColor=black" alt="Port :8087" /></a>
-  <a href="https://nullai.tech"><img src="https://img.shields.io/badge/Security-100%25_Zero--Egress-10B981?style=for-the-badge&logo=shield&logoColor=black" alt="Zero Egress" /></a>
-  <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"><img src="https://img.shields.io/badge/☕_Buy_Us_a_Coffee-Stripe-D4AF37?style=for-the-badge" alt="Buy Us a Coffee" /></a>
-</div>
+Deterministic static site compiler and local service landing page publisher generating 1,000 finished HTML pages across 20 residential/commercial trades and 50 mid-size US cities, served locally by a zero-dependency Python 3 HTTP daemon.
 
-# ⚡ City Desk
+- **Version**: `2.5.0`
+- **Local Workstation Port**: `127.0.0.1:8087`
+- **Zoth Studio Dossier**: [https://zoth.nullai.tech/tools/city-desk](https://zoth.nullai.tech/tools/city-desk)
+- **Author**: [1nc0gn30](https://1nc0gn30.si) (`@1nc0gn30`) · [NullAI](https://nullai.tech)
 
-> **City Desk — 1,000 localized service landing pages across 20 trades and 50 mid-size cities with live customizer and standalone HTML export.**
+## Overview
 
----
+`city-desk` compiles 20 service trade blueprints (`painters`, `roofers`, `plumbers`, `electricians`, `hvac`, `landscapers`, `carpenters`, `cleaners`, `concrete`, `drywall`, `fencing`, `flooring`, `gutters`, `handyman`, `insulation`, `locksmith`, `masonry`, `pest-control`, `siding`, `tree-service`) across 50 US cities into standalone, zero-framework HTML documents (`site/`).
 
-## 🏛️ Architectural Overview
+Each compiled page includes:
+- Unique deterministic copy rotation (FNV-1a hash seeded per city and trade) verified at build time against duplicate titles, broken internal links, and banned hype phrases.
+- Interactive 60-second ballpark written price estimator and URL query prospect personalization (`?biz=...&phone=...&email=...&city=...`).
+- Embedded `Schema.org` `@graph` (`LocalBusiness` / `Service`, `WebApplication`, and `FAQPage` JSON-LD), canonical tags, `sitemap.xml`, `robots.txt`, `llms.txt`, and `.well-known/mcp.json`.
+- Client-side single-file HTML bundle exporter (`city_engine.js`) so contractors can download a self-contained `.html` file ready for static hosting.
 
-**City Desk** is an official sovereign tool in the **[Zoth Studio v2](https://zoth.nullai.tech)** (77-Tool Matrix) and **[ZothOS Linux 3.3](https://zothos.nullai.tech)** ecosystem, engineered by **1nc0gn30 • NullAI ([@1nc0gn30](https://github.com/1nc0gn30))**.
+## Architecture
 
-| Property | Specification |
-| :--- | :--- |
-| **Tool ID** | `city-desk` |
-| **Category** | `Growth & SEO` |
-| **Loopback Daemon Port** | `http://127.0.0.1:8087` |
-| **Execution Mode** | `browser` + Python Server Daemon |
-| **Zoth Studio Route** | [`http://127.0.0.1:3000/tools/city-desk`](http://127.0.0.1:3000/tools/city-desk) |
-| **License** | **100% Free & Open Access (Zero Paywalls)** |
+```text
+city-desk/
+├── build.js                 # Zero-dependency Node.js static compiler + build invariant checker
+├── data.js                  # 20 trade blueprints & 50 mid-size US city definitions
+├── config.js                # Canonical origin, studio label, and reply-to settings
+├── city_engine.js           # Client-side URL personalization, price estimator & HTML bundle exporter
+├── style.css                # Editorial typography & responsive layout stylesheet
+├── server.py                # Python 3 ThreadingHTTPServer & REST API (:8087)
+├── bin/city-desk-tui        # Terminal Braille telemetry & benchmark utility
+├── site/                    # Compiled static output (1,000 trade×city pages + indexes + JSON APIs)
+└── test/build.test.js       # Node.js built-in test runner suite (links, titles, sitemap, 404s)
+```
 
----
+## Quickstart
 
-## 💎 What It Does & How It Works
-
-- **1,000 Localized Landing Pages**: Pre-synthesized matrix across 20 high-demand home service trades and 50 mid-size American cities.
-- **Client-Side Live Synthesizer**: Dynamically configures trade copy, local city context, contractor telephone, and business name in real-time.
-- **Standalone HTML Exporter**: Generates a self-contained, 20kb production-ready HTML file with zero external CSS or JS framework dependencies.
-- **Semantic Schema.org LocalBusiness Graphs**: Embedded JSON-LD structured data for instant Google Local & AI Answer Engine (AEO) ranking.
-- **100% Zero-Egress Local Enclave Execution**: Runs completely on `127.0.0.1:8087` with zero third-party telemetry.
-
----
-
-## 🛠️ ZothOS CLI & Daemon Commands
-
-The CLI is pre-installed in `/usr/local/bin/city-desk`:
+Clone the repository, compile all 1,000 pages into `site/`, and launch the local server on `127.0.0.1:8087`:
 
 ```bash
-# Check daemon health & ZothOS integration status
-city-desk --status
+git clone https://github.com/1nc0gn30/city-desk.git
+cd city-desk
 
-# List all 20 supported trade services and baseline scopes
-city-desk --trades
+# Compile all 1,000 localized trade pages, sitemaps, and JSON indexes
+node build.js
 
-# List all 50 target municipal cities
-city-desk --cities
-
-# Rebuild all 1,000 localized landing pages
-city-desk --build
-
-# Deterministic JSON telemetry output
-city-desk --json
-
-# Start the standalone server daemon on port 8087
-city-desk --serve
-# Or directly via Python:
-python3 ~/NullAITech/city-desk/server.py --port 8087
+# Start the local HTTP & REST server on 127.0.0.1:8087
+python3 server.py --host 127.0.0.1 --port 8087
 ```
 
----
+Open `http://127.0.0.1:8087` in a browser or query the health endpoint:
 
-## ☕ Support 1nc0gn30 • NullAI (Zero Paywalls)
-
-All tools across the Zoth Studio ecosystem are 100% free, unlocked, and open-source by default. If this utility provides value to your workflow, support development via:
-
-- **Stripe "Buy Us a Coffee"**: [https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X](https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X)
-- **Solana Tip Address**: `GG2eQbVh8ut1BK6j1A2tz7pSySdLpD38BgyEhGcxdXoK`
-
----
-
-<div align="center">
-  <sub>Engineered by <b>1nc0gn30 • NullAI</b> (<a href="https://github.com/1nc0gn30">@1nc0gn30</a>) &bull; <a href="https://nullai.tech">NullAI Platform</a> &bull; <a href="https://zoth.nullai.tech">Zoth Studio v2</a></sub>
-</div>
-
----
-
-## 🏛️ ZothOS v3.4, Zoth Studio v2 & Obsidian Second Brain Ecosystem
-
-```mermaid
-flowchart LR
-    subgraph ZothOS["🐧 ZothOS v3.4 CLI & Braille TUI"]
-        CLI["city-desk --help / --json"]
-        TUI["city-desk-tui<br/>Unicode U+2800 2x4 Braille"]
-    end
-
-    subgraph Workstation["⚡ Sovereign Workstation"]
-        WEB["http://127.0.0.1:8087<br/>REST API & /health"]
-    end
-
-    subgraph Studio["🌌 Zoth Studio v2 & ZothOS-Lite"]
-        GODMODE["http://127.0.0.1:3000/tools/city-desk<br/>God-Mode Workstation"]
-        LITE["http://127.0.0.1:8145<br/>ZothOS-Lite Web Desktop"]
-    end
-
-    subgraph SecondBrain["💎 Obsidian Second Brain & STDP"]
-        TRACKER["http://127.0.0.1:8151<br/>Zoth Obsidian Tracker"]
-        NEURO["http://127.0.0.1:8094<br/>Neuro-Memory STDP Cortex"]
-        NOTE["Studio/Tools/Studio city-desk.md"]
-    end
-
-    CLI --> WEB
-    TUI --> WEB
-    WEB <--> GODMODE
-    WEB <--> LITE
-    WEB --> TRACKER
-    TRACKER <--> NOTE
-    NOTE <--> NEURO
+```bash
+curl -s http://127.0.0.1:8087/health
 ```
 
-### Cross-Surface Integration Matrix
+## CLI & MCP Usage
 
-| Surface | Endpoint / Binary | Capabilities |
+### CLI Commands
+
+`server.py`, `build.js`, `bin/city-desk-tui`, and ZothOS v3.4.0 `/usr/local/bin/city-desk` provide:
+
+```bash
+# Server CLI flags
+python3 server.py --help
+python3 server.py --version
+python3 server.py --status --json
+python3 server.py --host 127.0.0.1 --port 8087
+
+# Rebuild static site and run built-in invariant checks
+npm run build
+
+# Terminal benchmark & JSON telemetry
+python3 bin/city-desk-tui --json
+```
+
+### REST API & Static Discovery Endpoints (`127.0.0.1:8087`)
+
+| Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| **Standalone Workstation** | `http://127.0.0.1:8087` | 100% Free & Open-Access Web Deck, live `/health` & REST telemetry |
-| **Zoth Studio v2 Route** | `http://127.0.0.1:3000/tools/city-desk` | Interactive God-Mode component inside Zoth Studio (`https://zoth.nullai.tech`) |
-| **ZothOS v3.4 CLI & TUI** | `city-desk` / `city-desk-tui` | Global binary in `/usr/local/bin/` with Unicode `U+2800` Braille TUI & `--json` output |
-| **ZothOS-Lite Web Desktop** | `http://127.0.0.1:8145` | Browser-native KDE-style window manager & terminal launcher |
-| **Zoth Obsidian Tracker** | `http://127.0.0.1:8151` | Interactive Obsidian Second Brain vault explorer (`~/Documents/Obsidian Vault/Studio/Tools/Studio city-desk.md`) |
-| **Neuro-Memory STDP Cortex** | `http://127.0.0.1:8094` | 3-Factor STDP synaptic memory daemon & 21-tool MCP server |
+| `GET` | `/health` | Daemon health, uptime, port (`8087`), trade/city/page counts |
+| `GET` | `/api/status`, `/api/info` | Service metadata, `site/` directory path, and workbench links |
+| `GET` | `/api/trades`, `/api/services` | Catalog of 20 trade blueprints and baseline pricing |
+| `GET` | `/api/cities` | Indexed US city slugs and state codes |
+| `POST` | `/api/synth`, `/api/generate` | Assemble a personalized preview URL for `{trade, city, biz, phone}` |
+| `GET` | `/offers.json` | Full manifest of 1,000 compiled `{city, state, service, price, path}` routes |
+| `GET` | `/.well-known/mcp.json` | Static MCP resource descriptor for `api/services.json` and `offers.json` |
+
+## Testing & Verification
+
+Run the zero-dependency Node.js test suite (compiles all 1,000 pages and validates internal links, unique `<title>` tags, `sitemap.xml` parity, template placeholder hygiene, and 404 routing):
 
 ```bash
-# Inspect CLI & Unicode U+2800 Braille TUI on ZothOS v3.4
-city-desk --help
-city-desk-tui --status
-city-desk-tui --json
-
-# Verify Second Brain Vault & 12-Step Verification Gallery on :8151
-zoth-obsidian-tracker --verify
+npm test
+python3 server.py --status --json
 ```
 
+## Support
+
+City Desk is 100% free and open-source with zero paywalls. Optional support:
+- [Buy Us a Coffee (Stripe)](https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X)
+
+## License
+
+Released under the [MIT License](LICENSE). Copyright (c) 2026 1nc0gn30 · NullAI ([https://nullai.tech](https://nullai.tech)).

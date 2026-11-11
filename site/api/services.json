@@ -1,37 +1,7 @@
 {
   "provider": "1nc0gn30 • NullAI (City Desk)",
-  "checkoutTiers": [
-    {
-      "id": "dfy-1page",
-      "name": "Done-For-You 1-Page Custom Launch (48h Delivery)",
-      "priceUSD": 149,
-      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
-    },
-    {
-      "id": "ai-receptionist",
-      "name": "24/7 AI Receptionist & Missed-Call SMS Text-Back",
-      "priceUSD": 299,
-      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
-    },
-    {
-      "id": "turnkey-5page",
-      "name": "Turnkey 5-Page Custom Website & Local AEO",
-      "priceUSD": 499,
-      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
-    },
-    {
-      "id": "kickoff-deposit",
-      "name": "Custom Build Kickoff Deposit",
-      "priceUSD": 99,
-      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
-    },
-    {
-      "id": "self-serve-html",
-      "name": "Self-Serve Standalone HTML Bundle",
-      "priceUSD": 19,
-      "checkoutUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X"
-    }
-  ],
+  "license": "100% Free & Open Access",
+  "supportUrl": "https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X",
   "trades": [
     {
       "slug": "painters",
