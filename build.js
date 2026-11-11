@@ -1160,9 +1160,9 @@ ${CITIES.map(c => `- **${c.name}, ${c.state}** (\`/cities/${c.slug}/\`)`).join('
     ''
   ].join('\n'));
   write('_redirects', [
-    '/cities/:city/:trade/* /cities/virginia-beach-va/:trade/index.html 200',
-    '/cities/:city/:trade /cities/virginia-beach-va/:trade/index.html 200',
-    '/cities/:city/* /cities/virginia-beach-va/index.html 200',
+    '/cities/:city/:trade/* /cities/boise-id/:trade/index.html 200',
+    '/cities/:city/:trade /cities/boise-id/:trade/index.html 200',
+    '/cities/:city/* /cities/boise-id/index.html 200',
     ''
   ].join('\n'));
 

@@ -785,7 +785,7 @@ const CITIES = [
   ['Mobile', 'AL'], ['Huntsville', 'AL'], ['Montgomery', 'AL'], ['Jackson', 'MS'], ['Little Rock', 'AR'],
   ['Fayetteville', 'AR'], ['Tulsa', 'OK'], ['Wichita', 'KS'], ['Des Moines', 'IA'], ['Cedar Rapids', 'IA'],
   ['Omaha', 'NE'], ['Sioux Falls', 'SD'], ['Fargo', 'ND'], ['Billings', 'MT'], ['Madison', 'WI'],
-  ['Green Bay', 'WI'], ['Grand Rapids', 'MI'], ['Ann Arbor', 'MI'], ['Fort Wayne', 'IN'], ['Virginia Beach', 'VA'],
+  ['Green Bay', 'WI'], ['Grand Rapids', 'MI'], ['Ann Arbor', 'MI'], ['Fort Wayne', 'IN'], ['Raleigh', 'NC'],
   ['Norfolk', 'VA'], ['Toledo', 'OH'], ['Dayton', 'OH'], ['Akron', 'OH'], ['Lexington', 'KY'],
   ['Knoxville', 'TN'], ['Chattanooga', 'TN'], ['Greenville', 'SC'], ['Savannah', 'GA'], ['Augusta', 'GA'],
   ['Chesapeake', 'VA'], ['Springfield', 'MO'], ['Fort Collins', 'CO'], ['Provo', 'UT'], ['Gainesville', 'FL']

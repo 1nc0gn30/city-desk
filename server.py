@@ -56,7 +56,7 @@ CITIES = [
     {"slug": "rochester-ny", "name": "Rochester", "state": "NY"},
     {"slug": "richmond-va", "name": "Richmond", "state": "VA"},
     {"slug": "norfolk-va", "name": "Norfolk", "state": "VA"},
-    {"slug": "virginia-beach-va", "name": "Virginia Beach", "state": "VA"},
+    {"slug": "austin-tx", "name": "Austin", "state": "TX"},
     {"slug": "chesapeake-va", "name": "Chesapeake", "state": "VA"},
     {"slug": "raleigh-nc", "name": "Raleigh", "state": "NC"},
     {"slug": "greensboro-nc", "name": "Greensboro", "state": "NC"},

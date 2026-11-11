@@ -58,7 +58,7 @@ Engineered by 1nc0gn30 (NullAI | https://nullai.tech | ops@nullai.tech | (948) 2
 - **Grand Rapids, MI** (`/cities/grand-rapids-mi/`)
 - **Ann Arbor, MI** (`/cities/ann-arbor-mi/`)
 - **Fort Wayne, IN** (`/cities/fort-wayne-in/`)
-- **Virginia Beach, VA** (`/cities/virginia-beach-va/`)
+- **Raleigh, NC** (`/cities/raleigh-nc/`)
 - **Norfolk, VA** (`/cities/norfolk-va/`)
 - **Toledo, OH** (`/cities/toledo-oh/`)
 - **Dayton, OH** (`/cities/dayton-oh/`)

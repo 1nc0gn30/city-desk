@@ -21,11 +21,11 @@
 # rewrites cleanly with HTTP 200 to the trade template and is personalized by city_engine.js.
 [[redirects]]
   from = "/cities/:city/:trade/*"
-  to = "/cities/virginia-beach-va/:trade/index.html"
+  to = "/cities/boise-id/:trade/index.html"
   status = 200
 
 [[redirects]]
   from = "/cities/:city/*"
-  to = "/cities/virginia-beach-va/index.html"
+  to = "/cities/boise-id/index.html"
   status = 200
 

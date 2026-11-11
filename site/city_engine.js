@@ -27,7 +27,7 @@
         if (pathMatch) {
           const derivedCity = pathMatch[1].split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
           const derivedState = pathMatch[2].toUpperCase();
-          if (derivedCity.toLowerCase() !== 'virginia beach') {
+          if (derivedCity.toLowerCase() !== 'boise') {
             customCity = `${derivedCity}, ${derivedState}`;
           }
         }
@@ -91,17 +91,17 @@
         // Replace fallback template city references across visible copy
         document.querySelectorAll('h1, h2, p, span, option, summary, dd').forEach((el) => {
           if (el.children.length === 0 && el.textContent) {
-            if (el.textContent.includes('Virginia Beach, VA')) {
-              el.textContent = el.textContent.replace(/Virginia Beach,\s*VA/g, customCity);
-            } else if (el.textContent.includes('Virginia Beach')) {
-              el.textContent = el.textContent.replace(/Virginia Beach/g, cityOnly);
+            if (el.textContent.includes('Boise, ID')) {
+              el.textContent = el.textContent.replace(/Boise,\s*ID/g, customCity);
+            } else if (el.textContent.includes('Boise')) {
+              el.textContent = el.textContent.replace(/Boise/g, cityOnly);
             }
           }
         });
       }
 
       if (biz) {
-        document.title = `${biz}${customCity ? ' (' + customCity + ')' : ''} — ${document.title.replace(/Virginia Beach,\s*VA/g, customCity || 'Local Preview')}`;
+        document.title = `${biz}${customCity ? ' (' + customCity + ')' : ''} — ${document.title.replace(/Boise,\s*ID/g, customCity || 'Local Preview')}`;
         const mark = document.querySelector('.bar .mark');
         if (mark) {
           mark.setAttribute('title', `${biz}${customCity ? ' — ' + customCity : ''}`);

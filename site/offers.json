@@ -4760,144 +4760,144 @@
     "path": "/cities/fort-wayne-in/property-managers/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "painters",
     "price": 800,
-    "path": "/cities/virginia-beach-va/painters/"
+    "path": "/cities/raleigh-nc/painters/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "plumbers",
     "price": 900,
-    "path": "/cities/virginia-beach-va/plumbers/"
+    "path": "/cities/raleigh-nc/plumbers/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "hvac",
     "price": 1100,
-    "path": "/cities/virginia-beach-va/hvac/"
+    "path": "/cities/raleigh-nc/hvac/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "roofers",
     "price": 1000,
-    "path": "/cities/virginia-beach-va/roofers/"
+    "path": "/cities/raleigh-nc/roofers/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "electricians",
     "price": 1000,
-    "path": "/cities/virginia-beach-va/electricians/"
+    "path": "/cities/raleigh-nc/electricians/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "garage-doors",
     "price": 700,
-    "path": "/cities/virginia-beach-va/garage-doors/"
+    "path": "/cities/raleigh-nc/garage-doors/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "landscapers",
     "price": 800,
-    "path": "/cities/virginia-beach-va/landscapers/"
+    "path": "/cities/raleigh-nc/landscapers/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "cleaners",
     "price": 700,
-    "path": "/cities/virginia-beach-va/cleaners/"
+    "path": "/cities/raleigh-nc/cleaners/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "detailers",
     "price": 700,
-    "path": "/cities/virginia-beach-va/detailers/"
+    "path": "/cities/raleigh-nc/detailers/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "junk-removal",
     "price": 700,
-    "path": "/cities/virginia-beach-va/junk-removal/"
+    "path": "/cities/raleigh-nc/junk-removal/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "pest-control",
     "price": 800,
-    "path": "/cities/virginia-beach-va/pest-control/"
+    "path": "/cities/raleigh-nc/pest-control/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "movers",
     "price": 900,
-    "path": "/cities/virginia-beach-va/movers/"
+    "path": "/cities/raleigh-nc/movers/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "groomers",
     "price": 700,
-    "path": "/cities/virginia-beach-va/groomers/"
+    "path": "/cities/raleigh-nc/groomers/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "dentists",
     "price": 1500,
-    "path": "/cities/virginia-beach-va/dentists/"
+    "path": "/cities/raleigh-nc/dentists/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "med-spas",
     "price": 1400,
-    "path": "/cities/virginia-beach-va/med-spas/"
+    "path": "/cities/raleigh-nc/med-spas/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "gyms",
     "price": 900,
-    "path": "/cities/virginia-beach-va/gyms/"
+    "path": "/cities/raleigh-nc/gyms/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "restaurants",
     "price": 1200,
-    "path": "/cities/virginia-beach-va/restaurants/"
+    "path": "/cities/raleigh-nc/restaurants/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "food-trucks",
     "price": 800,
-    "path": "/cities/virginia-beach-va/food-trucks/"
+    "path": "/cities/raleigh-nc/food-trucks/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "auto-repair",
     "price": 1000,
-    "path": "/cities/virginia-beach-va/auto-repair/"
+    "path": "/cities/raleigh-nc/auto-repair/"
   },
   {
-    "city": "Virginia Beach",
-    "state": "VA",
+    "city": "Raleigh",
+    "state": "NC",
     "service": "property-managers",
     "price": 1300,
-    "path": "/cities/virginia-beach-va/property-managers/"
+    "path": "/cities/raleigh-nc/property-managers/"
   },
   {
     "city": "Norfolk",
