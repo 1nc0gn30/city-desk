@@ -841,8 +841,8 @@ function homePage() {
   <div class="sales-content">
     <div class="sales-left">
       <span class="pulse-dot"></span>
-      <strong style="color:#10b981;">SOVEREIGN OPEN ACCESS:</strong>
-      <span>All 1,000 trade pages and standalone HTML synthesizers are 100% free and open. Voluntary tips support development.</span>
+      <strong style="color:#047857;">SOVEREIGN OPEN ACCESS:</strong>
+      <span style="color:#1c1915;">All 1,000 trade pages and standalone HTML synthesizers are 100% free and open. Voluntary tips support development.</span>
     </div>
     <div class="sales-actions">
       <a href="https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X" target="_blank" rel="noopener noreferrer" class="btn-gold" style="background:#D4AF37;color:#08080B;font-weight:800;">Buy Us a Coffee (Stripe)</a>
